@@ -3,7 +3,7 @@
 
 ## Lab scenario
 
-A Privileged role administrator can customize Privileged Identity Management (PIM) in their Azure Active Directory (Azure AD) organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
+A Privileged role administrator can customize Privileged Identity Management (PIM) in their Microsoft Entra ID, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
 
 ## Lab Objectives
 After completing this lab, you will be able to:
@@ -22,7 +22,7 @@ In this exercise, you will learn how to customize role settings by configuring M
 
 #### Task 1 - Open role settings
 
-Follow these steps to open the settings for an Azure AD role.
+Follow these steps to open the settings for an Microsoft Entra ID role.
 
 2. In the Azure portal, search for and  select **Microsoft Entra ID Privileged Identity Management.**
 
@@ -64,7 +64,7 @@ With Microsoft Entra ID, a Global administrator can make permanent Microsoft Ent
 
 The Microsoft Entra ID Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Microsoft Entra ID admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
 
-Follow these steps to make a user eligible for an Azure AD admin role.
+Follow these steps to make a user eligible for an Microsoft Entra ID admin role.
 
 1. Search for and then select **Microsoft Entra ID Privileged Identity Management.**
 
@@ -131,7 +131,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 #### Task 3 - Activate your Microsoft Entra ID roles
 
-When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
+When you need to assume an Microsoft Entra ID role, you can request activation by opening **My roles** in Privileged Identity Management.
 
 1. From the **Search, resources, services, and docs** bar, look for Privileged.
 
