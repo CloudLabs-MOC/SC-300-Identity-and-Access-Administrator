@@ -8,7 +8,7 @@ You can select what happens when an external user, who was invited to your direc
 
 In this lab you will be performing the following task:
 
-- Task 1 - Manage the lifecycle of external users in Azure AD Identity Governance settings
+- Task 1 - Manage the lifecycle of external users in Microsoft Entra ID Identity Governance settings
 
 ## Estimated time: 30 minutes
 
@@ -18,7 +18,7 @@ In this lab you will be performing the following task:
 
 ### Exercise 1 - Microsoft Entra ID Identity Governance settings
 
-#### Task 1 - Manage the lifecycle of external users in Azure AD Identity Governance settings
+#### Task 1 - Manage the lifecycle of external users in Microsoft Enta ID Identity Governance settings
 
 1. In the Azure Portal, in **Search resources, services and docs** type **Microsoft Entra ID** and select it.
 
