@@ -2,7 +2,7 @@
 
 ## Lab scenario
 
-For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
+For applications your organization has developed or for those that are registered directly in your Microsoft Entra ID tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
 ## Lab Objectives
 After completing this lab, you will be able to complete the following tasks:
