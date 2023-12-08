@@ -2,14 +2,14 @@
 
 ## Lab scenario
 
-Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through connecting data sources from Microsoft and third-party security solutions, you have the ability to execute security operations tasks.  In this lab exercise, you will create a Microsoft Sentinel workspace with data connectors to Azure AD for executing hunting queries using Kusto Query Language (KQL). 
+Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through connecting data sources from Microsoft and third-party security solutions, you have the ability to execute security operations tasks.  In this lab exercise, you will create a Microsoft Sentinel workspace with data connectors to Microsoft entra ID for executing hunting queries using Kusto Query Language (KQL). 
 
 ## Lab Objectives
 
 In this lab, you will be performing the following tasks:
 
 - Task 1 - Create a Microsoft Sentinel workspace
-- Task 2 - Add Azure AD as a Data source
+- Task 2 - Add Microsoft entra ID as a Data source
 - Task 3 - Run Kusto query on User activity
 
 ## Architecture Diagram
@@ -74,7 +74,7 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
 
    ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](./media/lab27-2.png)
 
-   **Note** - The Azure AD data connector may take a few minutes to show in the active count. 
+   **Note** - The Microsoft Entra ID data connector may take a few minutes to show in the active count. 
 
 #### Task 3 - Run Kusto query on User activity
 
@@ -88,7 +88,7 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
 
    ![](./media/audit.png)
 
-1. This will provide a list of User IDs on Azure AD.  Since we have just created the workspace, you may not see results. Copy the format of the query and paste it in notepad you need this in next step.
+1. This will provide a list of User IDs on Microsoft Entra ID.  Since we have just created the workspace, you may not see results. Copy the format of the query and paste it in notepad you need this in next step.
 
 1. From the left-hand navigation menu, under **Threat management** section, select **Hunting**.
 
@@ -108,7 +108,7 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
 In this lab you have completed the following tasks:
 
 - Create a Microsoft Sentinel workspace
-- Add Azure AD as a Data source
+- Add Microsoft Entra ID as a Data source
 - Run Kusto query on User activity
 
 ## You have successfully completed the lab.
