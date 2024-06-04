@@ -190,6 +190,7 @@ Users can review and see the terms of use that they have accepted by using the f
     ![Screen image displaying the settings and privacy page with organization's notes highlighted](./media/lp4-mod1-myaccount-setting-and-privacy-org-notes.png)
 
 4. Under **Organization’s notice**, you can review the terms of use you have accepted.
+5. "Note:Ignore MOC HOL 100053 terms of use error, And can proceed with the next step." 
 
 #### Task 6 - Edit terms of use details
 
