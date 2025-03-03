@@ -305,7 +305,7 @@ This task will use an alternative method to remove the assigned role; it will us
     Get-Module AzureAD 
     ```
 
-    ![](./media/sc300-26.png)    
+    ![](./media/sc300--26.png)    
 
 1. Next, you will need to login to Azure by running:  
 
