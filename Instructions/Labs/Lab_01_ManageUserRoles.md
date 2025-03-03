@@ -71,7 +71,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
-1. Enter the Chris Green's Userprincipalname that you had copied in task 1 **(1)** then click on **Next (2)**.
+1. Enter the Chris Green's **Userprincipalname** that you had copied in task 1 **(1)** then click on **Next (2)**.
 
     | **Setting**| **Value**|
     | :--- | :--- |
@@ -119,7 +119,7 @@ After completing this lab, you will be able to complete the following exercises:
 
     ![](./media/sc300-11.png)
 
-1. Notice that **+ Create your own application** is unavailable.
+1. Notice that **+ Create your own application** is **unavailable**.
 
     ![](./media/sc300-12.png)
 
@@ -198,7 +198,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Click on  **+ New Application**.
 
-1. Notice that **+ Create your own application** is available now.
+1. Notice that **+ Create your own application** is **available** now.
 
     ![](./media/sc300-17.png)
 
