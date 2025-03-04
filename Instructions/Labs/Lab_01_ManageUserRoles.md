@@ -59,7 +59,7 @@ After completing this lab, you will be able to complete the following exercises:
 
        >**Note:** You will have to change the password upon first login to this account
       
-1. Thne click on **Create**.
+1. Then click on **Create**.
 
 1. The user is now created and registered to your organization.
 
@@ -69,6 +69,10 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Launch a new **InPrivate** browser window.
 
+    >**Note:** You can open an InPrivate browser window by clicking the **ellipsis** (1) in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window** option.
+ 
+     ![](./media/image-3.png)
+ 
 1. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
 1. Enter the Chris Green's **Userprincipalname** that you had copied in task 1 **(1)** then click on **Next (2)**.
@@ -137,11 +141,11 @@ After completing this lab, you will be able to complete the following exercises:
 
 ### Task 1 - Assign a role to a user
 
-1. Go back to the normal browser window where you are logged in as a Global Administrator.
+1. Go back to the normal browser window where you are logged in as a ODL User.
 
 1. Navigate to **Microsoft Entra ID**  page.
 
-1. Select on **Users** under the Manage section of the menu.
+1. Select on **Users** under the Manage section from the left navigation pane.
 
 1. Select **Chris Green's** account.
 
@@ -150,7 +154,7 @@ After completing this lab, you will be able to complete the following exercises:
     - Select **+ Add assignments (2)**
     - Search for **Application administrator (3)**
     - Then mark the `Application administrator` role **(4)**
-    - Select **Add (4)**
+    - Select **Add (5)**
 
       ![Assigned roles page - showing the selected role](./media/sc300-15.png)
 
@@ -170,6 +174,12 @@ After completing this lab, you will be able to complete the following exercises:
 ### Task 2 - Check application permissions
 
 1. Launch a new InPrivate browser window.
+
+1. Launch a new **InPrivate** browser window.
+
+    >**Note:** You can open an InPrivate browser window by clicking the **ellipsis** (1) in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window** option.
+ 
+     ![](./media/image-3.png)
 
 1. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
@@ -216,11 +226,15 @@ In this exercise, you will remove the role assignment that was assigned in the p
 
 This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Entra ID.
 
-1. If you are not already logged in as your Global Admin, launch the Azure Portal and log in now.
+1. Go back to the normal browser window where you are logged in as a ODL User with the below credential.
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>   
 
 1. In the search box type **Microsoft Entra ID** and launch Microsoft Entra ID.
 
-1. Select on **Users** under the Manage section of the menu.
+1. Select on **Users** under the Manage section from the left navigation pane.
 
 1. Select **Chris Green's** account.
 
@@ -249,15 +263,20 @@ This task will use an alternative method to remove the assigned role; it will us
     ![](./media/sc300-20.png)
 
      >**Note:** Sign in with the ODL user credentials present in the **Environment page** in order to be able to edit the excel sheet.
+
+      - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+      - **Password:** <inject key="AzureAdUserPassword"></inject>      
       
 1. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password.The following screenshot is an example of how you can complete the .csvfile: 
 
     ![Bulk import using csv file entry](./media/bulk121.png)
        
-3. Copy the domain name  in the Azure portal from the Microsoft Entra ID Overview page, copy the primary domain name, and replace **<<<enter your >>>** with primary domain name for all the users.
-
+1. Copy the Primary domain name  in the Azure portal from the **Microsoft Entra ID** Overview page, copy the **primary domain name**.
    ![Bulk import using csv file entry](./media/xce12.png)
 
+1. In the .csv template replace **<<< enter your >>>** with primary domain name for all the users.
+   
    >**Note:** You do not need to fill out all the fields. As per the sample data provided, you mainly need to add the username information. Be careful not to leave any extra white spaces in the Excel sheet else Bulk creation will fail.
 
 1. Once you are done with replacing the domain names, navigate to **Downloads (1)** section, save the file as **BulkUser (2)** then click on **Save ()3** and then close the file.
@@ -411,6 +430,8 @@ Some user accounts in your organization will not be provided all available produ
 1. From left pane select **Licenses (1)**  and select the available **Office 365 E5 license (2)**.
 
     ![](./media/sc300-37.png)
+
+     >**Note:** If you dont see the **Office 365 E5 license**, please click on **Refresh** button it may take some time to appear.
 
 1. Select **+ Assign Licenses**.
 
