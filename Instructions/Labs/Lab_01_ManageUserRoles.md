@@ -95,7 +95,7 @@ After completing this lab, you will be able to complete the following exercises:
     | New Password| Enter **Horizon@123 (2)** |
     | Confirm Password| Reenter **Horizon@123 (3)** |
 
-    ![](./media/sc300-8.png)    
+    ![](./media/sc300--8.png)    
 
 1. Click on **Next** for **Action Required** pop up.
 
