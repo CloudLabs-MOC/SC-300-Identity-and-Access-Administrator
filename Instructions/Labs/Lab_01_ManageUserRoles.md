@@ -75,7 +75,7 @@ After completing this lab, you will be able to complete the following exercises:
  
 1. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
-1. Enter the Chris Green's **Userprincipalname** that you had copied in task 1 **(1)** then click on **Next (2)**.
+1. Enter the Chris Green's **Userprincipalname** that you had copied in task 1 step 4 **(1)** then click on **Next (2)**.
 
     | **Setting**| **Value**|
     | :--- | :--- |
