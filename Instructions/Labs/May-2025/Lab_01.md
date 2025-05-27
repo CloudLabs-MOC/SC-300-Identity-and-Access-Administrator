@@ -259,7 +259,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 3. Open the **All users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
 
-    **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
+    >**Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
 
     ![Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](../media/users.png)
 
@@ -273,7 +273,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 2. Review the list of deleted users and select **Chris Green**.
 
-    **Important** - By default, deleted user accounts are permanently removed from Azure Active Directory automatically after 30 days.
+    >**Important** - By default, deleted user accounts are permanently removed from Azure Active Directory automatically after 30 days.
 
 3. On the menu, select **Restore user**.
 
@@ -299,7 +299,6 @@ Some user accounts in your organization will not be provided all available produ
 4. Select on **Raul Razo**.
 
 5. Review Raul's profile and ensure he has a Usage Location set.
-
 
     >**Warning** - To assign a license to a user, the user must assigned a usage location.
 
