@@ -117,7 +117,7 @@ After completing this lab, you will be able to complete the following exercises:
 #### Task 2 - Check application permissions
 
 1. Launch a new InPrivate browser window.
-2. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
+2. Open the Microsoft Entra admin center https://entra.microsoftcom as Chris Green..
 
     | **Setting**| **Value**|
     | :--- | :--- |
@@ -140,11 +140,11 @@ In this exercise, you will remove the role assignment that was assigned in the p
 
 This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Entra ID.
 
-1. If you are not already logged in as your Global Admin, launch the Azure Portal and log in now.
+1. If you are not already logged in as your Global Admin, go to https://entra.microsoftcom Microsoft Entra admin center and log in now.
 
-2. In the search box type **Microsoft Entra ID** and launch Microsoft Entra ID.
+2. In the search box type **Roles** and then launch Microsoft Entra ID roles and administration.
 
-3. In **Microsoft Entra ID**, select **Roles and administrators**, and then select the **Application administrator** role from the list.
+3.  In **All roles** of **Roles and administrators**, select the **Application administrator** role from the list.
 
 4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
 
@@ -190,56 +190,58 @@ This task will use an alternative method to remove the assigned role; it will us
 
 #### Task 2 - Addition of users using PowerShell
 
-1. Open PowerShell as an administrator. This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
+1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
-   >**Note** - Select **PowerShell** and not **PowerShell ISE**.
+**Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to https://aka.ms/PowerShell-Release?tag=7.3.9. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
 
-2. You will need to add and import the Azure AD PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
+**Lab Tip** - TouchType does not work with PowerShell well in the lab environment.  To work around this issue, you open Notepad in you lab environment. Next use the TouchType feature to place the script into Notepad, then finally use Copy & Paste to put the command into PowerShell.  Apologies for this extra step.
 
-    ```
-    Install-Module AzureAD
-    Import-Module AzureAD
-    ```
-
-3. Confirm that the module is installed correctly by running the command:  
+2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 
     ```
-    Get-Module AzureAD 
+    Install-Module Microsoft.Graph
     ```
-
-4. Next, you will need to login to Azure by running:  
+3. Confirm the Microsoft.Graph module is installed:
 
     ```
-    Connect-AzureAD 
-    ``` 
-
-5. The Microsoft login window will appear for you to log in to Azure AD.  
-
-   >**Note:** If you get any warnings you can click on **Yes**
-
-6. To verify that you are connected and to see existing users, run:  
-
-    ``` 
-    Get-AzureADUser 
+    Get-InstalledModule Microsoft.Graph
     ```
     
-7. To assign a common temporary password to all new users, run the following command and replace the TempPW with the password that you would like to provide to your users.  
+
+4. Next, you will need to login to Microsoft Graph API by running:  
+
+    ```
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
+    ``` 
+    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Accept the permissions request; then close the browser window.
+
+5. To verify that you are connected and to see existing users, run:  
 
     ``` 
-    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+    Get-MgUser 
     ```
+    
+7. To assign a common temporary password to all new users, run the following command and replace the <Enter a complex Password> with the password that you would like to provide to your users.  
 
+    ``` 
+    $PWProfile = @{
+        Password = "<Enter a complex password you will>";
+        ForceChangePasswordNextSignIn = $false
+    }
     ```
-    $PasswordProfile.Password = "<<enter a secure password you will remember>>" 
-    ```
-
 8. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
 
     ```
-    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@labtenantname.com" -AccountEnabled $true -MailNickName "Newuser"
+    New-MgUser `
+        -DisplayName "New PW User" `
+        -GivenName "New" -Surname "User" `
+        -MailNickname "newuser" `
+        -UsageLocation "US" `
+        -UserPrincipalName "newuser@<labtenantname.com>" `
+        -PasswordProfile $PWProfile -AccountEnabled `
+        -Department "Research" -JobTitle "Trainer"
     ```
-
-    >**Note** - Replace **labtenantname.com** with the **azurehol...onmicrosoft.com** name assigned by the lab tenant.You can find it in the Primary domain section of Microsoft Entra ID Overview page
+   >**Note** - Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
 
 ## Experiment with managing users
 
