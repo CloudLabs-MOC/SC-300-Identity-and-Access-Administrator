@@ -294,17 +294,17 @@ Some user accounts in your organization will not be provided all available produ
 
 2. In the left navigation, under **Identity**, select **Users**, then select **All users**.
 
-3. In the Users page, enter **Raul** into the search box.
+3. In the Users page, enter **Andre** into the search box.
 
-4. Select on **Raul Razo**.
+4. Select on **Andre Lawson**.
 
-5. Review Raul's profile and ensure he has a Usage Location set.
+5. Review Andre's profile and ensure he has a Usage Location set.
 
     >**Warning** - To assign a license to a user, the user must assigned a usage location.
 
 6. Select the **Licenses** menu item in the menu on the left.
 
-7. Ensure that Raul has "No license assignments found.
+7. Ensure that Andre has "No license assignments found.
    
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -314,7 +314,7 @@ Some user accounts in your organization will not be provided all available produ
 
      <validation step="d02480d1-77db-498c-8f14-61b3dbc8169b" />
 
-#### Task 2 - Add a Windows license to Raul
+#### Task 2 - Add a Windows license to Raul (Read-Only)
 
 You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
 
@@ -330,15 +330,15 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 6. Choose the **+ Assign licenses** item.
 
-7. Search for **Raul Razo** in the list.
+7. Search for **Andre Lawson** in the list.
 
-8. Once you have added Raul, select **Assign**.
+8. Once you have added Andre, select **Assign**.
 
 9. Return to the browser tab with **Microsoft Entra admin center** open.
 
 10. Navigate back to the **All Users** in the left navigation, under **Identity**, select **Users**
 
-11. In the Users page, select **Raul Razo**.
+11. In the Users page, select **Andre Lawson**.
 
 12. In the left navigation, select **Licenses**.
 
