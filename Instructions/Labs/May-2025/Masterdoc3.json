@@ -1,0 +1,17 @@
+[
+    {
+      "Name": "SC-300: Identity and Access Administrator",
+      "Language": "English",
+      "BaseURL": "https://github.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/tree/prod",
+      "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/May-2025/Gettingstarted.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/May-2025/Lab_03.md",
+          "Order": 2
+        }
+      ]
+    }
+  ]

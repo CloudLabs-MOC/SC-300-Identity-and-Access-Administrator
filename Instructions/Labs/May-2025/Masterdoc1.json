@@ -11,14 +11,6 @@
         {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/May-2025/Lab_01.md",
           "Order": 2
-        },
-        {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/May-2025/Lab_02.md",
-          "Order": 3
-        },
-        {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/May-2025/Lab_03.md",
-          "Order": 4
         }
       ]
     }
