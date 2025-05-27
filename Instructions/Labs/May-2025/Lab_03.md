@@ -112,6 +112,8 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+    <validation step="58da6f73-286e-4c2e-9506-09649fb7ba6d" />
+
 ### Task 3: Test the conditional access policy
 
 You should test your conditional access policies to ensure they working as expected.
@@ -258,6 +260,8 @@ As part of your company's larger security configuration, you must test a conditi
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+    <validation step="65f5da2a-6866-4584-8787-25c4f8839db5" />
 
 ## Review
 In this lab, you have completed the following tasks:

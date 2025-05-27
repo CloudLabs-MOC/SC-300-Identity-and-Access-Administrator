@@ -97,6 +97,8 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
 
+     <validation step="7a3d51d2-0661-4532-8946-cc1d0e7f846c" />
+
 #### Task 3 - Test Delia's login
 
 1. Open a new **InPrivate** browsing window.
