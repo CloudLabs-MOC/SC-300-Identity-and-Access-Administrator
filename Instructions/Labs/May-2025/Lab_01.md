@@ -108,6 +108,8 @@ After completing this lab, you will be able to complete the following exercises:
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
 
+     <validation step="a2dbf6f4-a68f-47d8-b0fe-f5e0e821e10f" />
+
 #### Task 2 - Check application permissions
 
 1. Launch a new InPrivate browser window.
@@ -331,6 +333,8 @@ Some user accounts in your organization will not be provided all available produ
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+
+     <validation step="d02480d1-77db-498c-8f14-61b3dbc8169b" />
 
 ## Review
 
