@@ -241,7 +241,7 @@ This task will use an alternative method to remove the assigned role; it will us
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Research" -JobTitle "Trainer"
     ```
-   >**Note** - Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
+   > **Note** - Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
 
 ## Experiment with managing users
 
@@ -253,11 +253,11 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 #### Task 1 - Remove a User
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Browse to [https://entra.micrososft.com](Microsoft Entra admin center).
 
-2. In the left navigation, under **Manage**, select **Users**.
+2. In the left navigation, under **Identity**, select **Users**.
 
-3. In the **Users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
+3. Open the **All users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
 
     **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
 
@@ -269,7 +269,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 #### Task 2 - Restore a deleted user
 
-1. In the Users page, in the left navigation, select **Deleted users**.
+1. In the Users page,select **All User** in the left navigation, select **Deleted users**.
 
 2. Review the list of deleted users and select **Chris Green**.
 
@@ -290,49 +290,22 @@ Some user accounts in your organization will not be provided all available produ
 
 #### Task 1 - Find your unlicensed user in Microsoft Entra ID
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Browse to [https://entra.microsoft.com]( https://entra.microsoft.com).
 
-2. In the left navigation, under **Mange**, select **Users**.
+2. In the left navigation, under **Identity**, select **Users**, then select **All users**.
 
-3. In the Users page, enter **Andre** into the search box.
+3. In the Users page, enter **Raul** into the search box.
 
-4. Select on **Andre Lawson**.
+4. Select on **Raul Razo**.
 
-5. Review Andre's profile and ensure he has a Usage Location set.
+5. Review Raul's profile and ensure he has a Usage Location set.
+
 
     >**Warning** - To assign a license to a user, the user must assigned a usage location.
 
-6. To check if Andre has a usage location set, navigate to Andre Lawson's profile and choose **Edit Properties** from the top menu.
+6. Select the **Licenses** menu item in the menu on the left.
 
-7. Navigate to the **Settings (1)** section and enter the location as **United States (2)** and click on **Save (3)**.
-
-   ![Screen image displaying the Update license assignments page and license options highlighted](../media/unitedst2.png)
-
-6. Now, back on the Overview page of Microsoft Entra ID, select the **Licenses** menu item in the left-hand menu.
-
-7. Ensure that Andre has "No license assignments found."
-
-8. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
-
-9. In the left navigation, under **Manage**, select **Users**
-
-10. In the Users page, select **Andre Lawson**.
-
-11. In the left navigation, select **Licenses**.
-
-12. Select the **+ Assignments** button. 
-
-13. On the Update license assignments page, select the check box for  **Office 365 E5** license.
-
-    ![Screen image displaying the Update license assignments page and license options highlighted](../media/office365.png)
-
-14. When complete, select **Save**.
-
-15. Now navigate to the user profile of **Andre Lawson**  from the left navigation pane select **Licenses**.
-
-16. Notice that the license has been assigned.
-
-    ![Screen image displaying the Update license assignments page and license options highlighted](../media/e5lic.png)
+7. Ensure that Raul has "No license assignments found.
    
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -341,6 +314,38 @@ Some user accounts in your organization will not be provided all available produ
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
 
      <validation step="d02480d1-77db-498c-8f14-61b3dbc8169b" />
+
+#### Task 2 - Add a Windows license to Raul
+
+You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
+
+1. Open a new tab in your browser.
+
+2. Connect to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
+
+3. Log in as your administrator account if prompted.
+
+4. From the menu on the left, select **Billing** and then select **Licenses**.
+
+5. Select **Windows 10/11 Enterprise E3** license from the list.
+
+6. Choose the **+ Assign licenses** item.
+
+7. Search for **Raul Razo** in the list.
+
+8. Once you have added Raul, select **Assign**.
+
+9. Return to the browser tab with **Microsoft Entra admin center** open.
+
+10. Navigate back to the **All Users** in the left navigation, under **Identity**, select **Users**
+
+11. In the Users page, select **Raul Razo**.
+
+12. In the left navigation, select **Licenses**.
+
+13. Notice that the license has been assigned.
+
+14. You can exit out of the license screen.
 
 ## Review
 
