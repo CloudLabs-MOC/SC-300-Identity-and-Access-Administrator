@@ -28,18 +28,22 @@ After completing this lab, you will be able to complete the following exercises:
 
 #### Task 1 - Add a new user
 
-1. In the Azure portal, search for and  select **Microsoft Entra ID**.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com).
 
-2. In the left navigation menu, under **Manage**, select **Users**, then select **+ New User** and **Create new user**.
+   >**Note:** Use the **Email/Username:** <inject key="AzureAdUserEmail"></inject> and **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+   ![Enter Your Password](../media/g7.png)
+
+2. In the menu on the left select **Identity**.
+
+3. In the left navigation menu, under **Users**, select **All Users**, then select **+ New User** and **Create new user**.
 
 3. Mark the **Create user** button. Then, create a user with the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | User name| ChrisG|
-    | Name| Chris Green|
-    | First name| Chris|
-    | Last name| Green|
+    | User principal name| ChrisG|
+    | Display Name| Chris Green|
 
 4. Mark the **Auto-generate password** option.
 
@@ -54,7 +58,7 @@ After completing this lab, you will be able to complete the following exercises:
 #### Task 2 - Login and try to create an app
 
 1. Launch a new **InPrivate** browser window.
-2. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
+2. Open the Microsoft Entra admin center [https://entra.microsoft.com](https://entra.microsoft.com) as Chris Green.
 
     | **Setting**| **Value**|
     | :--- | :--- |
