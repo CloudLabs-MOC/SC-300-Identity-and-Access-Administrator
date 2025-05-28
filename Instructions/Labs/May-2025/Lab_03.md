@@ -28,17 +28,20 @@ In this exercise, you will learn to create a conditional access policy in Micros
 
 1. Launch a new **InPrivate** browser window.
 
-2. Connect to [https://www.office.com](https://www.office.com) 
+2. Connect to [Microsoft 365 Copilot](https://www.office.com) 
 
-3. When prompted, log in with the following credentials which are also provided in the Environment details page:
+3. Sign in with the following credentials which are also provided in the Environment details page:
 
    | Setting | Value |
    | :--- | :--- |
    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
     
-4. If a prompt appears, click on **Ask Later** 
-5. Ensure that you are able to access the Microsoft Office website via browser.
+4. If a prompt appears, click on **Ask Later**.
+
+5. Ensure that you are able to access the Microsoft 365 Copilot website via browser.
+
+    ![](../media/page-06.png)
 
 ### Task 2: Create a conditional access policy
 
@@ -63,33 +66,40 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 5. Within the new policy page, configure the following:
     - In the **Name** box, enter **Block Office 365 for odl_user <inject key="DeploymentId" enableCopy="false" /> (1)**.
       
-    >**Note:** Using such naming conventions/formats help you to quickly recognize the policy and its function.
+        >**Note:** Using such naming conventions/formats help you to quickly recognize the policy and its function.
     
     - Under **Assignments**, click on **Users (2)**.
-    - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
-    - Select the **Users and groups (4)** checkbox.
-    - Under **Select**, click on **0 users and groups selected (5)** to add the new user who would be alligned to this conditional access policy.
-    - In the Select pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (6)** account and then click on **Select (7)**.
 
-    ![](../media/lab13-ms-entra-id-5.png)
-    ![](../media/lab13-ms-entra-id-6.png)
+    - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
+
+    - Select the **Users and groups (4)** checkbox.
+
+    - In the Select pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (5)** account and then click on **Select (6)**.
+
+        ![](../media/page-07.png)
+        ![](../media/page-08.png)
 
 6. In order to block a specific app from the user, execute the following configurations while creating the conditional access policy:
+
     - Under the **Target resources** section, click on **No target resources selected (1)**.
-    - Ensure to have **Cloud apps (2)** option selected from the dropdown list.
+
+    - Ensure to have **Resources (formerly cloud apps) (2)** option selected from the dropdown list.
+
     - Within the **Include** tab, choose the **Select apps (3)** radio button.
+
     - Click on **Select (4)** which opens the Select pane.
+
     - In the Select pane, search for and select **Office 365 (5)** and then click on **Select (6)**.
 
-    ![](../media/lab13-ms-entra-id-7.png)
+        ![](../media/page-09.png)
 
 7. To provide control access enforcement to block or grant access, perform the following:
     - Under **Access controls**, select **0 controls selected (1)**.
     - In the Grant pane, select **Block access (2)** and then click on **Select (3)**.
 
-    ![](../media/lab13-ms-entra-id-8.png)
+        ![](../media/lab13-ms-entra-id-8.png)
 
-    >**Note:** This policy is configured solely for the purpose of demonstration in an exercise, intended to quickly showcase a conditional access policy.
+        >**Note:** This policy is configured solely for the purpose of demonstration in an exercise, intended to quickly showcase a conditional access policy.
 
 8. Under **Enable policy**, select **On (1)**, and then select **Create (2)**.
 
@@ -118,9 +128,9 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 You should test your conditional access policies to ensure they working as expected.
 
-1. Open a new 'Inprivate' browser tab and then browse to [https://www.office.com](https://www.office.com).
+1. Open a new 'Inprivate' browser tab and then browse to [Microsoft 365 Copilot](https://www.office.com).
     
-    - When prompted, log in as:
+    - Sign-in as:
 
    | Setting | Value |
    | :--- | :--- |
@@ -133,13 +143,17 @@ You should test your conditional access policies to ensure they working as expec
 
 3. If you are signed in, close the tab, wait 1 minute, and then retry.
     
-   **Note** - If your are auto-logged into Office 365 as the user, then you will need to manually log out. Your credentials/access were cached. Once you log out and sign-in, your Office 365 should deny access.
+   > **Note** - If your are auto-logged into Office 365 as the user, then you will need to manually log out. Your credentials/access were cached. Once you log out and sign-in, your Office 365 should deny access.
 
-4. Close the tab and return to the Conditional Access page that displays the list of available policies.
+4. Close the tab and return to the **Conditional Access | Policies** page. On the **Overview (1)** tab, select **Policy snapshot > View all policies (2)** to display the list of available policies.
 
-   ![](../media/lab13-ms-entra-id-13.png)
+   ![](../media/page-10.png)
+
+   ![](../media/page-11.png)
 
 5. Select the Office 365 conditional access policy that was just created.
+
+    ![](../media/page-11.png)
 
 6. Under **Enable policy**, select **Off** and then select **Save**.
 
@@ -168,12 +182,12 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
     ![](../media/lab13-ms-entra-id-15.png)
 
 5. To test conditional access policy with What if, perform the following:
-    - Under **User or Workload identity**, select **No user or service principal selected (1)**.
-    - **Select identity type**: User **(2)**
-    - **Select**: User **(3)**
-    - Click on **No user selected (4)**
 
-    ![](../media/lab13-ms-entra-id-16.png)
+    - **Select identity type**: User **(1)**
+    
+    - **Select**: Edit user **(2)**
+
+        ![](../media/lab13-ms-entra-id-16.png)
 
 6. Within the Users page, choose **ODL_User <inject key="DeploymentID" enableCopy="false" /> (1)** as the user and then click on **Select (2)**
 
@@ -186,7 +200,7 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
     - Click on **Select (4)** which opens the Select pane.
     - In the Select pane, search for and select **Office 365 (5)** and then click on **Select (6)**
 
-    ![](../media/office365lab13.png)
+        ![](../media/office365lab13.png)
 
 8. Select **What if** present at the bottom of the page. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
