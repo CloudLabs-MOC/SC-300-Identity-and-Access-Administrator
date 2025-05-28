@@ -53,11 +53,66 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 5. If you are prompted with a window for MFA, click on **Ask Later**.
 
+
 6. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Cancle" to skip the tour.
+
+## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
+
+1. If you see the pop-up **Stay Signed in?**, click **No**.
+
+1. If **Action required** pop-up window appears, click on **Next**.
+
+   ![](../media/mfa1.png)
+
+1. On **Start by getting the app** page, click on **Next**.
+1. Click on **Next** twice.
+1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
+
+   ![Install](../media/mfa2.png)
+
+   > Note: For Ios, Open the app store and repeat the steps.
+
+   > Note: Skip if already installed.
+
+1. Open the app and tap on **Scan a QR code**.
+
+1. Scan the QR code visible on the screen and click on **Next**.
+
+   ![QR code](../media/mfa3.png)
+
+1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
+
+1. Once the notification is approved, click on **Next**.
+
+   ![Approved](../media/mfa4.png)
+
+1. Click on **Done**.
+
+1. If prompted to stay signed in, you can click **"No"**.
+
+1. Tap on **Finish** in the Mobile Device.
+
+   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
  
-7. Click "Next" from the bottom right corner to embark on your Lab journey!
+
+## Support Contact
  
-     ![Start Your Azure Journey](../media/g8.png)
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels explicitly tailored for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+ 
+Learner Support Contacts:
+ 
+- Email Support: cloudlabs-support@spektrasystems.com
+- Live Chat Support: https://cloudlabs.ai/labs-support
+
+Click on **Next** from the lower right corner to move on to the next page.
+
+   ![Start Your Azure Journey](../media/g8.png)
+
+## Happy Learning !!
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
 

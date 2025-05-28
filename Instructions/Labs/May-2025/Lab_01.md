@@ -38,6 +38,8 @@ After completing this lab, you will be able to complete the following exercises:
 
 3. In the left navigation menu, under **Users**, select **All Users**, then select **+ New User** and **Create new user**.
 
+   ![Enter Your Password](../media/lab1-1.png)
+
 3. Mark the **Create user** button. Then, create a user with the following information:
 
     | **Setting**| **Value**|
@@ -47,11 +49,15 @@ After completing this lab, you will be able to complete the following exercises:
 
 4. Mark the **Auto-generate password** option.
 
+   ![Enter Your Password](../media/lab1-2.png)
+
 5. Copy the generated password to a location you can remember it for the next task.
 
    >**Note:** You will have to change the password upon first login to this account
    
    >**Note:** Copy the username Of Chris Green in order to login in the next task
+
+   ![](../media/lab1-3.png)
 
 6. Click on **Review + Create** and subsequently click on **Create**. The user is now created and registered to your organization.
 
@@ -65,20 +71,31 @@ After completing this lab, you will be able to complete the following exercises:
     | User name| ChrisG@`your domain name.com`|
     | Password| Enter the auto-generated password from previous task. |
 
-3. Update your password.
+3. Update your password and click **Sign-In (4)**.
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | Current Password| Use auto-generated password|
-    | New Password| Enter a unique and secure password |
-    | Confirm Password| Reenter a unique and secure password |
+    | Current Password| Use auto-generated password **(1)**|
+    | New Password| Enter a unique and secure password **(2)**|
+    | Confirm Password| Reenter a unique and secure password **(3)**|
+
+    ![Enter Your Password](../media/lab1-4.png)
 
     >**Note:** If you get a prompt to Enable MFA you can choose **Ask Later**.
 
 4. If you see a **Welcome to Microsoft Azure** tour dialog, Select the **Maybe Later** button.
 
 5. Search for and select **Enterprise applications** in the search dialog at the top of the screen.
-7. Select on **+ New application**. Notice that **+ Create your own application** is unavailable.
+
+     ![Enter Your Password](../media/lab1-5.png)
+
+7. Select on **+ New application**.
+ 
+    ![Enter Your Password](../media/lab1-6.png)
+
+1. Notice that the **+ Create your own application** option is disabled (grayed out).
+
+   ![Enter Your Password](../media/lab1-7.png)
 
 9. Try Selecting on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
 10. Select on **ChrisG** name in the upper-right corner and sign out.
@@ -90,13 +107,19 @@ After completing this lab, you will be able to complete the following exercises:
 
 #### Task 1 - Assign a role to a user
 
-1. If you are not already logged in as a Global Administrator role, open the Azure Portal and log in.
+1. If you are not already logged in as a Global Administrator role, open the Microsoft Entra admin center and log in.
+
 2. Navigate to **Microsoft Entra ID**  page.
+
 3. Select on **Users** under the Manage section of the menu.
+
 4. Select **Chris Green's** account.
-5. Choose **Assigned roles** from the Manage menu.**(1)**
-6. Select **+ Add assignments (2)** and mark the `Application administrator` role **(3)**
-7. Select **Add (4)**
+
+5. Choose **Assigned roles** from the Manage menu.**(1)**.
+
+6. Select **+ Add assignments (2)** and mark the `Application administrator` role **(3)**.
+
+7. Select **Add (4)**.
 
     ![Assigned roles page - showing the selected role](../media/directory-role-select-role.png)
 
@@ -125,8 +148,20 @@ After completing this lab, you will be able to complete the following exercises:
     | Password| Enter the unique and secure password you created earlier |
 
 3. If you see a **Welcome to Microsoft Azure** tour dialog, Select the **Maybe Later** button.
-4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
-5. Click on  **+ New Application**.Notice that **+ Create your own application** is available now.
+
+5. Search for and select **Enterprise applications** in the search dialog at the top of the screen.
+
+     ![Enter Your Password](../media/lab1-5.png)
+
+7. Select on **+ New application**.
+ 
+    ![Enter Your Password](../media/lab1-6.png)
+
+
+5. Notice that **+ Create your own application** is available now.
+
+  
+   ![Assigned roles page - showing the selected role](../media/lab1-9.png)
 
    >**Note:** This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.
 
@@ -142,17 +177,23 @@ This task will use an alternative method to remove the assigned role; it will us
 
 1. If you are not already logged in as your Global Admin, go to https://entra.microsoftcom Microsoft Entra admin center and log in now.
 
-2. In the search box type **Roles** and then launch Microsoft Entra ID roles and administration.
+2. In the search box type **Roles (1)** and then launch **Microsoft Entra ID roles and administration (1)**.
 
-3.  In **All roles** of **Roles and administrators**, select the **Application administrator** role from the list.
+   ![Assigned roles page - showing the selected role](../media/lab1-10.png)
+
+3. In **All roles** of **Roles and administrators**, select the **Application administrator** role from the list.
+
+   ![Assigned roles page - showing the selected role](../media/lab1-11.png)
 
 4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
 
-5. Put a check in the box next to Chris Green.
+5. Put a check in the **box (1)** next to Chris Green.
 
-6. Select **X Remove assignments** from the options at the top of the dialog.
+6. Select **X Remove assignments (2)** from the options at the top of the dialog.
 
-7. Answer **Yes** when the confirmation box opens.
+7. Answer **Yes (3)** when the confirmation box opens.
+
+   ![Enter Your Password](../media/lab1-8.png)
 
 8. Close Microsoft Entra ID.
 
@@ -192,9 +233,6 @@ This task will use an alternative method to remove the assigned role; it will us
 
 1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
-   > **Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to https://aka.ms/PowerShell-Release?tag=7.3.9. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
-
-   > **Lab Tip** - TouchType does not work with PowerShell well in the lab environment.  To work around this issue, you open Notepad in you lab environment. Next use the TouchType feature to place the script into Notepad, then finally use Copy & Paste to put the command into PowerShell.  Apologies for this extra step.
 
 2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 
@@ -313,38 +351,6 @@ Some user accounts in your organization will not be provided all available produ
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
 
      <validation step="d02480d1-77db-498c-8f14-61b3dbc8169b" />
-
-#### Task 2 - Add a Windows license to Raul (Read-Only)
-
-You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
-
-1. Open a new tab in your browser.
-
-2. Connect to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
-
-3. Log in as your administrator account if prompted.
-
-4. From the menu on the left, select **Billing** and then select **Licenses**.
-
-5. Select **Windows 10/11 Enterprise E3** license from the list.
-
-6. Choose the **+ Assign licenses** item.
-
-7. Search for **Andre Lawson** in the list.
-
-8. Once you have added Andre, select **Assign**.
-
-9. Return to the browser tab with **Microsoft Entra admin center** open.
-
-10. Navigate back to the **All Users** in the left navigation, under **Identity**, select **Users**
-
-11. In the Users page, select **Andre Lawson**.
-
-12. In the left navigation, select **Licenses**.
-
-13. Notice that the license has been assigned.
-
-14. You can exit out of the license screen.
 
 ## Review
 

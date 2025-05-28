@@ -26,11 +26,18 @@ After completing this lab, you will be able to complete the following exercises:
 
 #### Task 1 - Review Azure Multi-Factor Authentication options
 
-1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
+1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com).
 
-2. Use the search feature and search for **multifactor**.
+1. Sign in with the following credentials which are also provided in the Environment details page:
 
-3. In the search results, select **Multifactor authentication**.
+   | Setting | Value |
+   | :--- | :--- |
+   | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
+   | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
+    
+2. Use the search bar to look for **multifactor (1)**, then select **Multifactor authentication (2)** from the search results.
+
+    ![Screenshot showing MFA options in the dashboard](../media/lab2-1.png)
 
 4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
@@ -49,6 +56,8 @@ After completing this lab, you will be able to complete the following exercises:
 Next, let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
 1. Switch back to the Microsoft Entra admin center and select **Identity**, then **Protection**, and then **Conditional access**.
+
+   ![](../media/lab13-ms-entra-id-3-lab3.png)
 
 2. On the menu, Select **Policies (1)**. From the drop down select **+ New Policy (2)**.
 
@@ -72,7 +81,7 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
    - In the newly opened dialog, search and choose **Office 365**.
    - Choose **Select**.
 
-6. 6. Choose a network location in the Conditions section, then select **Not configured**.
+6. Choose a network location in the Conditions section, then select **Not configured**.
 
    - In the **Conditions** section choose the **0 conditions selected** link.
    - At the bottom of the newly opened menu find the **Locations** section, and select **Not configured**.
