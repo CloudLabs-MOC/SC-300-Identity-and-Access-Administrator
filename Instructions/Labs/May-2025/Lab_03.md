@@ -167,19 +167,20 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 ### Task 1: Use What if to test conditional access policies
 
+
 1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com)
 
-1. In **Search resources, services and docs** type **Microsoft Entra ID** and select it.
+1. In **Search** bar type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-    ![](../media/ms-entra-id-1.png)
+    ![](../media/ms-entra-id-1-lab3.png)
 
-2. On the Microsoft Entra ID page, from the left-hand navigation page, under **Manage**, select **Security**.
+2.  On the menu, expand **Identity (1)** and then expand **Protection (2)**.
 
-    ![](../media/ms-entra-id-2.png)
+    ![](../media/ms-entra-id-2-lab3.png)
 
-3. On the Security page, in the left navigation, select **Conditional Access**.
+3. In the left navigation, select **Conditional Access**.
 
-    ![](../media/lab13-ms-entra-id-3.png)
+    ![](../media/lab13-ms-entra-id-3-lab3.png)
 
 4. In the navigation pane, select **Policies (1)** and then click on **What if (2)**.
 
@@ -236,19 +237,20 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency.
 
+
 1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com)
 
-1. In **Search resources, services and docs** type **Microsoft Entra ID** and select it.
+1. In **Search** bar type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-    ![](../media/ms-entra-id-1.png)
+    ![](../media/ms-entra-id-1-lab3.png)
 
-2. On the Microsoft Entra ID page, from the left-hand navigation page, under **Manage**, select **Security**.
+2.  On the menu, expand **Identity (1)** and then expand **Protection (2)**.
 
-    ![](../media/ms-entra-id-2.png)
+    ![](../media/ms-entra-id-2-lab3.png)
 
-3. On the Security page, in the left navigation, select **Conditional Access**.
+3. In the left navigation, select **Conditional Access**.
 
-    ![](../media/lab13-ms-entra-id-3.png)
+    ![](../media/lab13-ms-entra-id-3-lab3.png)
 
 5. On the **Overview** page, click **+ Create new policy**.
 
