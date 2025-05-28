@@ -47,21 +47,23 @@ In this exercise, you will learn to create a conditional access policy in Micros
 
 Azure Active Directory conditional access is an advanced feature of Azure AD that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
-1. In Azure Portal, in **Search resources, services and docs** type **Microsoft Entra ID** and select it.
+1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com)
 
-    ![](../media/ms-entra-id-1.png)
+1. In **Search** bar type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-2. On the Microsoft Entra ID page, from the left-hand navigation page, under **Manage**, select **Security**.
+    ![](../media/ms-entra-id-1-lab3.png)
 
-    ![](../media/ms-entra-id-2.png)
+2.  On the menu, expand **Identity (1)** and then expand **Protection (2)**.
 
-3. On the Security page, in the left navigation, select **Conditional Access**.
+    ![](../media/ms-entra-id-2-lab3.png)
 
-    ![](../media/lab13-ms-entra-id-3.png)
+3. In the left navigation, select **Conditional Access**.
+
+    ![](../media/lab13-ms-entra-id-3-lab3.png)
 
 4. On the **Overview** page, click **+ Create new policy**.
 
-    ![](../media/lab13-ms-entra-id-4.png)
+    ![](../media/lab13-ms-entra-id-4-lab3.png)
 
 5. Within the new policy page, configure the following:
     - In the **Name** box, enter **Block Office 365 for odl_user <inject key="DeploymentId" enableCopy="false" /> (1)**.
@@ -85,7 +87,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
     - Ensure to have **Resources (formerly cloud apps) (2)** option selected from the dropdown list.
 
-    - Within the **Include** tab, choose the **Select apps (3)** radio button.
+    - Within the **Include** tab, choose the **Select resources (3)** radio button.
 
     - Click on **Select (4)** which opens the Select pane.
 
@@ -128,7 +130,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 You should test your conditional access policies to ensure they working as expected.
 
-1. Open a new 'Inprivate' browser tab and then browse to [Microsoft 365 Copilot](https://www.office.com).
+1. Open a new **InPrivate** browser tab and then browse to [https://sway.cloud.microsoft](https://sway.cloud.microsoft).
     
     - Sign-in as:
 
@@ -165,7 +167,9 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 ### Task 1: Use What if to test conditional access policies
 
-1. In Azure Portal, in **Search resources, services and docs** type **Microsoft Entra ID** and select it.
+1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com)
+
+1. In **Search resources, services and docs** type **Microsoft Entra ID** and select it.
 
     ![](../media/ms-entra-id-1.png)
 
@@ -181,13 +185,29 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
     ![](../media/lab13-ms-entra-id-15.png)
 
+1. Click on **To revert to the classic What if experience, click here.**
+
+   ![](../media/revert.png)
+
+1. Under **Enhanced 'What if' evaluation experience**, set the toggle to **Off (1)** , then click **Apply (2)** to turn off the feature.
+
+    ![](../media/revert1.png)
+
 5. To test conditional access policy with What if, perform the following:
 
-    - **Select identity type**: User **(1)**
-    
-    - **Select**: Edit user **(2)**
+    - Under **User or Workload identity**, select **No user or service principal selected (1)**.
+    - **Select identity type**: User **(2)**
+    - **Select**: User **(3)**
+    - Click on **No user selected (4)**
 
-        ![](../media/lab13-ms-entra-id-16.png)
+    ![](../media/lab13-ms-entra-id-16.png)
+
+    >**Note:** If you don't see the above options, sign out of the Microsoft Entra admin center and sign back in using the below account:
+
+    | Setting | Value |
+    | :--- | :--- |
+    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
+    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
 
 6. Within the Users page, choose **ODL_User <inject key="DeploymentID" enableCopy="false" /> (1)** as the user and then click on **Select (2)**
 
@@ -216,7 +236,9 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency.
 
-1. In Azure Portal, in **Search resources, services and docs** type **Microsoft Entra ID** and select it.
+1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com)
+
+1. In **Search resources, services and docs** type **Microsoft Entra ID** and select it.
 
     ![](../media/ms-entra-id-1.png)
 
