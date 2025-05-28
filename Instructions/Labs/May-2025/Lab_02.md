@@ -26,31 +26,33 @@ After completing this lab, you will be able to complete the following exercises:
 
 #### Task 1 - Review Azure Multi-Factor Authentication options
 
-1. In the Azure portal, use the search feature and search for **multi-factor**.
+1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. In the search results, select **Multi-Factor Authentication**.
+2. Use the search feature and search for **multifactor**.
 
-3. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
+3. In the search results, select **Multifactor authentication**.
 
-    ![Screenshot showing MFA options in the dashboard](../media/multifactor1.png)
+4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
-4. In the new browser page, you can see the MFA options for Azure users and service settings.
+    ![Screenshot showing MFA options in the dashboard](../media/E1T1S4-2705.png)
 
-    ![Screenshot showing MFA configuration](../media/mfa-settings.png)
+5. In the new browser page, you can see the MFA options for Azure users and service settings.
 
-5. This is where you would select the supported authentication methods, in the screen above, all of them are selected.
+    ![Screenshot showing MFA configuration](../media/E1T1S5-2705.png)
 
-6. You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra ID identity using a different password specific to that app.
+6. This is where you would select the supported authentication methods, in the screen above, all of them are selected.
+
+7. You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra identity using a different password specific to that app.
 
 #### Task 2 - Setup conditional access rules for MFA for Delia Dennis
 
 Next, let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Azure portal, search for and select **Microsoft Entra ID**, then  navigate to **Security** under the Manage section, and then subsequently select **Conditional access**.
+1. Switch back to the Microsoft Entra admin center and select **Identity**, then **Protection**, and then **Conditional access**.
 
-2. From the menu, click on **Create new policy**.
+2. On the menu, Select **Policies (1)**. From the drop down select **+ New Policy (2)**.
 
-    ![creenshot highlighting the New Policy button in the Azure portal](../media/createnewpolicy1.png)
+    ![creenshot highlighting the New Policy button in the Azure portal](../media/E1T2S2-2705.png)
 
 3. Name your policy, for example **MFA_for_Delia**
 
@@ -61,35 +63,41 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
     - Check **Users and groups** (available users will be populated to the right)
     - Choose **Delia Dennis** from the list of users then choose **Select** button.
 
-5. Under **Target Resources** click on **No target resources selected**
+5. Select **No target resources selected** in Target resources.
+   
 
-   - In the dropdown, make sure **Cloud apps** is selected.
-   - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
-   - Now under Include, change your choice to **Select apps** item and then under Select click on **None**.
-   - In the newly opened dialog, choose **Office 365**.
+   - In the dropdown, make sure **Resources (formerly cloud apps)** is selected.
+   - Now under Include section, choose the **Select resources** item.
+   - In the **Select** section select the **None** link.
+   - In the newly opened dialog, search and choose **Office 365**.
    - Choose **Select**.
 
-6. Review the Conditions section.
+6. 6. Choose a network location in the Conditions section, then select **Not configured**.
+
+   - In the **Conditions** section choose the **0 conditions selected** link.
+   - At the bottom of the newly opened menu find the **Locations** section, and select **Not configured**.
+   - Choose **Yes** for the **Configure** item.
+   - Select **Any network or location**.
+
+7. Review the Conditions section.
 
    - Under **Conditions** click on **0 conditions selected** then under **Locations** click on **Not Configured** and then under  **Configure** toggle  it to **Yes**  and ensure that under **Include** ,**Any location** is selected.
 
-      ![Screenshot highlighting the New Policy button in the Azure portal](../media/sc-300loc.png)
+8. Under **Access Controls** click on  **0 controls selected** and verify **Grant access** is selected.
 
-7. Under **Access Controls** click on  **0 controls selected** and verify **Grant access** is selected.
+9. Select the **Require multi-factor authentication** check box to enforce MFA.
 
-8. Select the **Require multi-factor authentication** check box to enforce MFA.
+10. Ensure that **Require all the selected controls** is selected.
 
-9. Ensure that **Require all the selected controls** is selected.
+11. Select **Select**.
 
-10. Select **Select**.
+12. Set **Enable policy** to **On**.
 
-11. Set **Enable policy** to **On**.
+13. Hit **Create** to create the policy.
 
-12. Hit **Create** to create the policy.
+    ![Screenshot showing the complete Add Policy dialog](../media/conditional-access-policy-2705.png)
 
-    ![Screenshot showing the complete Add Policy dialog](../media/policy-complete.png)
-
-13. MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
+14. MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -130,23 +138,23 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
 
 Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
 
-1. Switch back to the **Microsoft Entra ID** dashboard in the Azure portal.
+1. Switch back to the **Microsoft Entra admin center** and find the **Indentity** in the left-hand navigation menu.
 
-2. Select **Users**.
+2. Select **Users**, then select **All users**.
 
 3. At the top of the Users pane, select **Per-user MFA**.
 
-   ![Screenshot showing the MFA option](../media/mfauuser.png)
+   ![Screenshot showing the MFA option](../media/per-user-mfa-2705.png)
 
 4. A new browser tab/window will open with a multi-factor authentication user settings dialog.
 
-   ![Screenshot showing the MFA options](../media/and-users.png)
+   ![Screenshot showing the MFA options](../media/per-user-mfa2-2705.png)
 
-5. Select **Adele Vance** with a check-mark.
-6. Select the **Enable** option under quick steps.
-7. Read the notification popup if you get it, then select **enable multi-factor auth** button.
+5. Select **Alex Wilber** with a check-mark.
+6. Select the **Enable MFA** option under quick steps.
+7. Read the notification popup if you get it, then select **enable multi-factor auth** button..
 8. Select **Close**.
-9. Notice that Adele now has **Enabled** as her MFA status.
+9. Notice that Alex now has **Enabled** as her MFA status.
 10. Close the MFA setting tab.
 
 ## Review
