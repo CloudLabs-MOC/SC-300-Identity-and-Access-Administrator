@@ -239,12 +239,14 @@ This task will use an alternative method to remove the assigned role; it will us
     ```
     Install-Module Microsoft.Graph
     ```
+
+    ![Assigned roles page - showing the selected role](../media/lab1-14.png)
+
 3. Confirm the Microsoft.Graph module is installed:
 
     ```
     Get-InstalledModule Microsoft.Graph
     ```
-    
 
 4. Next, you will need to login to Microsoft Graph API by running:  
 
@@ -281,6 +283,8 @@ This task will use an alternative method to remove the assigned role; it will us
     ```
    > **Note** - Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
 
+   ![Assigned roles page - showing the selected role](../media/lab1-15.png)
+
 ## Experiment with managing users
 
 You can add and remove users with the Microsoft Entra ID page.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script. 
@@ -315,6 +319,8 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 3. On the menu, select **Restore user**.
 
+   ![Assigned roles page - showing the selected role](../media/lab1-13.png)
+
 4. Review the dialog box and then select **OK**.
 
 5. In the left navigation, select **All users**.
@@ -343,6 +349,8 @@ Some user accounts in your organization will not be provided all available produ
 6. Select the **Licenses** menu item in the menu on the left.
 
 7. Ensure that Andre has "No license assignments found.
+
+   ![](../media/lab1-12.png)
    
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
