@@ -51,21 +51,17 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 1. In **Search** bar type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-    ![](../media/ms-entra-id-1-lab3.png)
+    ![](../media/entra-04.png)
 
-2.  On the menu, expand **Identity (1)** and then expand **Protection (2)**.
+2. In the left navigation, select **Conditional Access**.
 
-    ![](../media/ms-entra-id-2-lab3.png)
+    ![](../media/entra-01.png)
 
-3. In the left navigation, select **Conditional Access**.
-
-    ![](../media/lab13-ms-entra-id-3-lab3.png)
-
-4. On the **Overview** page, click **+ Create new policy**.
+3. On the **Overview** page, click **+ Create new policy**.
 
     ![](../media/lab13-ms-entra-id-4-lab3.png)
 
-5. Within the new policy page, configure the following:
+4. Within the new policy page, configure the following:
     - In the **Name** box, enter **Block Office 365 for odl_user <inject key="DeploymentId" enableCopy="false" /> (1)**.
       
         >**Note:** Using such naming conventions/formats help you to quickly recognize the policy and its function.
@@ -81,7 +77,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
         ![](../media/page-07.png)
         ![](../media/page-08.png)
 
-6. In order to block a specific app from the user, execute the following configurations while creating the conditional access policy:
+5. In order to block a specific app from the user, execute the following configurations while creating the conditional access policy:
 
     - Under the **Target resources** section, click on **No target resources selected (1)**.
 
@@ -95,7 +91,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
         ![](../media/page-09.png)
 
-7. To provide control access enforcement to block or grant access, perform the following:
+6. To provide control access enforcement to block or grant access, perform the following:
     - Under **Access controls**, select **0 controls selected (1)**.
     - In the Grant pane, select **Block access (2)** and then click on **Select (3)**.
 
@@ -103,7 +99,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
         >**Note:** This policy is configured solely for the purpose of demonstration in an exercise, intended to quickly showcase a conditional access policy.
 
-8. Under **Enable policy**, select **On (1)**, and then select **Create (2)**.
+7. Under **Enable policy**, select **On (1)**, and then select **Create (2)**.
 
     ![](../media/lab13-ms-entra-id-9.png)
 
@@ -172,58 +168,42 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 1. In **Search** bar type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-    ![](../media/ms-entra-id-1-lab3.png)
+    ![](../media/entra-04.png)
 
-2.  On the menu, expand **Identity (1)** and then expand **Protection (2)**.
+31. In the left navigation, select **Conditional Access**.
 
-    ![](../media/ms-entra-id-2-lab3.png)
+    ![](../media/entra-01.png)
 
-3. In the left navigation, select **Conditional Access**.
-
-    ![](../media/lab13-ms-entra-id-3-lab3.png)
-
-4. In the navigation pane, select **Policies (1)** and then click on **What if (2)**.
+1. In the navigation pane, select **Policies (1)** and then click on **What if (2)**.
 
     ![](../media/lab13-ms-entra-id-15.png)
 
-1. Click on **To revert to the classic What if experience, click here.**
+1. To test conditional access policy with What if, perform the following:
 
-   ![](../media/revert.png)
+    - **Select identity type**: User **(1)**
+    - Select **Edit User** > and choose **ODL_User <inject key="DeploymentID" enableCopy="false" />** as the user and then click on **Select**
 
-1. Under **Enhanced 'What if' evaluation experience**, set the toggle to **Off (1)** , then click **Apply (2)** to turn off the feature.
-
-    ![](../media/revert1.png)
-
-5. To test conditional access policy with What if, perform the following:
-
-    - Under **User or Workload identity**, select **No user or service principal selected (1)**.
-    - **Select identity type**: User **(2)**
-    - **Select**: User **(3)**
-    - Click on **No user selected (4)**
-
-    ![](../media/lab13-ms-entra-id-16.png)
-
-    >**Note:** If you don't see the above options, sign out of the Microsoft Entra admin center and sign back in using the below account:
-
-    | Setting | Value |
-    | :--- | :--- |
-    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
-    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
-
-6. Within the Users page, choose **ODL_User <inject key="DeploymentID" enableCopy="false" /> (1)** as the user and then click on **Select (2)**
-
-    ![](../media/lab13-ms-entra-id-17.png)
-
-7. To select the target resource, 
-    - Select **Cloud apps, actions, or authentication context (1)**.
-    - Select **Cloud apps (2)** from the dropdown list.
-    - Ensure to select the **Select apps (3)** radio button.
+1. To select the target resource, 
+    - Select **Cloud app (2)** from the dropdown list.
+    - Ensure to select the **+ Select cloud app (3)**.
     - Click on **Select (4)** which opens the Select pane.
-    - In the Select pane, search for and select **Office 365 (5)** and then click on **Select (6)**
+    - In the Select pane, search for and select **Microsoft Office 365 Portal (4)** and then click on **Select (5)**
 
-        ![](../media/office365lab13.png)
+        ![](../media/entra-02.png)
 
-8. Select **What if** present at the bottom of the page. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
+        >**Note:** If you don't see the above options, sign out of the Microsoft Entra admin center and sign back in using the below account:
+
+        | Setting | Value |
+        | :--- | :--- |
+        | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
+        | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
+
+1. Under **Sign in conditions**, follow the process:
+
+    - Device platform: Select **Windows**
+    - Client app: Select **Browser**
+
+1. Select **What if** present at the bottom of the page. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
     ![](../media/lab13-ms-entra-id-19.png)
 
@@ -242,21 +222,17 @@ As part of your company's larger security configuration, you must test a conditi
 
 1. In **Search** bar type **Microsoft Entra ID (1)** and select **Microsoft Entra ID (2)**.
 
-    ![](../media/ms-entra-id-1-lab3.png)
+    ![](../media/entra-04.png)
 
-2.  On the menu, expand **Identity (1)** and then expand **Protection (2)**.
+1. In the left navigation, select **Conditional Access**.
 
-    ![](../media/ms-entra-id-2-lab3.png)
+    ![](../media/entra-01.png)
 
-3. In the left navigation, select **Conditional Access**.
-
-    ![](../media/lab13-ms-entra-id-3-lab3.png)
-
-5. On the **Overview** page, click **+ Create new policy**.
+1. On the **Overview** page, click **+ Create new policy**.
 
     ![](../media/lab13-ms-entra-id-4.png)
 
-6. Within the new policy page, configure the following:
+1. Within the new policy page, configure the following:
     - In the **Name** box, enter **Sign in frequency (1)**.    
     - Under **Assignments**, click on **Users (2)**.
     - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
@@ -267,16 +243,16 @@ As part of your company's larger security configuration, you must test a conditi
     ![](../media/lab13-ms-entra-id-21.png)
     ![](../media/lab13-ms-entra-id-22.png)
 
-7. In order to implement sign in reauthentication frequency to a specific app for the user, execute the following configurations while creating the conditional access policy:
+1. In order to implement sign in reauthentication frequency to a specific app for the user, execute the following configurations while creating the conditional access policy:
     - Under the **Target resources** section, click on **No target resources selected (1)**.
-    - Ensure to have **Cloud apps (2)** option selected from the dropdown list.
-    - Within the **Include** tab, choose the **Select apps (3)** radio button.
+    - Ensure to have **Resources (formerly cloud apps) (2)** option selected from the dropdown list.
+    - Within the **Include** tab, choose the **Select resources (3)** radio button.
     - Click on **Select (4)** which opens the Select pane.
     - In the Select pane, search for and select **Office 365 (5)** and then click on **Select (6)**.
 
-    ![](../media/lab13-ms-entra-id-7.png)
+        ![](../media/entra-03.png)
 
-8. To set control access based on session controls to enable limited experiences within specific cloud applications, perform the following:
+1. To set control access based on session controls to enable limited experiences within specific cloud applications, perform the following:
     - Under **Access controls**, select **Session (1)**.
     - In the Session pane, select the **Sign-in frequency (2)** checkbox.
     - In the value box, enter **30 (3)**.
