@@ -57,6 +57,8 @@ After completing this lab, you will be able to complete the following exercises:
 
       ![](./media/sc300-4.png)    
 
+      ![](./media/e1-t1s5.png)
+
        >**Note:** You will have to change the password upon first login to this account
       
 1. Then click on **Create**.
@@ -121,7 +123,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Select on **+ New application**.
 
-    ![](./media/sc300-11.png)
+    ![](./media/e2-t2s5.png)
 
 1. Notice that **+ Create your own application** is **unavailable**.
 
