@@ -25,9 +25,15 @@ Incorporate guest users into the directory to extend limited access and collabor
 
 1. In the Azure portal, search for  and select **Microsoft Entra ID**.
 
+    ![](./media/entraid01.png)
+
 2. Under **Manage**, select **Users**.
 
+    ![](./media/user01.png)
+
 3. Select **+ New user** to create a new user in Microsoft Entra ID.
+
+    ![](./media/invite01.png)
 
 4. On the New user menu, select **Invite external user** and then add your information as the guest user.
 
@@ -35,7 +41,11 @@ Incorporate guest users into the directory to extend limited access and collabor
 
 5. Enter email address: **sc300externaluser1@sc300email.com**
 
+    ![](./media/invite02.png)
+
 6. Click on **Review + Invite** and subsequebtly click on **Invite**.
+
+    ![](./media/invite03.png)
 
 7. On the Users page, verify your account is listed and, in the **User type** column, verify **Guest** is shown.After you send the invitation, the user account is automatically added to the directory as a guest.
 
@@ -68,6 +78,8 @@ A recent partnership has been established with another company. For now, employe
 
 4. In the Bulk invite users pane, select **Download** to a sample CSV template with invitation properties.
 
+    ![](./media/bulkinvite01.png)
+    
 5. Using an editor to view the CSV file, review the template.
 
 6. Open the .csv template and add a line for each guest user. Required values are:
