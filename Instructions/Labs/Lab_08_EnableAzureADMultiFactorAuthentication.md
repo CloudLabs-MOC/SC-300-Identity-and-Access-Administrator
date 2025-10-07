@@ -52,29 +52,9 @@ Alternatively, you can open **Identity**, then select **Protection**, and select
 
 Next, let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Microsoft Entra admin center and select **Identity (1)**, then **Protection (2)**, and then **Conditional access (3)**. Click on **+ Create new policy (4)**.
+1. Switch back to the Microsoft Entra admin center and select **Entra ID (1)**, then **Conditional access (2)**. **Click on + Create new policy (3)**.
 
-    ![](./media/L8E1T2S1-1712.png)
-
-1. If you encounter following error, click on **Disable security policy**, on **Security default** specify the following:
-
-    - Security defaults **Disabled(1)** 
-
-    - Reason for disabling Select **My organization is planning to use Conditional Access (2)**.
-
-    - Click on **Save (3)**
-
-    ![](./media/lab08-sc300-6.png)
-
-    ![](./media/lab08-sc300-7.png)
-
-1. On **Disable security policy** pop up, click on Disable.
-   
-    ![](./media/lab08-sc300-8.png)
-
-1. Again navigate to **Conditional access** blade, from the menu, click on **+ Create new policy**.
-   
-    ![](./media/lab08-sc300-5.png)
+    ![](./media/ca01.png)
    
 1. Name your policy, for example **MFA_for_Delia**
 
@@ -113,6 +93,26 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
 1. Set **Enable policy** to **On (1)**. Hit **Create (2)** to create the policy.
 
     ![](./media/lab08-sc300-10.png)
+
+1. If you encounter following error, click on **Disable security policy**, on **Security default** specify the following:
+
+    - Security defaults **Disabled(1)** 
+
+    - Reason for disabling Select **My organization is planning to use Conditional Access (2)**.
+
+    - Click on **Save (3)**
+
+    ![](./media/lab08-sc300-6.png)
+
+    ![](./media/lab08-sc300-7.png)
+
+1. On **Disable security policy** pop up, click on Disable.
+   
+    ![](./media/lab08-sc300-8.png)
+
+1. Again navigate to **Conditional access** blade, from the menu, click on **+ Create new policy**.
+   
+    ![](./media/lab08-sc300-5.png)
 
 1. MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
 
