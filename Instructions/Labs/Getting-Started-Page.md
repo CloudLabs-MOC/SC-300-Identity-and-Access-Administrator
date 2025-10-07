@@ -6,7 +6,7 @@ Welcome to your SC-300: Microsoft Identity and Access Administrator  workshop! W
  
 Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](./media/gs11.png)
+![Access Your VM and Lab Guide](./media/lab%20guide.png)
 
 # **Virtual Machine & Lab Guide**
  
@@ -16,13 +16,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** details tab.
  
-![Explore Lab Resources](./media/gs7.png)
+![Explore Lab Resources](./media/env.png)
  
 ## **Utilizing the Split Window Feature**
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](./media/gs2.png)
+![Use the Split Window Feature](./media/split%20window.png)
  
 ## Utilizing the Zoom In/Out Feature
 
@@ -34,13 +34,13 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-![Manage Your Virtual Machine](./media/gs5.png)
+![Manage Your Virtual Machine](./media/resources-01.png)
  
 ## **Lab Duration Extension**
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
-    ![Manage Your Virtual Machine](./media/gs8.png)
+    ![Manage Your Virtual Machine](./media/extend1.png)
 
     >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
@@ -54,7 +54,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![Launch Azure Portal](./media/gs6.png)
+    ![Launch Azure Portal](./media/azureportal.png)
 
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
@@ -66,7 +66,9 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](./media/g7.png)
+     ![Enter Your Password](./media/pass.png)
+
+>Kindly note: If you're asked to enter a Temporary Access Pass instead of a Password when signing in to the Azure portal, You can find it under the Environment Details tab -> Password.
 
 4. If you get a pop-up stating Action Required click on Ask Later.
  
