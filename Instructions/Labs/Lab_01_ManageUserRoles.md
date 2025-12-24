@@ -5,7 +5,7 @@
 
 Your company recently hired a new employee who will perform duties as an application administrator. You must create a new user and assign the appropriate role.
 
-#### Estimated time: 60 minutes
+#### Estimated time: 60 Minutes
 
 ## Lab Objectives
 
@@ -55,9 +55,9 @@ After completing this lab, you will be able to complete the following exercises:
 
     - Click on **Review+create (6)**
 
-      ![](./media/sc300-4.png)    
+      ![](./media/l1-12-1.png)    
 
-      ![](./media/e1-t1s5.png)
+      ![](./media/l1-12-2.png)
 
        >**Note:** You will have to change the password upon first login to this account
       
@@ -65,13 +65,13 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. The user is now created and registered to your organization.
 
-    ![](./media/sc300-5.png)
+    ![](./media/l1-12-3.png)
 
 ### Task 2 - Login and try to create an app
 
 1. Launch a new **InPrivate** browser window.
 
-    >**Note:** You can open an InPrivate browser window by clicking the **ellipsis** (1) in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window** option.
+    >**Note:** You can open an InPrivate browser window by clicking the **ellipsis (1)** in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window (2)** option.
  
      ![](./media/image-3.png)
  
@@ -119,7 +119,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Search for and select **Enterprise applications (1)** in the search dialog at the top of the screen and select **Enterprise applications (2)** from the services.
 
-    ![](./media/sc300-10.png)
+    ![](./media/l1-12-4.png)
 
 1. Select on **+ New application**.
 
@@ -131,11 +131,11 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Try Selecting on some of the other settings like **User settings**, and others to see the **Chris Green** does not have rights.
 
-    ![](./media/sc300-13.png)
+    ![](./media/l1-12-5.png)
 
-1. Select on **ChrisG** name in the upper-right corner and sign out.
+1. Select on **ChrisG** name in the upper-right corner and **Sign out**.
 
-    ![](./media/sc300-14.png)
+    ![](./media/l1-12-6.png)
 
 ## Exercise 2 - Assign the application admin role and create an app
 
@@ -158,18 +158,18 @@ After completing this lab, you will be able to complete the following exercises:
     - Then mark the `Application administrator` role **(4)**
     - Select **Add (5)**
 
-      ![Assigned roles page - showing the selected role](./media/sc300-15.png)
+      ![Assigned roles page - showing the selected role](./media/l1-12-7.png)
 
 1. Select the **Refesh** button.
 
 1. The newly assigned Application administrator role appears on the user’s Assigned roles page.
 
-    ![](./media/sc300-16.png)
+    ![](./media/l1-12-8.png)
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help
 
      <validation step="a2dbf6f4-a68f-47d8-b0fe-f5e0e821e10f" />
 
@@ -179,7 +179,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Launch a new **InPrivate** browser window.
 
-    >**Note:** You can open an InPrivate browser window by clicking the **ellipsis** (1) in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window** option.
+    >**Note:** You can open an InPrivate browser window by clicking the **ellipsis (1)** in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window (2)** option.
  
      ![](./media/image-3.png)
 
@@ -206,19 +206,19 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Search on and select **Enterprise applications (1)** in the search dialog at the top of the screen and select **Enterprise applications (2)** from the services.
 
-    ![](./media/sc300-10.png)
+    ![](./media/l1-12-4.png)
 
 1. Click on  **+ New Application**.
 
 1. Notice that **+ Create your own application** is **available** now.
 
-    ![](./media/sc300-17.png)
+    ![](./media/l1-12-9.png)
 
      >**Note:** This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.
 
 1. Sign out of the Chris Green instance of the Azure Portal and close the browser.
 
-    ![](./media/sc300-14.png)
+    ![](./media/l1-12-6.png)
 
 ## Exercise 3 - Remove a role assignment
 
@@ -246,9 +246,11 @@ This task will use an alternative method to remove the assigned role; it will us
 
     - Select **X Remove assignments (3)** from the options at the top navigation pane.
 
-      ![](./media/sc300-18.png)    
+      ![](./media/l1-12-10.png)    
 
 1. Answer **Yes** when the confirmation box opens.
+
+     ![](./media/l1-12-11.png) 
 
 1. Close Microsoft Entra ID.
 
@@ -272,10 +274,10 @@ This task will use an alternative method to remove the assigned role; it will us
       
 1. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password.The following screenshot is an example of how you can complete the .csvfile: 
 
-    ![Bulk import using csv file entry](./media/bulk121.png)
+    ![Bulk import using csv file entry](./media/l1-12-13.png)
        
 1. Copy the Primary domain name  in the Azure portal from the **Microsoft Entra ID** Overview page, copy the **primary domain name**.
-   ![Bulk import using csv file entry](./media/xce12.png)
+   ![Bulk import using csv file entry](./media/l1-12-12.png)
 
 1. In the .csv template replace **<<< enter your >>>** with primary domain name for all the users.
    
@@ -289,15 +291,15 @@ This task will use an alternative method to remove the assigned role; it will us
 
 1. On the **Users | All users** tile, select the **Bulk operations (1)** drop-down arrow and then **Bulk create (2)**.
 
-    ![](./media/sc300-22.png)
+    ![](./media/l1-12-14.png)
 
 1. Selecting **Bulk create** will open a new tile. From the **upload** button **(1)** browse to **Downloads (2)** section and choose the file named as **BulkUser (3)** and select **Open (4)**.
 
-    ![](./media/sc300-23.png)
+    ![](./media/l1-12-15.png)
 
 1. You will be notified that the file has been uploaded successfully. Choose **Submit** to add the users. 
 
-    ![](./media/sc300-24.png)
+    ![](./media/l1-12-16.png)
 
 1. After the users have been created, you will be prompted that the creation has succeeded.  Close the Bulk create users tile and the new users will be populated in the list of **Users | All users**.
 
@@ -307,63 +309,87 @@ This task will use an alternative method to remove the assigned role; it will us
 
 ### Task 2 - Addition of users using PowerShell
 
+**Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to https://aka.ms/PowerShell-Release?tag=7.3.9. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
+
+
 1. In the LabVM, search for **powershell (1)**, right click on **Windows Powershell (2)** and then open PowerShell as an administrator **(3)**. 
 
-    ![](./media/sc300-25.png)
+    ![](./media/l1-12-17.1.png)
 
      >**Note** - Select **PowerShell** and not **PowerShell ISE**.
 
-1. You will need to add and import the Azure AD PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
+     >**Note:** If PowerShell 7 is not installed, open PowerShell as an administrator and install it using Chocolatey by running the following command:
+
+     ```
+     choco install powershell-core -y
+     ```
+
+1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press **Y**:
 
     ```
-    Install-Module AzureAD
-    Import-Module AzureAD
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 
-1. Confirm that the module is installed correctly by running the command:  
+1. Confirm the Microsoft.Graph module is installed:
 
     ```
-    Get-Module AzureAD 
+    Get-InstalledModule Microsoft.Graph
     ```
 
-    ![](./media/sc300--26.png)    
+    ![](./media/l1-12-18.png)    
 
-1. Next, you will need to login to Azure by running:  
+1. Next, you will need to login to Microsoft Graph API by running:  
 
     ```
-    Connect-AzureAD 
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
+    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Accept the permissions request; then close the browser window.
 
-    ![](./media/sc300-27.png) 
+    ![](./media/l1-12-19.1.png) 
 
-1. The Microsoft login window will appear for you to log in to Azure AD.  
+1. When prompted to sign in, select **Work or school account (1)** and then click **Continue (2)**.  
 
-   >**Note:** If you get any warnings you can click on **Yes**
+     ![](./media/l1-12-19.png)
+
+      - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+      
+      - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+1. On the **Permissions requested** screen for **Microsoft Graph Command Line Tools**, review the permissions and click **Accept** to grant consent.
+   
+   ![](./media/l1-12-20.png)
 
 1. To verify that you are connected and to see existing users, run:  
 
     ``` 
-    Get-AzureADUser 
+    Get-MgUser 
     ```
 
-    ![](./media/sc300-28.png)     
+    ![](./media/l1-12-22.png)    
     
-1. To assign a common temporary password to all new users, run the following command. 
-    ``` 
-    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-    ```
+1. To assign a common temporary password to all new users, run the following command.
 
-    ```
-    $PasswordProfile.Password = "Horizon@123" 
+    ``` 
+    $PWProfile = @{
+        Password = "Horizon@123";
+        ForceChangePasswordNextSignIn = $false
+    }
     ```
 
 1. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
 
-    ```
-    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@labtenantname.com" -AccountEnabled $true -MailNickName "Newuser"
+     ```
+    New-MgUser `
+        -DisplayName "New PW User" `
+        -GivenName "New" -Surname "User" `
+        -MailNickname "newuser" `
+        -UsageLocation "US" `
+        -UserPrincipalName "newuser@<labtenantname.com>" `
+        -PasswordProfile $PWProfile -AccountEnabled `
+        -Department "Research" -JobTitle "Trainer"
     ```
 
-    ![](./media/sc300-29.png)     
+    ![](./media/l1-12-24.png)     
 
      >**Note** - Replace **labtenantname.com** with the domain name  you  copied in **Exercise 4 Task 1 step number 3**. 
 
@@ -381,7 +407,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
     **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
 
-    ![Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](./media/sc300-30.png)
+    ![Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](./media/l1-12-25.png)
 
 1. Review the dialog box and then select **Ok**.
 
@@ -389,7 +415,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 1. In the Users page, in the left navigation, select **Deleted users (1)**. Review the list of deleted users and select **Chris Green (2)**. On the menu, select **Restore user (3)**.
 
-    ![](./media/sc300-31.png)
+    ![](./media/l1-12-26.png)
 
      >**Important** - By default, deleted user accounts are permanently removed from Azure Active Directory automatically after 30 days
      .
@@ -397,7 +423,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 1. In the left navigation, select **All users (1)**. Search for select **Chris Green (2)** and the verfy that the user has been restored **(3)**.
 
-    ![](./media/sc300-32.png)
+    ![](./media/l1-12-27.png)
 
    >**Note:** You might have to click on **Refresh** to veiw the restored user.
 
@@ -411,7 +437,7 @@ Some user accounts in your organization will not be provided all available produ
 
 1. In the Users page, enter **Andre** into the search box. Select on **Andre Lawson (2)**.
 
-    ![](./media/sc300-33.png)
+    ![](./media/l1-12-28.png)
 
 1. Review Andre's profile and ensure he has a Usage Location set.
 
@@ -419,19 +445,19 @@ Some user accounts in your organization will not be provided all available produ
 
 1. To check if Andre has a usage location set, navigate to Andre Lawson's profile and choose **Edit Properties** from the top menu.
 
-    ![](./media/sc300--34.png)
+    ![](./media/l1-12-29.png)
 
 1. Navigate to the **Settings (1)** section and enter the location as **United States (2)** and click on **Save (3)**.
 
-   ![Screen image displaying the Update license assignments page and license options highlighted](./media/sc300-35.png)
+   ![Screen image displaying the Update license assignments page and license options highlighted](./media/l1-12-30.png)
 
 1. Now, back on the Overview page of Microsoft Entra ID, select the **Licenses (1)** menu item in the left-hand menu. Ensure that Andre has **No license assignments found (2)**. Select **Go to M365 Admin Center (3)** and you will be navigated to Microsoft 365 Admin Center.
 
-    ![](./media/sc300-36.png)
+    ![](./media/l1-12-31.png)
 
 1. From left pane select **Licenses (1)**  and select the available **Office 365 E5 license (2)**.
 
-    ![](./media/sc300-37.png)
+    ![](./media/l1-12-32.png)
 
      >**Note:** If you dont see the **Office 365 E5 license**, please click on **Refresh** button it may take some time to appear.
 
@@ -445,14 +471,14 @@ Some user accounts in your organization will not be provided all available produ
 
 1. Now navigate to the user profile of **Andre Lawson**  from the left navigation pane select **Licenses (1)**. Notice that the license has been assigned **(2)**.
 
-    ![](./media/sc300-40.png)
+    ![](./media/l1-12-33.png)
 
     >**Note:** You might have to refresh to see the License entry.
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help
 
      <validation step="d02480d1-77db-498c-8f14-61b3dbc8169b" />
 

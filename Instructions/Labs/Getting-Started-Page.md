@@ -4,9 +4,9 @@ Welcome to your SC-300: Microsoft Identity and Access Administrator  workshop! W
  
 ## **Accessing Your Lab Environment**
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](./media/lab%20guide.png)
+![Access Your VM and Lab Guide](./media/g-12-1.png)
 
 # **Virtual Machine & Lab Guide**
  
@@ -16,23 +16,23 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** details tab.
  
-![Explore Lab Resources](./media/env.png)
+![Explore Lab Resources](./media/g-12-2.png)
  
 ## **Utilizing the Split Window Feature**
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Use the Split Window Feature](./media/split%20window.png)
+![Use the Split Window Feature](./media/g-12-4.png)
  
 ## Utilizing the Zoom In/Out Feature
 
 To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
 
-![Use the Split Window Feature](./media/gs4.png)
+![Use the Split Window Feature](./media/g-12-3.png)
 
 ## **Managing Your Virtual Machine**
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./media/resources-01.png)
  
@@ -67,8 +67,6 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
      ![Enter Your Password](./media/pass.png)
-
->Kindly note: If you're asked to enter a Temporary Access Pass instead of a Password when signing in to the Azure portal, You can find it under the Environment Details tab -> Password.
 
 4. If you get a pop-up stating Action Required click on Ask Later.
  
@@ -109,7 +107,7 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 
 Learner Support Contacts:
 
-- Email Support: labs-support@spektrasystems.com
+- Email Support: cloudlabs-support@spektrasystems.com
 
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
