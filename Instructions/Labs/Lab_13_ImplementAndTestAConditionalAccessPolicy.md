@@ -59,7 +59,7 @@ In this task, you'll configure Microsoft Entra ID Conditional Access policies to
     | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
 
    
-3. On the menu, under **Entra ID (1)**, select **Conditional access(2)**.
+3. On the menu, under **Entra ID (1)**, select **Conditional Access(2)**.
    
     ![](./media/l3-12-1.png)
 
@@ -88,8 +88,8 @@ In this task, you'll configure Microsoft Entra ID Conditional Access policies to
     - Under the **Target resources** section, click on **No target resources selected (1)**.
     - Ensure to have **Resources (formerly cloud apps)** option selected from the dropdown list.
     - Within the **Include** tab, choose the **Select Resources (2)** radio button.
-    - Click on **None (4)** which opens the Resources pane.
-    - In the Select pane, search for and select **Sway (5)** and then click on **Select (6)**.
+    - Click on **None (3)** which opens the Resources pane.
+    - In the Select pane, search for and select **Sway (4)** and then click on **Select (5)**.
 
       ![](./media/l3-12-5.png)
 
@@ -171,7 +171,7 @@ In this exercise, you'll use the "What if" feature in Microsoft Entra ID's Condi
 
 2. To test conditional access policy with What if, perform the following:
     - Under **Select identity type**, select **Users (1)**.
-    - Click on **Edit (2)**
+    - Click on **Edit user(2)**
 
       ![](./media/l3-12-13.png)
 
@@ -182,7 +182,7 @@ In this exercise, you'll use the "What if" feature in Microsoft Entra ID's Condi
 4. On **Tareget resources**, under **Select target type**, 
     
     - Select **Cloud apps (1)** from the dropdown list.
-    - Click on **Select cloud app (3)** which opens the Select pane.
+    - Click on **Select cloud app (3)** which opens the Resource page.
     - In the Select pane, search for and select **Sway (1)** and then click on **Select (2)**
 
       ![](./media/l3-12-15.png)
@@ -214,7 +214,7 @@ In this task, you'll use the Microsoft Admin Center to configure Conditional Acc
     - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
     - Select the **Users and groups (4)** checkbox.
     - Under **Select**, click on **0 users and groups selected (5)** to add the new user who would be alligned to this conditional access policy.
-    - In the Select pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (6)** account and then click on **Select (7)**.
+    - In the Select pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (1)** account and then click on **Select (2)**.
 
        ![](./media/l3-12-18.png)
    
@@ -225,8 +225,8 @@ In this task, you'll use the Microsoft Admin Center to configure Conditional Acc
     - Under the **Target resources** section, click on **No target resources selected (1)**.
     - Ensure to have **Resources (formerly cloud apps)** option selected from the dropdown list.
     - Within the **Include** tab, choose the **Select Resources (2)** radio button.
-    - Click on **None (4)** which opens the Resources pane.
-    - In the Select pane, search for and select **Office 365 (5)** and then click on **Select (6)**.
+    - Click on **None (3)** which opens the Resources pane.
+    - In the Select pane, search for and select **Office 365 (1)** and then click on **Select (2)**.
 
       ![](./media/l3-12-19.png)
 
