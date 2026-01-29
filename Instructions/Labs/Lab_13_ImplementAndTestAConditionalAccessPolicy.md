@@ -1,4 +1,4 @@
-# Lab 13 - Implement and test a conditional access policy
+# Lab: Implement and test a conditional access policy
 
 ## Lab scenario
 

@@ -1,5 +1,5 @@
  
-# Lab 01: Manage User Roles
+# Lab: Manage User Roles
 
 ## Lab scenario
 
@@ -30,7 +30,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** and  select **Microsoft Entra ID (2)** from the services.
 
-    ![](./media/sc300--1.png)
+    ![](./media/sc-300-l2.png)
 
 1. In the left navigation menu, under **Manage**, select **Users**.
 
@@ -38,7 +38,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Then select **+ New User (1)** and **Create new user (2)**.
 
-    ![](./media/sc300-3.png)
+    ![](./media/sc-300-l1.png)
 
 1. Then, create a user with the following information:
 
@@ -73,7 +73,7 @@ After completing this lab, you will be able to complete the following exercises:
 
     >**Note:** You can open an InPrivate browser window by clicking the **ellipsis (1)** in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window (2)** option.
  
-     ![](./media/image-3.png)
+     ![](./media/sc-300-l4.png)
  
 1. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
@@ -181,7 +181,7 @@ After completing this lab, you will be able to complete the following exercises:
 
     >**Note:** You can open an InPrivate browser window by clicking the **ellipsis (1)** in the top-right corner of the lab VM's browser window and selecting the **New InPrivate Window (2)** option.
  
-     ![](./media/image-3.png)
+     ![](./media/sc-300-l4.png)
 
 1. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
@@ -283,7 +283,11 @@ This task will use an alternative method to remove the assigned role; it will us
    
    >**Note:** You do not need to fill out all the fields. As per the sample data provided, you mainly need to add the username information. Be careful not to leave any extra white spaces in the Excel sheet else Bulk creation will fail.
 
-1. Once you are done with replacing the domain names, navigate to **Downloads (1)** section, save the file as **BulkUser (2)** then click on **Save ()3** and then close the file.
+1. Once you are done with replacing the domain names, click on files and select **Save AS (1)** and click on **Browse (2)**
+
+    ![](./media/sc-300-l3.png)
+
+1. Navigate to **Downloads (1)** section, save the file as **BulkUser (2)** then click on **Save ()3** and then close the file.
 
     ![](./media/sc300-21.png)
 
@@ -309,26 +313,20 @@ This task will use an alternative method to remove the assigned role; it will us
 
 ### Task 2 - Addition of users using PowerShell
 
-**Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to https://aka.ms/PowerShell-Release?tag=7.3.9. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
-
 
 1. In the LabVM, search for **powershell (1)**, right click on **Windows Powershell (2)** and then open PowerShell as an administrator **(3)**. 
 
-    ![](./media/l1-12-17.1.png)
+    ![](./media/sc-300-l6.png)
 
      >**Note** - Select **PowerShell** and not **PowerShell ISE**.
-
-     >**Note:** If PowerShell 7 is not installed, open PowerShell as an administrator and install it using Chocolatey by running the following command:
-
-     ```
-     choco install powershell-core -y
-     ```
 
 1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press **Y**:
 
     ```
     Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
+
+    >**Note:** This may take 2–5 minutes to complete. Ignore any warnings that occur.
 
 1. Confirm the Microsoft.Graph module is installed:
 
@@ -455,19 +453,13 @@ Some user accounts in your organization will not be provided all available produ
 
     ![](./media/l1-12-31.png)
 
-1. From left pane select **Licenses (1)**  and select the available **Office 365 E5 license (2)**.
+1. From the left pane, select **Users (1)**, then click **Active users (2)**. Select the user **Andre Lawson (3)** to assign license.
 
-    ![](./media/l1-12-32.png)
+    ![](./media/sc-300-l7.png)
 
-     >**Note:** If you dont see the **Office 365 E5 license**, please click on **Refresh** button it may take some time to appear.
+1. Select **Licenses and apps (1)**, enable **Office 365 E5 (no Teams) (2)**, and click **Save changes (3)**.
 
-1. Select **+ Assign Licenses**.
-
-    ![](./media/sc300-38.png)
-
-1. On **Assign licenses to users** page, enter the name or email address of the user **(1)** to whom you want to assign the license and click on **Assign (2)**.
-
-    ![](./media/sc300-39.png)
+    ![](./media/sc-300-l8.png)
 
 1. Now navigate to the user profile of **Andre Lawson**  from the left navigation pane select **Licenses (1)**. Notice that the license has been assigned **(2)**.
 
