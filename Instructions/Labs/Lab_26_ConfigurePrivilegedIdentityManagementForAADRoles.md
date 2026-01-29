@@ -1,4 +1,4 @@
-# Lab 26: Configure Privileged Identity Management for Microsoft Entra ID roles
+# Lab: Configure Privileged Identity Management for Microsoft Entra ID roles
 
 ## Lab scenario
 
