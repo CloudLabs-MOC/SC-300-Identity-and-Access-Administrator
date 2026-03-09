@@ -59,7 +59,6 @@ In this task, you'll configure Microsoft Entra ID Conditional Access policies to
     | :--- | :--- |
     | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
     | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
-
    
 3. On the menu, under **Entra ID (1)**, select **Conditional Access(2)**.
    
@@ -84,7 +83,7 @@ In this task, you'll configure Microsoft Entra ID Conditional Access policies to
 
        ![](./media/lab13-03-2.png)
 
-        - If **Select users and groups** in opened, Under **Select**, click on **0 users and groups selected** to add the new user who would be alligned to this conditional access policy.
+        - If **Select users and groups** in not opened, Under **Select**, click on **0 users and groups selected** to add the new user who would be alligned to this conditional access policy.
 
 7. In order to block a specific app from the user, execute the following configurations while creating the conditional access policy:
     
@@ -202,6 +201,8 @@ In this exercise, you'll use the "What if" feature in Microsoft Entra ID's Condi
 
     >**Note:** This allows you to test the policies and their affectiveness before enabling the policies.
 
+     ![](./media/lab13-03-6.png)
+
 ## Exercise 3: Configure sign in frequency controls using a conditional access policy
 
 In this exercise, you'll configure sign-in frequency controls using a Conditional Access policy in Azure to manage and enforce restrictions on how often users can sign in.
@@ -210,7 +211,7 @@ In this exercise, you'll configure sign-in frequency controls using a Conditiona
 
 In this task, you'll use the Microsoft Admin Center to configure Conditional Access policies, enabling you to control access to resources based on specific conditions like user roles, device compliance, and location.As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign-in frequency.
 
-1. On the **Conditional Access | Overview** page, select **Create new policy** to start creating a Conditional Access policy.
+1. On the **Conditional Access | Overview** page, select **+ Create new policy** to start creating a Conditional Access policy.
 
     ![](./media/lab13-03-1.png)
 
