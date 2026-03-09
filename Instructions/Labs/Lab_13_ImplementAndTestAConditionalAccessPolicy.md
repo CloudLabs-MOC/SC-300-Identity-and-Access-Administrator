@@ -77,9 +77,9 @@ In this task, you'll configure Microsoft Entra ID Conditional Access policies to
     - Under **Assignments**, click on **Users or agents (Preview) (2)**.
     - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
     - Select the **Users and groups (4)** checkbox.
-    - In the **Select users and groups** pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (6)** account and then click on **Select (7)**.
+    - In the **Select users and groups** pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (5)** account and then click on **Select (6)**.
 
-       ![](./media/l3-12-3.png)
+       ![](./media/lab13-03-8.png)
 
        ![](./media/lab13-03-2.png)
 
@@ -173,7 +173,7 @@ In this exercise, you'll use the "What if" feature in Microsoft Entra ID's Condi
 
 2. To test conditional access policy with What if, perform the following:
     - Under **Select identity type**, select **Users (1)**.
-    - Click on **Edit user(2)**
+    - Click on **Edit user (2)**
 
       ![](./media/l3-12-13.png)
 
@@ -184,7 +184,7 @@ In this exercise, you'll use the "What if" feature in Microsoft Entra ID's Condi
 4. On **Tareget resources**, under **Select target type**, 
     
     - Select **Cloud apps (1)** from the dropdown list.
-    - Click on **Select cloud app (3)** which opens the Resource page.
+    - Click on **Select cloud app (2)** which opens the Resource page.
     - In the Select pane, search for and select **Sway (1)** and then click on **Select (2)**
 
       ![](./media/l3-12-15.png)
