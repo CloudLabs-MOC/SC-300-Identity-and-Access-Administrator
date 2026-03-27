@@ -118,13 +118,6 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
     ![](./media/l26-12-7.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-    <validation step="463fb3a1-c805-4bd6-96ca-3e48f02ec7b4" />
-
 ### Task 2 - Log in with Miriam
 
 In this task, you will log in to the Azure Portal as Miriam Graham, reset her password if needed, and check that she has the Compliance Administrator role assigned.
