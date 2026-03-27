@@ -26,17 +26,36 @@ In this exercise, you will learn how to customize role settings by configuring M
 
 In this task ,you will access and review the settings for the Compliance Administrator role in Azure AD Privileged Identity Management.
 
-1. In the Azure portal, search for and  select **Microsoft Entra Privileged Identity Management.**
+1. In the lab VM, on the desktop, open the **Microsoft Edge** browser.
+
+1. Open the **Microsoft Entra admin center** in a new browser tab by selecting the link below.
+
+   ```
+   https://entra.microsoft.com/
+   ```
+
+1. When prompted, log in with the following credentials which are also provided in the Environment details page:
+
+    | Setting | Value |
+    | :--- | :--- |
+    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
+    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
+   
+1. In the navigation pane, expand **ID Governance (1)** and select **Privileged Identity Management (2)**.
+
+    ![](./media/lab26-03-3.png)
 
 1. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles** under **Manage** option.
 
+    ![](./media/lab26-03-4.png)
+
 1. On the Quick start page, in the left navigation, select **Settings (1)** under **Manage** option.
-  
-1. Review the list of roles and then, in the **Search by role name (2)**, enter **compliance**.
-   
-   ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](./media/l26-12-1.png)
+
+1. Review the list of roles and then, in the **Search by role name**, enter **compliance (2)**.
 
 1. In the results, select **Compliance Administrator (3)**.
+
+    ![](./media/lab26-03-6.png)
 
 1. Review the role setting details information.
 
@@ -54,11 +73,11 @@ In this task, you will configure the Compliance Administrator role to require ap
 
 4. In the Select a member pane, select your administrator account **ODL_user <inject key="DeploymentId" enableCopy="false" /> (3)** and then select **Select (4)**.
 
-    ![Screen image displaying the edit role settings page and select a member pane with the selected members highlighted](./media/l26-12-3.png)
+    ![](./media/lab26-03-7.png)
 
 5. Once you have configured the role settings, select **Update** to save your changes.
 
-    ![](./media/l26-12-4.png)
+    ![](./media/lab26-03-8.png)
 
 ## Exercise 2 - PIM with Microsoft Entra ID roles
 
@@ -70,15 +89,11 @@ The Microsoft Entra ID Privileged Identity Management (PIM) service also allows 
 
 Follow these steps to make a user eligible for an Azure AD admin role.
 
-1. Search for and then select **Microsoft Entra Privileged Identity Management.**
+1. In the Privileged Identity Management page, in the left navigation, under **Manage** select **Roles (1)**.
 
-2. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles** under **Manage.**
+2. On the top menu, select **+ Add assignments (2)**
 
-3. On the Quick start page, in the left navigation, under Manage select **Roles (1)**.
-
-4. On the top menu, select **+ Add assignments (2)**
-
-    ![Screen image displaying Azure AD roles with Add assignments menu highlighted](./media/l26-12-5.png)
+    ![](./media/lab26-03-9.png)
 
 5. In the Add assignments page, on the **Membership** tab, review the settings.
 
@@ -90,7 +105,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 9. In the Select a member pane, select **Miriam Graham (3)** and then select **Select (4)**.
 
-   ![Screen image displaying the select a member pane with a selected member highlighted](./media/l26-12-6.png)
+   ![](./media/lab26-03-10.png)
 
 10. In the Add assignments page, select **Next >**.
 
@@ -116,16 +131,20 @@ In this task, you will log in to the Azure Portal as Miriam Graham, reset her pa
 
 1. Open a new InPrivate browser window.
 
-2. Connect to the Azure Portal (https://portal.azure.com).
+2. Open the **Microsoft Entra admin center** in a new browser tab by selecting the link below.
+
+   ```
+   https://entra.microsoft.com/
+   ```
 
 3. If it opens with a user logged in, Select on their name in the upper-right corner and select **Sign in as a different account**.
 
-4. Log in a Miriam.
+1. When prompted, log in with the following credentials which are also provided in the Environment details page:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Username | **miriam.graham@** `<<your domain.onmicrosoft.com>>` |
-   | Password |  Enter the password for Miriam Graham |
+    | Setting | Value |
+    | :--- | :--- |
+    | Username | **<inject key="User 08 UPN" enableCopy="true" />** |
+    | Password | **<inject key="User 08 Password" enableCopy="true" />** |
 
    >**Note:** To find the username for Miriam Graham, login to the Azure portal and navigate to the Users section of the Microsoft Entra ID, and copy the user name.
 
@@ -163,43 +182,41 @@ In this task, you will log in to the Azure Portal as Miriam Graham, reset her pa
 
        >**NOTE**: Enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
-6. From the **Search resource, services, and docs** bar look for **Microsoft Entra ID**, and open the page.
+1. In the navigation pane, expand **Entra ID (1)**, select **Users (2)**, and then choose the user **Miriam Graham (3)**.
 
-7. On the **Overview** page, look for the **My feed**.
+   ![](./media/lab26-03-11.png)
 
-8. Select **View Profile** under Miriam Graham's name; this with open Miriam's profile page.
-
-   ![Screen image displaying the select a member pane with a selected member highlighted](./media/l26-12-8.png)
-
-9. From the left navigation pane,under Manage select **Assigned roles (1)** then select **Eligible assignments (2)**.
+9. From the left navigation pane, select **Assigned roles (1)** then select **Eligible assignments (2)**.
 
 10. Notice that the **Compliance Administrator (3)** role is now available to Miriam.
 
-    ![](./media/l26-12-9.png)
+    ![](./media/lab26-03-12.png)
 
 ### Task 3 - Activate your Microsoft Entra ID roles
 
 When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
 
-1. From the **Search, resources, services, and docs** bar, look for Privileged.
+1. In the navigation pane, expand **ID Governance (1)** and select **Privileged Identity Management (2)**.
 
-2. Open the **Microsoft Entra Privileged Identity Management** page.
+3. On the Privileged Identity Management page, in the left navigation menu, select **My roles (2)** under **Tasks**.
 
-3. On the Privileged Identity Management page, in the left navigation menu, select **My roles** under **Tasks**.
+    ![](./media/lab26-03-13.png)
 
 4. In the My roles page, review the list of **Eligible assignments (1)**.
 
 5. In the Compliance Administrator role row, select **Activate (2)**.
 
-    ![Screen image displaying My roles with eligible role assignments highlighted](./media/l26-12-10.png)
+    ![](./media/lab26-03-14.png)
 
-6. On **Activate – Compliance Administrator** pane, in the **Reason** box, enter the **This is my justification for activating this role**.
+6. On **Activate – Compliance Administrator** pane, in the **Reason** box, enter the **This is my justification for activating this role (1)**.
 
      >**Notes:** If required you will have to sigin in again as Miriam Graham with a SMS verification.
      
      >**Important Note** - The principal of least privilege, you should only activate the account for the amount of time you need it.  If the work needed to be done, only takes 1.5 hours, then set the duration to two hours.  Similarily, if you know that you won't be able to do the work until after 3 p.m., choose a Custom activation time.
 
-7. Select **Activate**.
+7. Select **Activate (2)**.
+
+    ![](./media/lab26-03-15.png)
 
 ### Task 4 - Assign a role with restricted scope
 
@@ -207,11 +224,13 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 
 1. Now, go to the portal where you have logged in as the ODL user in the normal Microsoft Edge browser.
 
-2. Browse to the Privileged Identity Management page, and in the left navigation menu, select Azure **Microsoft Entra roles** under **Manage** option.
+2. Navigate to the Privileged Identity Management page, and in the left navigation menu, select **Microsoft Entra roles** under **Manage** option.
 
-3. Under Manage select **Roles**.
+3. Under Manage select **Roles (1)**.
 
-4. In the Roles page, on the top menu, select **+ Add assignments.**
+4. In the Roles page, on the top menu, select **+ Add assignments (2)**
+
+    ![](./media/lab26-03-9.png)
 
 5. In the Add assignments page, select the **Select role** menu and then select **User administrator.**
 
@@ -226,6 +245,8 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 Follow these steps to update or remove an existing role assignment.
 
 1. In the **Privileged Identity Management | Microsoft Entra roles** page, in the left navigation, select **Assignments**.
+
+    ![](./media/lab26-03-16.png)
 
 2. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
 
