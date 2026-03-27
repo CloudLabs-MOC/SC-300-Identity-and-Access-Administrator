@@ -89,9 +89,7 @@ The Microsoft Entra ID Privileged Identity Management (PIM) service also allows 
 
 Follow these steps to make a user eligible for an Azure AD admin role.
 
-1. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles** under **Manage.**
-
-1. On the Quick start page, in the left navigation, under **Manage** select **Roles (1)**.
+1. In the Privileged Identity Management page, in the left navigation, under **Manage** select **Roles (1)**.
 
 2. On the top menu, select **+ Add assignments (2)**
 
@@ -200,7 +198,7 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
 1. In the navigation pane, expand **ID Governance (1)** and select **Privileged Identity Management (2)**.
 
-3. On the Privileged Identity Management page, in the left navigation menu, select **My roles** under **Tasks**.
+3. On the Privileged Identity Management page, in the left navigation menu, select **My roles (2)** under **Tasks**.
 
     ![](./media/lab26-03-13.png)
 
