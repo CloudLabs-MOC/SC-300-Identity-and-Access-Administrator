@@ -247,6 +247,7 @@ Users can review and see the terms of use that they have accepted by using the f
     ![](./media/settings-privacy3.png)
 
 5. Under **Organization’s notice**, you can review the terms of use you have accepted.
+6. Note:"You will get you have not accepted any MOC HOL 100053 terms of use"
 
 ### Task 6: Edit terms of use details 
 
