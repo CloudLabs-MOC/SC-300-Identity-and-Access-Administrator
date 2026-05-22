@@ -27,12 +27,12 @@ In this lab, you will complete the following tasks:
     
 
 1. To understand the functionality of the Cloud app catalog, execute the following steps:
-    - On the left menu, scroll to the heading named **Cloud apps** and click **Cloud app catalog (1)**.
-    - In **Browse by category** pane, search for and select **Cloud storage (2)**.
-    - In the list of apps, note the **Risk scores (3)** next to the app name.
+    - On the left menu, scroll to the heading named **Hide navigation (1)**.
+    - Click on **Cloud app catalog (2)**.
+    - In the list of apps, Search dropbox.
       
 
-    ![](./media/sc-300-lab17-2.png)
+    ![](./media/sc-300-lab17-3.png)
 
 1. Open another browser tab and navigate to **www.dropbox.com**.
 
@@ -40,9 +40,9 @@ In this lab, you will complete the following tasks:
 
 ### Task 2: Restrict Apps in Defender for Cloud Apps
 
-1. Return to the **Discovered apps** tile, search for and select **Dropbox**. Select the **Tag as unsanctioned** for Dropbox.
+1. Return to the **Discovered apps** tile, search for and select **Dropbox**. Select the **Tag as unsanctioned (1)** for Dropbox.
 
-    ![](./media/sc-300-lab17-1.png)
+    ![](./media/sc-300-lab17-4.png)
 
     >**Note:** This is located next to the circled check-mark.
 
