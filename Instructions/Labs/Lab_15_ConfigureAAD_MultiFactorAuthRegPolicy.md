@@ -61,7 +61,7 @@ Now let us enable MFA registration for a single user.
 
 6. Select **Save**.
 
-![](./media/lab-15-Task-2.png)
+    ![](./media/lab-15-Task-2.png)
 
 This will require the user to complete the MFA registration the next time they attempt to login.
 
