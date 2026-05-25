@@ -7,11 +7,11 @@ Your organization requires that only specific users or groups have access to ent
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
-+ Exercise 1 - Configure an Enterprise App
-    + Task 1 - Add an app to your Microsoft Entra ID tenant
-    + Task 2 - Assign users to an app
+- Exercise 1 - Configure an Enterprise App
+    - Task 1 - Add an app to your Microsoft Entra ID tenant
+    - Task 2 - Assign users to an app
 
-## Estimated time: 20 minutes
+## Estimated time: 20 Minutes
 
 ## Architecture diagram
 
@@ -28,7 +28,7 @@ Configuring an Enterprise App involves setting up and managing the identity and 
    - **Password:** **<inject key="AzureAdUserPassword"></inject>**
      
 
-2. On the Identity menu, under **Applications (1)**, select **Enterprise applications (2)** and click on **+ New application (3)**.
+2. On the **Entra ID** menu, select **Enterprise apps (1)**, then select **All Applications (2)** and click on **+ New application (3)**.
 
     ![](./media/Ent-app.png)
    
@@ -38,9 +38,9 @@ Configuring an Enterprise App involves setting up and managing the identity and 
     - From the list of results, select **GitHub Enterprise Cloud – Enterprise Account (2)**.
     - In the **GitHub Enterprise Cloud – Enterprise Account**, review the settings and then select **Create (3)**.
 
-    ![](./media/enterprise-apps-3.png)
+        ![](./media/enterprise-apps-3.png)
 
-    >**Note:** The Enterprise Application creation may take upto 2 minutes. Please wait till the deployment is successful.
+        >**Note:** The Enterprise Application creation may take upto 2 minutes. Please wait till the deployment is successful.
 
 5. Once created, you will be redirected to the GitHub Enterprise Cloud – Enterprise Account page.
 
@@ -55,7 +55,7 @@ Configuring an Enterprise App involves setting up and managing the identity and 
 
 ### Task 2: Assign users to an app
 
-1. On the GitHub Enterprise Cloud – Enterprise Account page, on the Overview page, under **Getting Started**, select **1. Assign users and groups**.
+1. On the GitHub Enterprise Cloud – Enterprise Account page, on the Overview page, under **Getting Started**, select **Assign users and groups**.
 
     ![](./media/enterprise-apps-4-1.png)
 
