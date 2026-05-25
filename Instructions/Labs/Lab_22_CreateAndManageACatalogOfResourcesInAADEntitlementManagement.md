@@ -15,7 +15,7 @@ In this lab, you will complete the following tasks:
 + Task 6 - Create Access reviews for guest users
 + Task 7 - Delete a catalog
 
-## Estimated time: 15 minutes
+## Estimated time: 15 Minutes
 
 ### Architecture Diagram
 
@@ -26,7 +26,7 @@ Building out resources in Entitlement Management involves defining and structuri
 
 ### Task 1 - Create a catalog
 
-1. In **Search, resources, services and docs**, search and select for **Microsoft Entra ID**.
+1. In **Search, resources, services and docs**, search **Microsoft Entra ID (1)** and select for **Microsoft Entra ID (2)**.
 
     ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-1.png)
 
@@ -34,17 +34,18 @@ Building out resources in Entitlement Management involves defining and structuri
 
     ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-2.png)
 
-1. From the left-hand navigation menu, under **Entitlement management**, select **Catalogs** and on the top menu, select **+ New Catalog**.
+1. From the left-hand navigation menu, under **Catalogs**, select **Catalogs (1)** and on the top menu, select **+ New Catalog (2)**.
 
     ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](./media/lab22-3.png)
 
-1. In the New catalog pane, specify the following details and click on **Create (4)**.
+1. In the New catalog pane, specify the following details and click on **Create (5)**.
 
       | **Option**                          | **Value**                               |
       | ----------------------------------- | --------------------------------------- |
-      | **Name**                            | **Marketing**.                     |
-      | **Description**                     | Enter **For marketing department users**.|
-      | **Enabled**                         | **No**. |
+      | **Name**                            | **Marketing (1)**                     |
+      | **Description**                     | Enter **For marketing department users. (2)**|
+      | **Enabled**                         | **Yes (3)** |
+      |**Enabled for external users** | Select **No (4)**|
    
 
    ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](./media/lab22-4-(1).png)
@@ -53,55 +54,61 @@ Building out resources in Entitlement Management involves defining and structuri
 
 ### Task 2 - Create a groups
 
-1. In **Search, resources, services and docs**, search and select for **Microsoft Entra ID**.
+1. In **Search, resources, services and docs**, search  **Microsoft Entra ID (1)** and select for **Microsoft Entra ID (2)**.
 
-1. From the left-hand navigation pane, select **Groups**. On **Groups | All groups**, select **New Group**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-1.png)
 
-1. Now, follow these instruction to create a groups:-
+1. From the left-hand navigation pane, select **Groups (1)**. On **Groups | All groups (2)**, select **New Group (3)**.
+
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-400.png)
+
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-401.png)
+
+1. Now, follow these instruction to create a groups, then select **Create (4)**.
 
     | Settings | Value |
     | -------- | ------ |
-    | Group type | **Security** |
-    | Group name | **Retail** |
-    | Group description | **Groups and Teams** |
+    | Group type | **Security (1)** |
+    | Group name | **Retail (2)** |
+    | Group description | **Groups and Teams (3)** |
 
-1. Select **Create**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-402.png)
 
 1. On **Groups | All groups**, select **New Group**.
 
-1. Now, follow these instruction to create a groups:-
+1. Now, follow these instruction to create a groups, then select **Create (4)**.
 
     | Settings | Value |
     | -------- | ------ |
-    | Group type | **Security** |
-    | Group name | **Box** |
-    | Group description | **Applications** |
+    | Group type | **Security (1)** |
+    | Group name | **Box (2)** |
+    | Group description | **Applications (3)** |
 
-1. Select **Create**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-403.png)
 
 1. On **Groups | All groups**, select **New Group**.
 
-1. Now, follow these instruction to create a groups:-
+1. Now, follow these instruction to create a groups, then select **Create (4)**.
 
     | Settings | Value |
     | -------- | ------ |
-    | Group type | **Security** |
-    | Group name | **Salesforce** |
-    | Group description | **Applications** |
+    | Group type | **Security (1)** |
+    | Group name | **Salesforce (2)** |
+    | Group description | **Applications (3)** |
 
-1. Select **Create**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-404.png)
 
 1. On **Groups | All groups**, select **New Group**.
 
-1. Now, follow these instruction to create a groups:-
+1. Now, follow these instruction to create a groups, then select **Create (4)**.
 
     | Settings | Value |
     | -------- | ------ |
-    | Group type | **Security** |
-    | Group name | **SharePoint sites** |
-    | Group description | **SharePoint** |
+    | Group type | **Security (1)** |
+    | Group name | **SharePoint sites (2)** |
+    | Group description | **SharePoint (3)** |
 
-1. Select **Create**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-405.png)
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -118,15 +125,17 @@ To include resources in an access package, the resources must exist in a catalog
 
 1. Under **Manage** section, select **Identity Governance**.
 
-1. On the Identity Governance page, select **Catalogs**.
+1. On the Identity Governance page, under **Entitlement management**.
 
-1. In the **Catalogs** list, select **Marketing**.
+1. In the **Catalogs (1)** list, select **Marketing (2)**.
 
-1. From the left-hand navigation pane, under **Manage**, select **Resources** and on the menu, select + **Add resources**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-406.png)
+
+1. From the left-hand navigation pane, under **Manage**, select **Resources (1)** and on the menu, select + **Add resources (2)**.
 
    ![](./media/lab22-5.png)
 
-1. Select **+ Groups and Teams**. In the Add resources to catalog page, review the available options. Add the following items: **Box**, **Retail**, **Salesforce**, and **SharePoint sites**.
+1. Select **+ Groups and Teams (1)**. In the Add resources to catalog page, review the available options. Add the following items: **Box**, **Retail**, **Salesforce**, and **SharePoint sites (2)**, then click on **Select (3)**.
 
    ![](./media/lab22-6.png)
 
@@ -151,11 +160,11 @@ The user that created a catalog becomes the first catalog owner. To delegate man
 
 You can edit the name and description for a catalog. Users see this information in an access package's details.
 
-1. On the Marketing page, from the left-hand navigation pane, select **Overview**.
+1. On the Marketing page, from the left-hand navigation pane, select **Overview (1)**, then on the top menu, select **Edit (2)**.
 
-2. On the top menu, select **Edit**.
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-407.png)
 
-3. Review the setting and, under **Properties** > **Enabled**, select **Yes** and click  **Save**.
+1. On the **Overview (1)** page review the setting and, under **Properties** > **Enabled**, select **Yes (2)** and click  **Save (3)**.
 
     ![](./media/lab22-10.png)
 
@@ -163,34 +172,41 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. Navigate back to the **Identity Governance**.
 
-1. Access reviews can manage the access lifecycle.  Azure AD Identity Governance provides an overview dashboard showing the status of access reviews.
+1. Access reviews can manage the access lifecycle. Azure AD Identity Governance provides an overview dashboard showing the status of access reviews.
 
-1. From the left-hand navigation pane, select **Access reviews** under **Access reviews**and select **+ New access review** to create your guest user access review.  The tile will open to configure the access review for guest users.
+1. From the left-hand navigation pane, select **Access reviews** under **Access reviews (1)** and select **+ New access review (2)** to create your guest user access review.  The tile will open to configure the access review for guest users.
 
     ![](./media/lab22-11.png)
 
-1. On **New access review** blade, specify the following detail and click on **Next: Reviews**.
+1. On tile under the **Review access to a resource type**, choose **Select**
+
+    ![](./media/lab22-408.png)
+
+1. On **New access review** blade, specify the following detail and click on **Next: Reviews (4)**.
     | Settings | Value |
     | -------- | ------ |
-    | **Select what to review** | **Teams + Groups** |
-    | **Review scope** | select **All Microsoft 365 groups with guest users** |
-    | **Scope** | **Guest users only** |
+    | **Select what to review** | **Teams + Groups (1)** |
+    | **Review scope** | select **All Microsoft 365 groups with guest users (2)** |
+    | **Scope** | **Guest users only (3)** |
     |||
 
    ![](./media/lab22-12.png)
 
 1. The next tile is where you configure who reviews and approves access, how often access will be reviewed, and when access will expire.
 
-1. Under **Select reviewers**, select **Group owners** as these reviewers. 
+1. Under **Select reviewers**, select **Group owners (1)** as these reviewers, enter a **Duration (in days) (2)**, default is 3, choose a **Review recurrence (3)** and **Start date (4)** for the review click on **Settings (5)**.
+
+    ![](./media/lab22-20.png)
 
     >**Note**: Guest users should not be allowed to review their own access as a good identity governance practice.
-
-1. Enter a **Duration (in days)**, default is 3, choose a **Review recurrence** and **Start date** for the review.
-
-1. Select **Next: Settings** and configure the settings for how the review will take place and what happens when the guest user responds or does not respond.  A good practice is to select **Auto apply results to resource** and select **Remove access** for **If reviewers don't respond** and click on **Next: Review + create**,
-    ![](./media/lab22-13.png)
+    
+1. Select **Next: Settings** and configure the settings for how the review will take place and what happens when the guest user responds or does not respond.  A good practice is to select **Auto apply results to resource (1)** and select **Remove access (2)** for **If reviewers don't respond** and click on **Next: Review + Create (3)**,
+    
+    ![](./media/lab22-21.png)
 
 1. Select **Create** to create the new **Access review**.
+
+    ![](./media/lab22-22.png)
 
 ### Review
 In this lab, you have completed:
