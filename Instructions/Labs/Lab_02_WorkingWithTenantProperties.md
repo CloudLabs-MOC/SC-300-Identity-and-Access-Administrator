@@ -62,7 +62,7 @@ After completing this lab, you will be able to:
 
    ![](./media/sc-300-46.png)
    
-1. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
+1. Change the Tenant Properties for the **Name (1)** and **Technical contact (2)** in the dialog.
 
     | **Setting** | **Value** |
     | :--- | :--- |
