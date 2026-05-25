@@ -37,9 +37,9 @@ In this task, you will create a Windows 11 VM from the Azure Marketplace, config
 
    ![](./media/sc-300-lab16-7.png)
 
-1. From the dropdown, choose **Windows 11 Enterprise, version 22H2**. You will be redirected to **Create a virtual machine** tab.
+1. From the dropdown, choose **Windows 11 Enterprise, version 25H2**. You will be redirected to **Create a virtual machine** tab.
 
-   ![](./media/new-lab16-1.png)
+   ![](./media/Lab-16-Task-1-1.png)
 
 1. In the **Create a Virtual Machine** page, modify the following by keeping the rest as default:
 
@@ -55,7 +55,7 @@ In this task, you will create a Windows 11 VM from the Azure Marketplace, config
 
         ![](./media/sc-300-lab16-2.png)
 
-        ![](./media/sc-300-lab16-3.png)
+        <!-- ![](./media/sc-300-lab16-3.png) -->
    
 1. You will have to create an administrator username and password for the VM on the basics tab.
 

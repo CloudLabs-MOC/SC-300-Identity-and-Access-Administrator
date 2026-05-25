@@ -27,20 +27,21 @@ After completing this lab, you will be able to:
 3. On the  Microsoft Entra ID page, under **Identity**, select **Protection**.
 
 4. In the left navigation, select **Identity protection**.
+![](./media/Lab-15-Task-1.png)
 
-5. In the Identity protection page, in the left navigation under **Protect**, select **Multifactor authentication registration policy**.
+5. In the Identity protection page, in the left navigation under **Protect (1)**, select **Multifactor authentication registration policy (2)**.
 
-    ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/policy25.png)
+6. Under **Assignments**.
 
-6. Under **Assignments**
-
-7. Under **Assignments**, select **All users** and review the available options.
+7. Under **Assignments (3)**, select **All users (4)** and review the available options.
 
 8. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
 
 9. Additionally, you can choose to exclude users from the policy.
 
-10. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
+10. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration (5)** is selected and cannot be changed.
+
+    ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/Lab-15-Task-1-2.png)
 
 #### Task 2 - Configure Microsoft Entra Identity Protection policy for MFA registration
 
@@ -50,15 +51,17 @@ Now let us enable MFA registration for a single user.
 
 1. In the Microsoft Entra admin center, navigate to Microsoft Entra Identity Protection in the search bar.
 
-2. Under **Protect** in the menu, select **Multifactor authentication registration policy**.
+2. Under **Protect** in the menu, select **Multifactor authentication registration policy (1)**.
 
-3. Under **Assignments**, select **All users** under Users, and in the Include tab, select **Select individuals and groups**
+3. Under **Assignments**, select **All users** under Users, and in the Include tab, select **Select individuals and groups (2)**
 
 4. Now, select the user named **Chris Green** and click on **Select**.
 
-5. Ensure that  **Policy enforcement** is toggled from **Disabled** to **Enabled** 
+5. Ensure that  **Policy enforcement (3)** is toggled from **Disabled** to **Enabled** 
 
 6. Select **Save**.
+
+    ![](./media/lab-15-Task-2.png)
 
 This will require the user to complete the MFA registration the next time they attempt to login.
 

@@ -28,6 +28,7 @@ Based on your organizational requirements, you can customize the Microsoft Entra
     ![](./media/ms-entra-id-1.png)
 
 1. On the Microsoft Entra ID page, from the left-hand navigation page, under **Manage**, select **Security**.
+    ![](./media/Lab-12-Task-1-1.png)
 
 1. On the Security page, in the left navigation, select **Authentication methods**.
 

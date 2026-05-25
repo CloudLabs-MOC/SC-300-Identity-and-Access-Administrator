@@ -30,7 +30,8 @@ In this task, you will try to access Microsoft Sway website.
 
 1. Launch a new **InPrivate** browser window.
 
-2. Connect to [https://sway.cloud.microsoft/](https://sway.cloud.microsoft/) 
+2. Connect to [https://sway.cloud.microsoft/](https://sway.cloud.microsoft/) and click on Get Started 
+    ![](./media/Lab-13-Task-1-1.png)
 
 3. When prompted, log in with the following credentials which are also provided in the Environment details page:
 

@@ -35,7 +35,8 @@ After completing this lab, you will be able to complete the following exercises:
 
 1. Launch a new **InPrivate** browser window. Copy and paste this link in the browser window [https://www.office.com](https://www.office.com).
 
-1. Select Sign in and connect as **Delia Dennis**, 
+1. Select Sign in and connect as **Delia Dennis**, after entering the username for entering the password use the option **Use your password instead** instead entering the password directly into the field.
+   ![](./media/lab-3-task-1-1.png)
 
    | **Setting**| **Value**|
    | :--- | :--- |
@@ -92,15 +93,15 @@ After completing this lab, you will be able to complete the following exercises:
 
 ### Task 3 - Assign a license to a group
 
-1. To assign the license please go to [http://admin.microsoft.com/](url)
+1. To assign the license please go to [https://admin.microsoft.com/](url)
 
 2. In the Licenses page, select **Office 365 E3 (no Teams)**.
   
    ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/E1T3S2.png)
 
-3. On License details page, select **Groups** then **+ Assign licenses**.
+3. On License details page, select **+ Assign licenses**.
 
-   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/E1T3S3.png)
+   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/Lab-3-task-3-1.png)
  
 
 4. Enter a group name as **sg-SC300-O365**, select it and then click on **Assign**.
