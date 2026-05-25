@@ -11,7 +11,7 @@ After completing this lab, you will be able to complete the following exercises:
 + Exercise 1 - Create and test the Conditional Access App Contol policy
 + Exercise 2 - Setup alerts in Microsoft Defender for Cloud Apps
 
-## Estimated time: 30 minutes
+## Estimated time: 30 Minutes
 
 ## Architecture Diagram
 
