@@ -47,8 +47,10 @@ After completing this lab, you will be able to:
      ![Azure portal menu with Azure Active Directory selected](./media/irt1.png)
 
 6. Click on **Add domain** page of Microsoft 365 Admin center,paste the value **sales.labtenant.onmicrosoft.com** and click on **Use this Domian**.
+      
+      ![](./media/sc-300-45.png)
 
-7. Click on **Continue** in the verify your domain page and click on **Verify** option under Add a record to verify ownership.
+7. Select the **Close** button when the next screen opens up. For the purpose of this lab we will not set up the DNS.
    
 8. Navigate back to the Azure portal. Under the custom domain section, you should now be able to see the newly created custom subdomain.
 
@@ -58,7 +60,9 @@ After completing this lab, you will be able to:
 
 1. In the **Custom domain names** page, from the left-hand navigation pane, in the **Manage** section, select **Properties**.
 
-1. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
+   ![](./media/sc-300-46.png)
+   
+1. Change the Tenant Properties for the **Name (1)** and **Technical contact (2)** in the dialog.
 
     | **Setting** | **Value** |
     | :--- | :--- |
@@ -136,13 +140,15 @@ You add your organization's privacy information in the **Properties** area of 
 
 2. In the upper-righthand corner of the Azure portal, select on your username.
 
-3. Choose **View account** from the dropdown menu.A new browser tab will open automatically.     
+3. Choose **View account** from the dropdown menu.A new browser tab will open automatically.  
+     
+     ![](./media/Privacy.png) 
 
-4. Select the **Settings & Privacy** on the left-hand menu.
+4. Select the **Settings & Privacy (1)** on the left-hand menu.
 
-5. Select **Privacy**.
+5. Select **Privacy (2)**.
 
-6. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.A new browser tab will open with the Privacy PDF file you linked to displayed.
+6. Under **Organization's notice (3)** select the **View** item next to Contoso Marketing organizational privacy statement.A new browser tab will open with the Privacy PDF file you linked to displayed.
 
 7. Review the sample Privacy statement.
 
