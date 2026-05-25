@@ -4,17 +4,18 @@
 
 Multi-factor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Microsoft Entra Multi-Factor Authentication. You must configure your Microsoft Entra organization's MFA registration policy to be assigned to all users.
 
+## Estimated time: 10 minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to:
+
 - Task 1 - Complete Policy configuration
 - Task 2 - Configure Microsoft Entra ID Identity Protection policy for MFA registration
 
 ## Architecture Diagram
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch15.png)
-
-## Estimated time: 10 minutes
 
 ### Exercise 1 - Set up MFA registration policy
 

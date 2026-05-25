@@ -6,9 +6,12 @@ A Privileged role administrator can customize Privileged Identity Management (PI
 
    >**Note:** There have been on-going changes to requiring MFA in lab environments. When you switch between users to complete this lab, you may be prompted to set up MFA.
 
+## Estimated time: 45 Minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to:
+
 - Exercise 1 - Configure Microsoft Entra ID role settings
 - Exercise 2 - PIM with Microsoft Entra ID roles
 
@@ -16,7 +19,6 @@ After completing this lab, you will be able to:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch26.png)
 
-## Estimated time: 45 Minutes
 
 ## Exercise 1 - Configure Microsoft Entra ID role settings
 

@@ -6,6 +6,8 @@ Your organization needs to be able to limit user access to its internal applicat
 
 >**Note** - For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
+## Estimated time: 45 Minutes
+
 ## Lab objectives
 
 In this lab, you will complete the following tasks:
@@ -13,8 +15,6 @@ In this lab, you will complete the following tasks:
 - Exercise 1: Set a conditional access policy to block an user from accessing Sway
 - Exercise 2: Test conditional access policies with "What if"
 - Exercise 3: Configure sign in frequency controls using a conditional access policy
-
-## Estimated time: 45 Minutes
 
 ## Architecture diagram
 
@@ -123,8 +123,8 @@ In this task, you'll configure Microsoft Entra ID Conditional Access policies to
        ![](./media/lab13-ms-entra-id-11.png)
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
     <validation step="58da6f73-286e-4c2e-9506-09649fb7ba6d" />
@@ -260,8 +260,8 @@ In this task, you'll use the Microsoft Admin Center to configure Conditional Acc
       > - Customers with an Azure Monitor subscription can monitor the impact of their Conditional Access policies using the Conditional Access insights workbook.
    
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
     <validation step="65f5da2a-6866-4584-8787-25c4f8839db5" />

@@ -4,6 +4,8 @@
 
 The company has made the decision to implement Azure Active Directory as the authentication method for accessing virtual machines remotely. This lab will demonstrate the process of configuring this setup for both Windows and Linux virtual machines.
 
+## Estimated time: 40 minutes
+
 ## Lab objectives
 
 After completing this lab, you will be able to complete the following tasks:
@@ -11,7 +13,6 @@ After completing this lab, you will be able to complete the following tasks:
 - Exercise 1 - Login to Windows Virtual Machines in Azure with Microsoft Entra ID
 - Exercise 2 - Login to Linux Virtual Machines in Azure with Microsoft Entra ID [READ-ONLY]
 
-## Estimated time: 40 minutes
 
 ## Architecture diagram
 
@@ -76,10 +77,10 @@ In this exercise, you will learn how to access Windows Virtual Machines in Azure
 
     ![Create vm](./media/create-vm-06.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="6d6f986c-9dc3-4dd6-9383-5d1200cede9b" />
 
@@ -114,10 +115,10 @@ In this exercise, you will learn how to access Windows Virtual Machines in Azure
 
      ![Create iam](./media/vm-iam-4.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="dbb08182-3d9e-4298-b39d-5ecca31d6672" />
 
@@ -245,6 +246,7 @@ The tasks outlined here are intended solely for informational purposes. They are
 1. For detailed steps, see Assign Azure roles using the Azure portal.
 
 ## Review
+
 In this lab, you have completed the following tasks:
 
 - Logged in to Windows Virtual Machines in Azure with Microsoft Entra ID

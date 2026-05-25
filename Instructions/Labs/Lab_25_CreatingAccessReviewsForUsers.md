@@ -4,12 +4,13 @@
 
 Privileged user access should be regularly reviewed in a similar manner.  Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company.  Unused and unnecessary privileged assignments should be removed.  Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
 
+## Estimated time: 5 minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to:
-+ Exercise 1 - Create an internal Access review
 
-## Estimated time: 5 minutes
++ Exercise 1 - Create an internal Access review
 
 ## Architecture Diagram
 
@@ -89,7 +90,7 @@ In this Exercise you'll learn creating an internal Access review involves regula
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="44cd7747-25c1-45c5-9f23-21f401b3e680" />
 

@@ -4,6 +4,8 @@
 
 Microsoft Defender for Cloud Apps  allows us to create additional Conditional Access policies specific to the cloud apps that we are monitoring.  Creating these policies can be done from within the Control menu within the Microsoft Defender for Cloud Apps  portal.
 
+## Estimated time: 30 Minutes
+
 ## Lab objectives
 
 After completing this lab, you will be able to complete the following exercises:
@@ -11,7 +13,6 @@ After completing this lab, you will be able to complete the following exercises:
 + Exercise 1 - Create and test the Conditional Access App Contol policy
 + Exercise 2 - Setup alerts in Microsoft Defender for Cloud Apps
 
-## Estimated time: 30 Minutes
 
 ## Architecture Diagram
 
@@ -100,10 +101,10 @@ In this task, you will configure Microsoft Entra ID to work with Defender for Cl
     
 14. Select **Create**.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
        <validation step="63811d93-2f19-414a-8080-7af5209c23db" />
 

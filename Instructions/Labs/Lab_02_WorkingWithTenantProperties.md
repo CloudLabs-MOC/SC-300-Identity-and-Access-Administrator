@@ -4,6 +4,8 @@
 
 You need to identify and update the different properties associated with your tenant.
 
+## Estimated time: 15 minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to:
@@ -15,8 +17,6 @@ After completing this lab, you will be able to:
 ## Architecture Diagram
 
 ![Azure portal menu with Azure Active Directory selected](./media/arch002.png)
-
-## Estimated time: 15 minutes
 
 ## Exercise 1 - Create a custom subdomains 
 
@@ -73,10 +73,10 @@ After completing this lab, you will be able to:
 
    >**Note:** You will notice the name change immediately upon completion of the save.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
     <validation step="758bd92b-fd9a-447f-87f5-b563b1df5ebb" />
 

@@ -5,6 +5,8 @@ Microsoft Entra terms of use policies provide a simple method that organizations
 
 You must create and enforce a ToU policy for your organization.
 
+## Estimated time: 40 minutes
+
 ## Lab objectives
 
 After completing this lab, you will be able to complete the following tasks:
@@ -16,7 +18,6 @@ After completing this lab, you will be able to complete the following tasks:
 + Task 5 - How users can review their terms of use
 + Task 6 - Edit terms of use details
 
-## Estimated time: 40 minutes
 
 ## Architecture diagram
 
@@ -122,6 +123,7 @@ Once you have finalized your terms of use document, use the following procedure 
     >**Note:** Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
 11. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page,
+
     - **Name:** Enter **Enforce ToU (1)**.
     - Under **Assignments|Users**, select **0 users and groups selected**.
     - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
@@ -138,6 +140,7 @@ Once you have finalized your terms of use document, use the following procedure 
     ![](./media/lab23-5.png)
 
 12. In order to implement terms of use over a specific app for the user, execute the following configurations while creating the conditional access policy:
+
     - Under the **Target resources** section, click on **No target resources selected (1)**.
     - Ensure to have **Resources(formerly Cloud apps) (2)** option selected from the dropdown list.
     - Within the **Include** tab, choose the **All resources (formerly All cloud apps) (3)** radio button.
@@ -145,6 +148,7 @@ Once you have finalized your terms of use document, use the following procedure 
        ![](./media/L23T1S12.png)
 
 13. To provide control access enforcement to block or grant access, perform the following:
+
     - Under **Access controls**, select **0 controls selected (1)**.
     - In the Grant pane,
         - Select the **Grant access (2)** radio button.
@@ -168,10 +172,10 @@ Once you have finalized your terms of use document, use the following procedure 
 
 14. If you choose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="022691e9-5511-4b18-8a4b-a30df2407a0f" />
 

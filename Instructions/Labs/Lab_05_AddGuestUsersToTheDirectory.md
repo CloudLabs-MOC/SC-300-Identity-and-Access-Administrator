@@ -4,6 +4,8 @@
 
 Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest.
 
+## Estimated time: 20 minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to complete the following exercises:
@@ -14,8 +16,6 @@ After completing this lab, you will be able to complete the following exercises:
 ## Architecture Diagram
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch05.png)
-
-## Estimated time: 20 minutes
 
 ## Exercise 1 - Add guest users to the directory
 
@@ -53,10 +53,10 @@ Incorporate guest users into the directory to extend limited access and collabor
 
    >**Note:** Kindly click on **Refresh** from the top menu until you see the Guest user entry.
    
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="ab193eee-9bbc-457c-a424-d29d268ca030" />
 
@@ -113,14 +113,15 @@ A recent partnership has been established with another company. For now, employe
 
 ### Task 2 - Invite guest users with PowerShell
 
-1. Go to the Azure portal Home page. 
-1. just click on the **cloudshell (1)** icon as and then Select **Powershell (2)**.
+1. Navigate to the Azure portal Home page. 
+
+1. Click on the **cloudshell (1)** icon and then Select **Powershell (2)**.
 
     ![](./media/Lab-05-task-2-1.png)
 
-1. Then select **No storage account reuired (1)** and Select the **subscription (2)** from the Drop down and click on **Apply (3)**.
+1. Then select **No storage account required (1)** and Select the **subscription (2)** from the drop-down and click on **Apply (3)**.
 
-![](./media/Lab-05-task-2-2.png)
+    ![](./media/Lab-05-task-2-2.png)
 
 1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before. Run the following two commands and when prompted to confirm press Y:
 
@@ -157,7 +158,7 @@ A recent partnership has been established with another company. For now, employe
     ```
 1. Send the MgInvitation command to invite the External user:
 
-   ```
+    ```
     New-MgInvitation -BodyParameter $params
     ```
 1. You can close PowerShell at this point.

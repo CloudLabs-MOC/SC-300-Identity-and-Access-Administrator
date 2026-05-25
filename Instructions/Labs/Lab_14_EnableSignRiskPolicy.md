@@ -4,6 +4,8 @@
 
 As an additional layer of security, you need to enable and configure your Azure AD organization's sign in and user risk policies.
 
+## Estimated time: 10 minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to:
@@ -13,8 +15,6 @@ After completing this lab, you will be able to:
 ## Architecture Diagram
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch14.png)
-
-## Estimated time: 10 minutes
 
 ### Before the Hands-on lab
 

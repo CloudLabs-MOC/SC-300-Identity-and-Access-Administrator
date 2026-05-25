@@ -5,6 +5,8 @@
 
 Your organization has decided to use security groups in Microsoft Entra ID to manage licenses. You need to configure a new security group and assign a license to that group and verify group member license's have been updated.
 
+### Estimated time: 25 minutes
+
 ## Lab Objectives
 
 After completing this lab, you will be able to complete the following exercises:
@@ -17,7 +19,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch03.png)
 
-## Estimated time: 25 minutes
+
 
 ## Exercise 1 - Create a security group and add a user
 
@@ -36,6 +38,7 @@ After completing this lab, you will be able to complete the following exercises:
 1. Launch a new **InPrivate** browser window. Copy and paste this link in the browser window [https://www.office.com](https://www.office.com).
 
 1. Select Sign in and connect as **Delia Dennis**, after entering the username for entering the password use the option **Use your password instead** instead entering the password directly into the field.
+
    ![](./media/lab-3-task-1-1.png)
 
    | **Setting**| **Value**|
@@ -84,10 +87,10 @@ After completing this lab, you will be able to complete the following exercises:
 
    >**Note:** Kindly click the **Refresh** button if you are not able to see the newly created group.
    
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="6697b154-6e23-4071-b1b5-7bdbf56fc007" />
 
@@ -166,10 +169,10 @@ Part of your duties as an Microsoft Entra administrator is to create different t
 
 5. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="cd72f203-b756-4b62-84fe-9e9abdcb5ea7" />
 
@@ -229,10 +232,10 @@ As your company grows, manually group management is too time consuming. Since st
 
 8. Review the members.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="4ef44753-8afa-4cd5-afc5-7467551cf169" />
 
@@ -242,7 +245,6 @@ As your company grows, manually group management is too time consuming. Since st
 
    - (user.objectid -ne null) and (user.userType -eq "Guest")
      
-
 2. Try make a group with only **Members** of the Microsoft Entra users.
 
    - (user.objectid -ne null) and (user.userType -eq "Member")
