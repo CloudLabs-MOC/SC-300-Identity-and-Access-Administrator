@@ -106,7 +106,20 @@ After completing this lab, you will be able to complete the following exercises:
 
 4. Enter a group name as **sg-SC300-O365**, select it and then click on **Assign**.
 
-   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/Lab-3task-3-2.png)
+   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/E1T3S4.png)
+5. Close the confirmation message.
+
+6. Return to the browser tab with Microsoft Entra admin center open.
+
+7. Navigate back to the All groups in the left navigation, under Identity, select Groups
+
+8. In the Groups page, select **sg-SC300-O365**.
+
+9. In the left navigation, select **Licenses**.
+
+10. Notice that the Office 365 E3 license has been assigned.
+
+11. You can exit out of the license screen.   
 
 ### Taks 4 - Confirm the Office 365 license
 
