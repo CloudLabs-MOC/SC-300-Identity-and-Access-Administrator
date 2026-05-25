@@ -68,21 +68,27 @@ In this task, you will configure Microsoft Entra ID to work with Defender for Cl
 
 2. From the left-hand navigation pane, under **Manage**, select **Security**.
 
+    ![](./media/IAA11.png)
+
 3. From the left-hand navigation pane, under **Protect**, select **Conditional Access**.
+
+   ![](./media/IAA12.png)
 
 4. Select **+ Create new policy**.
 
-5. Enter a policy name, **Monitor Pradeep using Forms**.
+   ![](./media/IAA13.png)
 
-6. Under **Users**, select **0 users and groups selected**, under **Include**, select **Select users and groups**, and select **Users and groups**. Choose **Pradeep Gupta** account for the lab tenant and select **Select**.
+5. Enter a policy name, **Monitor Pradeep using Forms (1)**.
+
+6. Under **Users (2)**, select **0 users and groups selected**, under **Include**, select **Select users and groups**, and select **Users and groups**. Choose **Pradeep Gupta** account for the lab tenant and select **Select**.
 
 8. Under Target resources, select **No target resources selected**, under **Include**, select **All resources (formerly 'All cloud apps')**. 
 
-9. Under **Access controls**, under **Session**, select **0 controls selected**.
+9. Under **Access controls**, under **Session (3)**, select **0 controls selected**.
 
-10. Select the **Use Conditional Access App Control** box, select the drop-down and select **Monitor only (Preview)**, and select **Select**.
+10. Select the **Use Conditional Access App Control ** box, select the drop-down and select **Monitor only (Preview)**, and select **Select**.
 
-11. Under **Enable policy**, select **On**, you will receive an alert message to disable security defaults. Click on the provided hyperlink.
+11. Under **Enable policy (4)**, select **On**, you will receive an alert message to disable security defaults. Click on the provided hyperlink.
     
     ![](./media/sc-300-lab18-4.png)
     

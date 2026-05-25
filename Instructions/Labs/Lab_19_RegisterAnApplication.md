@@ -11,7 +11,7 @@ In this lab, you will complete the following tasks:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch19.png)
 
-## Estimated time: 30 minutes
+## Estimated time: 30 Minutes
 
 ## Execise 1 : Register an application
 
@@ -25,9 +25,13 @@ Registering your application establishes a trust relationship between your app a
 
    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/MicrosoftentraID.png)
 
-1. On the **Microsoft Entra ID** blade, under **Manage**, select **App registrations.**
+1. On the **Microsoft Entra ID** blade, under **Manage (1)**, select **App registrations (2).**
+
+    ![](./media/IAA1.png)
 
 1. On the **App registrations** page, on the menu, select **+ New registration**.
+
+    ![](./media/IAA2.png)
 
 1. On the **register an application** blade, register an app named **Demo app (1)** using the default values. Under **Redirect URI**, select **Web (2)**, and rest you do not need to enter the redirect URI, select **Register (3)**.
 
@@ -37,7 +41,7 @@ Registering your application establishes a trust relationship between your app a
 
 ### Task 2 - Configure platform settings
 
-Settings for each application type, including redirect URIs, are configured in **Platform configurations** in the Azure portal. Some platforms, like **Web** and **Single-page applications**, require you to manually specify a redirect URI. For other platforms, like mobile and desktop, you can select from redirect URIs generated for you when you configure their other settings.
+Settings for each application type, including redirect URIs, are configured in **Redirect URI configurations** in the Azure portal. Some platforms, like **Web** and **Single-page applications**, require you to manually specify a redirect URI. For other platforms, like mobile and desktop, you can select from redirect URIs generated for you when you configure their other settings.
 
 To configure application settings based on the platform or device you're targeting:
 
@@ -45,9 +49,13 @@ To configure application settings based on the platform or device you're targeti
 
 1. On the **Demo app** page.
 
-2. From the left-hand navigation pane, under **Manage**, select **Authentication**.
+2. From the left-hand navigation pane, under **Manage (1)**, select **Authentication (Preview) (2)**.
 
-3. Under **Platform configurations**, select **+ Add a platform**.
+    ![](./media/IAA3.png)
+
+3. Under **Redirect URI configurations**, select **Add Redirect URI**.
+
+    ![](./media/IAA4.png)
 
 4. In **Configure platforms**, select the **Mobile and desktop applications** tile, and select **[https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient)**.
 
@@ -71,13 +79,17 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
     ![Screenshot of Azure portal showing the Certificates and secrets pane in app registration](./media/L19T3S1.png)
 
-1. Under **Description**, add a description for your client secret.
+1. Add a description for your client secret and duration.
 
-1. Under **Expires**, select a duration.
+    - **Description**= **SC300 lab secret (1)**
+    - **Duration** = **90 days (3 months) (2)**
+    - Select **Add (3)**.
 
-1. Select **Add**.
+        ![](./media/IAA5.png)
 
 1. **Save the value and secret ID in notepad** for use in your client application code. The Client secrets page will display the new secret value. It's important that you copy this value as it's only shown this one time. If you refresh your page and come back, it will only show as a masked value.
+
+    ![](./media/IAA6.png)
 
 With your web API registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
@@ -92,11 +104,13 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
 1. From the left-hand navigation pane, select **App registrations**, select **All applications**, and then select **Demo app**.
 
-1. From the left-hand navigation pane, under **Manage** section, select **Expose an API**, then **+ Add a scope**.
+1. From the left-hand navigation pane, under **Manage** section, select **Expose an API (1)**, then **+ Add a scope (2)**.
 
     ![An app registration's Expose an API pane in the Azure portal](./media/scope.png)
 
 1. You're prompted to set an **Application ID URI**, you can use the default value provided, which is in the form api://\<application-client-id\>.
+
+    > **Note:-** - The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id\>.
 
 1. Select **Save and continue**.
 
@@ -104,31 +118,42 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
     |Field|Example|
     | :--- | :--- |
-    |Scope name| Employees.Read.All|
-    |Who can consent| Admins and users|
-    |Admin consent display name| Read-only access to employee records|
-    |Admin consent description| Allow the application to have read-only access to all employee data.|
-    |User consent display name|Read-only access to your employee records|
-    |User consent description| Allow the application to have read-only access to your employee data.|
+    |Scope name| Employees.Read.All **(1)**|
+    |Who can consent| Admins and users **(2)**|
+    |Admin consent display name| Read-only access to employee records **(3)**|
+    |Admin consent description| Allow the application to have read-only access to all employee data **(4)**.|
+    |User consent display name|Read-only access to your employee records **(5)**|
+    |User consent description| Allow the application to have read-only access to your employee data **(6)** .|
 
-1. Set the **State** to **Enabled**, and then select **Add scope**.
+1. Set the **State** to **Enabled (7)**, and then select **Add scope (8)**.
+
+     ![](./media/IAA7.png)
+
 
 ### Task 5 - Add a scope requiring admin consent
 
 Next, add another example scope named Employees.Write.All that only admins can consent to. Scopes that require admin consent are typically used for providing access to higher-privileged operations, often by client applications that run as backend services or daemons that don't sign in a user interactively.
 
-1. On the **Demo app | Expose an API**, select **+ Add a scope**.
+1. On the **Demo app | Expose an API (1)**, select **+ Add a scope (2)**.
+
+    ![An app registration's Expose an API pane in the Azure portal](./media/scope.png)
+
 
 1. To add the Employees.Write.All example scope, follow the steps above and specify these values in the **Add scope** pane:
 
     | Field| Example value|
     | :--- | :--- |
-    | Scope name| Employees.Write.All|
-    | Who can consent| Admins only|
-    | Admin consent display name| Write access to employee records|
-    | Admin consent description| Allow the application to have write access to all employee data.|
+    | Scope name| Employees.Write.All **(1)**|
+    | Who can consent| Admins only **(2)**|
+    | Admin consent display name| Write access to employee records **(3)**|
+    | Admin consent description| Allow the application to have write access to all employee data. **(4)**|
     | User consent display name| None (leave empty)|
     | User consent description| None (leave empty)|
+
+1. Set the **State** to **Enabled (5)**, and then select **Add scope (6)**
+
+     ![](./media/IAA8.png)
+
 
     >**Note**: If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
@@ -167,15 +192,18 @@ You need to create a new custom role for app management. This new role should be
 
     ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/sc-300-lab19-2.png)
 
-1. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
+1. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role (1)**.
 
-6. Review the remaining options and then select **Next**.
+6. Review the remaining options and then select **Next (2)**.
+
+     ![](./media/IAA9.png)
+
 
 7. On the Permissions tab, review the available permissions.
 
-8. In the **Search by permission name or description** box, enter **credentials**.
+8. In the **Search by permission name or description** box, enter **credentials (1)**.
 
-9. In the results, select the **Manage** permissions and then select **Next**.
+9. In the results, select the **Manage (2)** permissions and then select **Next (3)**.
 
 - **microsoft.directory/servicePrincipals/managePasswordSingleSignOnCredentials**:-   Manage password single sign-on credentials or service principals.
     
