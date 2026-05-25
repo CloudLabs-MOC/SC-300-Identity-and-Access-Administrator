@@ -91,7 +91,7 @@ A recent partnership has been established with another company. For now, employe
 
     >**Note:** Sign in with the ODL user credentials present in the Environment Details page in order to be able to edit the excel sheet.
     
-    >**Note:** You can use any email address and redirection URL
+    >**Note:** You can use any email address and redirection URL or can go with the details that are mentioned in above image.
 
 7. Save the file.
 
@@ -113,7 +113,14 @@ A recent partnership has been established with another company. For now, employe
 
 ### Task 2 - Invite guest users with PowerShell
 
-1. Open PowerShell as an administrator. This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
+1. Go to the Azure portal Home page. 
+1. just click on the **cloudshell (1)** icon as and then Select **Powershell (2)**.
+
+    ![](./media/Lab-05-task-2-1.png)
+
+1. Then select **No storage account reuired (1)** and Select the **subscription (2)** from the Drop down and click on **Apply (3)**.
+
+![](./media/Lab-05-task-2-2.png)
 
 1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before. Run the following two commands and when prompted to confirm press Y:
 
