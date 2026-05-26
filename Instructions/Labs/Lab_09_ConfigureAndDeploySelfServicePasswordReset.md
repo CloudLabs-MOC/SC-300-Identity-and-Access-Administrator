@@ -109,7 +109,9 @@ In this task, you will register a mobile phone number for the user you created, 
 
 1. On the Keep your account secure page, click on **I want to set up a different method** and from **Choose a different method** window, select **Phone** and click on **Confirm** and **Next**
 
-     ![](./media/lab9-5.png)
+1. In this page select your **Country code (1)** and enter your **Phone Number (2)** and make sure that **text a code (3)** is selected under Choose how to verify and click on **Next (4)**.
+
+     ![](./media/Lab-09-Task-3-1.png)
 
     >**Note** - In this lab, you will use the **Phone** option. Enter your mobile phone details.
 
@@ -131,9 +133,12 @@ In this task, you will test the Self-Service Password Reset (SSPR) functionality
 
 1. Enter **alex.wilber@`<<organization-domain-name>>.com`**, and then select **Next**.
 
+1. Now select **Use your password instead**.
+    ![](./media/Lab-09-Task-4-1.png)
+
 1. On the Enter password page, select **Forgot my password**.
 
-   ![](./media/lab9-6.png)
+   ![](./media/Lab-09-Task-4-2.png)
 
 1. On the Get back into your account page, complete the requested by entering captcha and then select **Next**.
 
