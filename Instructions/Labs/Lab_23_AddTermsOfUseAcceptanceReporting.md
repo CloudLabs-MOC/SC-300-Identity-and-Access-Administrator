@@ -16,7 +16,7 @@ After completing this lab, you will be able to complete the following tasks:
 + Task 5 - How users can review their terms of use
 + Task 6 - Edit terms of use details
 
-## Estimated time: 40 minutes
+## Estimated time: 40 Minutes
 
 ## Architecture diagram
 
@@ -38,17 +38,17 @@ Once you have finalized your terms of use document, use the following procedure 
    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
 
-3. Open select **Identity Governance** in the lefthand navigation menu.
+3. Open select **ID Governance (1)** in the lefthand navigation menu.
    
-4. In the menu under, select **Entitlement management**.
+4. In the menu under, select **Entitlement management (2)**.
    
-   ![image](https://github.com/user-attachments/assets/e9b1a337-8c1d-4d58-ad5f-8ca2c9dadb04)
+   ![image](./media/lb22.png)
 
 5. To create a new term,
     - In the left navigation menu of the **Identity Governance** page, under **Terms of use**, select **Terms of use (1)**.
     - On the Terms of use page, on the top menu, select **+ New terms (2)**
 
-      ![image](https://github.com/user-attachments/assets/ff72f667-1e82-4a0a-aca5-de00bd363c16)
+      ![image](./media/lb22-1.png)
 
 
 6. Within the **New terms of use** page, configure the following:
@@ -130,12 +130,13 @@ Once you have finalized your terms of use document, use the following procedure 
     - In the Select pane, select **Alex Wilber (6)** account to use to test the terms and policy.
     - Click on **Select (7)**.
 
-    >**Note:** Do not select the ODL_user <inject key="DeploymentId" enableCopy="false" /> which can be used to ensure that your administrator account does not get locked out.
+        >**Note:** Do not select the ODL_user <inject key="DeploymentId" enableCopy="false" /> which can be used to ensure that your administrator account does not get locked out.
     
-    >**Warning:** If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
+        >**Warning:** If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
 
-    ![](./media/lab23-4.png)
-    ![](./media/lab23-5.png)
+        ![](./media/lab23-4.png)
+
+        ![](./media/lab23-5.png)
 
 12. In order to implement terms of use over a specific app for the user, execute the following configurations while creating the conditional access policy:
     - Under the **Target resources** section, click on **No target resources selected (1)**.
@@ -150,21 +151,21 @@ Once you have finalized your terms of use document, use the following procedure 
         - Select the **Grant access (2)** radio button.
         - Ensure to check the **Testing terms of use (3)** checkbox.
         - Click on **Select (4)**.
-        - Under **Enable policy**, select **On (5)**.
-        - When complete, select **Create (6)**.
+    - Under **Enable policy**, select **On (5)**.
+    - When complete, select **Create (6)**.
     
-         ![](./media/lab23-7.png)
+        ![](./media/lab23-7.png)
 
          >**Note:** There may be scenarios in which you may be produced with an error message stating that the Security defaults must be disabled to enable conditional access policy. In such cases, the account being provided may have the security defaults set to enabled for MFA functionality. It is recommended to disable the security default before proceeding with this lab. Follow the below instructions:
     - Click on the **disable security defaults** from the warning that displays as shown in the below screenshot.
       
-       ![](./media/lab13-ms-entra-id-10.png)
+        ![](./media/lab13-ms-entra-id-10.png)
     
     - Within the Security defaults page, ensure that the option - **Disabled (1)** is selected.
     - Select a reason for disabling - **Too many sign-in multifactor authentication challenges (2)**
     - Click on **Save (3)**
 
-      ![](./media/lab13-ms-entra-id-11.png)
+        ![](./media/lab13-ms-entra-id-11.png)
 
 14. If you choose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
 
@@ -210,11 +211,13 @@ The Terms of use page shows a count of the users who have accepted and declined.
 
 1. In Microsoft Azure portal, navigate to **Microsoft Entra ID** and select **Identity Governance**  and subsequently select **Terms of use** and locate the terms of use that was newly created.
   
-2. In this lab execution, since the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use from the **View Audit Logs** section from the top navigation pane.
+1. In this lab execution, since the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use from the **View Audit Logs** section from the top navigation pane.
 
-3. On the **Audit Logs** page from the top navigation pane , select **Download** to download a consents report and subsequently select **json** and click on **Download** to view the report.
+1. On the **Audit Logs** page from the top navigation pane , select **Download (1)** to download a consents report and subsequently select **JSON (2)** and click on **Download (3)** to view the report.
 
-4. On the **Identity Governance | Terms of Use** page, highlight **Testing terms of use** and select **View selected audit logs** to view the audit logs activity.
+    ![](./media/lb-23.png)
+
+1. On the **Identity Governance | Terms of Use** page, highlight **Testing terms of use** and select **View selected audit logs** to view the audit logs activity.
 
 ### Task 4: What terms of use looks like for users [Read Only]
 
@@ -222,11 +225,11 @@ The Terms of use page shows a count of the users who have accepted and declined.
 
     ![Example terms of use that appears when a user signs in](./media/user-tou.png)
 
-2. Users can view the terms of use and, if necessary, use buttons to zoom in and out.
+1. Users can view the terms of use and, if necessary, use buttons to zoom in and out.
 
     ![View of terms of use with zoom buttons](./media/zoom-buttons11.png)
 
-3. On mobile devices, the terms of use will be displayed similar to the following example.
+1. On mobile devices, the terms of use will be displayed similar to the following example.
 
     ![Example terms of use that appears when a user signs in on a mobile device](./media/mobile-tou.png)
 
@@ -236,17 +239,19 @@ Users can review and see the terms of use that they have accepted by using the f
 
 1. Open a new In-private browser and navigate to [https://myapps.microsoft.com](https://myapps.microsoft.com/).
 
-2. Sign in using your Alex Wilber's user account.
+1. Sign in using your Alex Wilber's user account.
 
-3. Select the user profile photo and then select **View account**. On the Overview page, select **VIEW SETTINGS AND PRIVACY**.
+1. Select the user profile photo and then select **View account**. 
+
+1. On the Overview page, select **Settings & Privacy**.
 
     ![](./media/settings-privacy.png)
 
-4. On the Settings & Privacy page, select the **Privacy** tab.
+1. On the Settings & Privacy page, select the **Privacy** tab.
 
     ![](./media/settings-privacy3.png)
 
-5. Under **Organization’s notice**, you can review the terms of use you have accepted.
+1. Under **Organization’s notice**, you can review the terms of use you have accepted.
 
 ### Task 6: Edit terms of use details 
 
@@ -260,19 +265,23 @@ You can edit some details of terms of use, but you can't modify an existing docu
    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** | 
 
-3. Open select **Identity Governance** in the lefthand navigation menu.
+3. Open select **ID Governance** in the lefthand navigation menu.
    
 4. In the menu under, select **Entitlement management**.
    
-   ![image](https://github.com/user-attachments/assets/e9b1a337-8c1d-4d58-ad5f-8ca2c9dadb04)
+   ![image](./media/lb-23-1.png)
 
 5. In the left navigation menu, under **Terms of use**, select **Terms of use**.
+
+    ![](./media/lb-23-2.png)
 
 6. To edit the terms of use details:
     - Select **Testing terms of use (1)**
     - On the top menu, select **Edit terms (2)**.
 
-    ![](./media/lab23-12.png)
+        ![](./media/lab23-12.png)
+
+        ![](./media/lab23-13.png)
 
     >**Note:** You have to click on open space, not directly on name of the Terms or Use.
 
@@ -282,11 +291,9 @@ You can edit some details of terms of use, but you can't modify an existing docu
     >- **Update an existing terms of use** document.
     >- You can add a language to an existing ToU If there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use.
 
-      ![](./media/lab23-13.png)
-
 7. In the **Language Options** table, identify the terms of use language you want to update and then, in the **Action** column, select **Update**.
 
-    ![](./media/lab23-13.png)
+    ![](./media/lab23-13-1.png)
 
 8. The Update terms of use version pane will look like as shown as below    
 
