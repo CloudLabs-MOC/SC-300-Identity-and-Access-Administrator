@@ -71,7 +71,7 @@ In this task, you will configure Microsoft Entra ID to work with Defender for Cl
 
     ![](./media/IAA11.png)
 
-3. From the left-hand navigation pane, under **Protect**, select **Conditional Access**.
+3. From the left-hand navigation pane, under **Protect (1)**, select **Conditional Access (2)**.
 
    ![](./media/IAA12.png)
 

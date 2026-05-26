@@ -25,9 +25,9 @@ Registering your application establishes a trust relationship between your app a
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account. The odl user account provided in the Environment will be having Global administrator role assigned. 
 
-2. Open the portal menu and then select **Identity**.
+2. Open the portal menu and then select **Entra ID**.
 
-3. On the Identity menu, under **Applications (1)**, select **App registrations (2)** and click on **+ New registration (3)**.
+3. On the Entra ID menu, select **App registrations (1)** and click on **+ New registration (2)**.
 
    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/app-reg.png)
 
@@ -71,9 +71,9 @@ The Global Administrator role is required in order to provide admin consent for 
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1. In Microsoft Entra admin center, browse to **Identity > Applications > Enterprise applications > Demo app.**
+1. In Microsoft Entra admin center, browse to **Entra ID > Enterprise apps > Demo app.**
 
-2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.** Under **Permissions,** select **Grant admin consent.**
+2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.** Under **Permissions (1),** select **Grant admin consent (2).**
 
     ![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](./media/T3S2.png)
 
@@ -82,6 +82,8 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 4. When prompted, sign in using your Global Administrator account.
 
 5. In the **Permissions requested** dialog box, review the information and then select **Accept**.
+
+    ![](./media/img6.png)
 
 ## Review
 
