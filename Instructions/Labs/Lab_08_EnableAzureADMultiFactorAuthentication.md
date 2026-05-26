@@ -72,7 +72,8 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
 
       ![](./media/L8E1T2S7.png)
 
-   - Now under Include, change your choice to **Select resources** item and then under Select click on **None**.
+   - Now under Include, change your choice to **Select resources** item and then under Select specific resources click on **None**.
+
    - In the newly opened dialog, choose **Office 365**.
    - Choose **Select**.
 

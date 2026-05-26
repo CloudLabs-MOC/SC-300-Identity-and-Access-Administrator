@@ -35,6 +35,9 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/p31.png) 
 
+   
+
+
 4. On the New Project page, give the project name **MyB2BApp (1)**, and then select **Create(2)**.
 
    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/project.png)
@@ -45,29 +48,45 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 6. In the left menu, under **APIs & Services**, select **OAuth consent screen**.
 
-7. Under User Type, select **External (1)**, and then select **Create (2)**.
+7. Select the **Get Started** .
+   ![](./media/Lab-06-Task-1-1.png)
 
-   ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/external.png)
+8. On the Application information screen enter the following information:
 
-8. On the **OAuth consent screen**, under App information, enter an App name, such as **Entra ID**.
+| Section | Field Name | Value |
+| :---    | :---    | :---  |
+| 1 App Information | | |
+|            | App name | +++Microsoft Entra ID+++ |
+|            | User support email | Select the email name from the drop down |
+| 2 Audience | | |
+|            | Internal / External | **External** |
+| 3 Contact Information | | |
+|            | Email addresses | Use the same email address as above |
+| 4 Finish | | |
+|            | Agreement | Mark the checkbox |
 
-9. Under User support email, select an email address. This should include the email address that you used to log into Google.
+9. Select the **Create** button to continue.
+   ![](./media/Lab-06-Task-1-2.png)
+   ![](./media/demo.png)
+   ![](./media/Lab-06-Task-1-3.png)
+   ![](./media/Lab-06-Task-1-4.png)
 
-10. Scroll down and under Authorized domains, select **+ Add domain**, and then add the microsoftonline.com domain.
+10. Select the **Create OAuth client** button.
 
-      ```
-      microsoftonline.com
-      ```
+11. Click on **Clients (1)** and then Click on the **Creat client (2)**.
+   ![](./media/Lab-06-Task-1-5.png)
 
-11. Under Developer contact information, enter the email address for the lab account that you used to sign into the portal.
+12. Choose **Application type = Web Application**.
+   ![](./media/Lab-06-Task-1-6.png)
 
-12. Select **Save and continue**.
+13. Accept the default name for the application.
 
-13. In the left menu, select **Credentials**.
+14. Within the **Authorized JavaScript origins**, select the **+ Add URI** button.
 
-14. Select **+ Create credentials**, and then select **OAuth client ID**.
+15. Enter the URI +++https://microsoftonline.com+++ for the value.
 
-15. In the Application type menu, select Web application. Give the application a suitable name, **Entra ID B2B**. Under **Authorized redirect URIs**, select **+ ADD URI**, and add the following URIs (select **ADD URI**, after adding each URIs):
+
+16. In the Application type menu, select Web application. Give the application a suitable name, **Entra ID B2B**. Under **Authorized redirect URIs**, select **+ ADD URI**, and add the following URIs (select **ADD URI**, after adding each URIs):
 
       ```
       https://login.microsoftonline.com
@@ -95,63 +114,92 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 18. You can leave your project at a publishing status of Testing.
 
+
+
 ### Task 2 - Add a test user
 
-1. Select the **OAuth consent screen** under APIs and Services menu.
+1. From the menu on the left, select the **Audience (1)** item.
 
-2. Scroll down and under the **Test Users** section of the page, choose **+ ADD USERS**.
+2. In the **Test Users** section of the page, choose **+ Add Users(2)**.
 
-3. Enter the gmail account you created (or are using) for this lab.
+3. Enter the gmail account you are using for this lab **(3)**.
 
-4. Select **Save**.
+4. Select **Save (4)**
+
+   ![](./media/Lab-06-Task-2-1.png)
+
+### Task 3 - Add authorized domain to Branding
+
+1. From the menu on the left, select the **Branding** item.
+
+2. Scroll to the very bottom of the page.
+
+3. In the **Authorized domains** section, add the domain **microsoftonline.com**.
+
+4. In the **Developer contact information** add they email address you are using for this lab.
+   ![](./media/Lab-06-Task-3-1.png)
 
 
 ## Exercise 2 - Configure Azure to work with an External identity provider
 
 In this exercise, you'll configure Azure to work with an external identity provider by setting up Microsoft Entra ID for Google federation. You'll invite a test user account, accept the invitation, and log in to Microsoft 365 using your Google account to verify the integration.
 
+   >**Note** Before stepping into the next task make sure you hold the **Client Id** and **Client secret** of the Client you have created by following the below steps.
+
+   >Click on the **Client (1)** and select the client that you have created like here **Web client 1 (2)**.
+   ![](./media/Lab-06-Task-4-1.png)
+
+   >Copy the **Client ID (1)** and **Client Secret (2)**. and make them noted in some notepad or document.
+   ![](./media/Lab-06-Task-4-2.png)
+
 ### Task 1 - Configure Microsoft Entra ID for Google federation
 
-1. Navigate back to the Azure Portal.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as an admin.
 
-2. Search and select for **Microsoft Entra ID**.
+2. Select **Microsoft Entra ID**.
 
-3. Under **Manage**, select **External Identities**.
+3. Under **Entra ID**, select **External Identities (1)**.
 
-4. Select **All identity providers** from the menu on the left.
+4. Choose **All identity providers (2)** from the menu on the left.
 
-   ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/federation1.png)  
+5. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google (3)** from the **External Identities | All identity providers** page
+   ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/Lab-06-Task-4-3.png) 
 
-5. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **Configure** for google from the **External Identities | All identity providers** page
- 
-6. After selecting configure, another page will open with additional information that is required to configure Google as an identity provider.  
+6. After selecting + Google, another page will open with additional information that is required to configure Google as an identity provider.  
 
-7. Enter the **Client ID** and **Client secret** you obtained earlier.
+7. Make sure you see **Name (1)** Field as Google. Enter the **Client ID (2)** and **Client secret (3)** you obtained earlier.
 
-8. Select **Save**.
+8. Select **Save (4)**.
+   ![](./media/Lab-06-Task-4-4.png)
+
+    
 
 This completes the configuration of Google as an identity provider.
 
 ### Task 2 - Invite you Test User account
 
-1. Open **Microsoft Entra ID**.
+1. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
 
-1. From the left-hand navigation pane, Select **Users**.
+2. Open Microsoft Entra ID.
 
-1. Select **+ New User**.
+3. Go to Users and select **All users**.
 
-1. Select **Invite external user** from the dropdown menu.
+4. Select **+ New User**.
 
-1. Enter the information for the gmail account you set up as a test user for the Google App in Exercise 1 Task 2.
+5. Choose **Invite external user** from the dropdown menu.
 
-1. Enter a personal message as you want.
+6. Enter the information for the gmail account you set up as a test user for the Google App in Exercise 1 Task 2.
 
-1. Select **Review + Invite** and subsequently click on **Invite**.
+7. Enter a personal message as you want.
+   ![](./media/Lab-06-Task-5-1.png)
+
+8. Select **Review + Invite** and subsequently click on **Invite**.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
      <validation step="7cf29cba-eb1e-4f7d-b267-186788edd5f7" />
 
