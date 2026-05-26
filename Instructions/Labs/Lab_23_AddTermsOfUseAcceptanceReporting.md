@@ -160,19 +160,6 @@ Once you have finalized your terms of use document, use the following procedure 
     
         ![](./media/lab23-7.png)
 
-         >**Note:** There may be scenarios in which you may be produced with an error message stating that the Security defaults must be disabled to enable conditional access policy. In such cases, the account being provided may have the security defaults set to enabled for MFA functionality. It is recommended to disable the security default before proceeding with this lab. Follow the below instructions:
-    - Click on the **disable security defaults** from the warning that displays as shown in the below screenshot.
-      
-        ![](./media/lab13-ms-entra-id-10.png)
-    
-    - Within the Security defaults page, ensure that the option - **Disabled (1)** is selected.
-    - Select a reason for disabling - **Too many sign-in multifactor authentication challenges (2)**
-    - Click on **Save (3)**
-
-        ![](./media/lab13-ms-entra-id-11.png)
-
-14. If you choose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
-
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 

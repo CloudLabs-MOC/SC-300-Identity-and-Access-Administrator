@@ -174,7 +174,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. Navigate back to the **Identity Governance**.
 
-1. Access reviews can manage the access lifecycle. Azure AD Identity Governance provides an overview dashboard showing the status of access reviews.
+1. Access reviews can manage the access lifecycle. Entra ID Identity Governance provides an overview dashboard showing the status of access reviews.
 
 1. From the left-hand navigation pane, select **Access reviews** under **Access reviews (1)** and select **+ New access review (2)** to create your guest user access review.  The tile will open to configure the access review for guest users.
 

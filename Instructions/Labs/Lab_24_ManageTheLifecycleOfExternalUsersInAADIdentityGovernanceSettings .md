@@ -4,7 +4,7 @@
 
 You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 
-## Estimated time: 30 minutes
+## Estimated time: 30 Minutes
 
 ## Lab Objectives
 
@@ -21,7 +21,7 @@ In this lab you will be performing the following task:
 
 ### Task 1 - Manage the lifecycle of external users in Microsoft Entra Identity Governance settings
 
-In this task, you will configure Azure AD Identity Governance settings to manage the lifecycle of external users. You'll adjust policies to block external users from signing in or remove their guest accounts when they lose access to resources, ensuring proper governance and security of your Azure environment.
+In this task, you will configure Entra ID Identity Governance settings to manage the lifecycle of external users. You'll adjust policies to block external users from signing in or remove their guest accounts when they lose access to resources, ensuring proper governance and security of your Azure environment.
 
 1. Sign in to the https://portal.azure.com/
 
