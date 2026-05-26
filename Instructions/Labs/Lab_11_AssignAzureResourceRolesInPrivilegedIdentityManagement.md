@@ -12,19 +12,20 @@ Microsoft Entra ID Privileged Identity Management (PIM) can manage the built-in 
 
 You need to make a user eligible for an Azure resource role.
 
+## Estimated time: 10 minutes
+
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
 - Task 1 - Assign Azure resource roles
 - Task 2 - Update or remove an existing resource role assignment
 
-## Estimated time: 10 minutes
-
 ## Architecture Diagram
 
    ![](./media/arch-11.png)
 
 ### Exercise 1 - PIM with Azure resources
+
 Using Privileged Identity Management (PIM) with Azure resources enables just-in-time access, auditing, and monitoring of privileged roles to enhance security and compliance.
 
 #### Task 1 - Assign Azure resource roles
@@ -71,10 +72,10 @@ Using Privileged Identity Management (PIM) with Azure resources enables just-in-
 
 1. After the new role assignment is created, a status notification is displayed.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="e0ad202b-3667-47cc-801c-0207597c7e9b" />
 
@@ -101,7 +102,9 @@ Follow these steps to update or remove an existing role assignment.
    ![](./media/remove-assignment2.png)
 
 ### Review
+
 In this lab, you have completed:
+
 - Assigned Azure resource roles
 - Updated or removed an existing resource role assignment
 

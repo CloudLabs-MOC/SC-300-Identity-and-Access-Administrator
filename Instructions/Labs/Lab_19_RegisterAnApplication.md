@@ -11,8 +11,6 @@ In this lab, you will complete the following tasks:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch19.png)
 
-## Estimated time: 30 Minutes
-
 ## Execise 1 : Register an application
 
 ### Task 1 - App registration
@@ -171,10 +169,10 @@ Next, add another example scope named Employees.Write.All that only admins can
      
      > **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
     
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="6eec643a-ac27-4d9b-b23d-2b843753d8d6" />
 
@@ -216,10 +214,10 @@ You need to create a new custom role for app management. This new role should be
 
 10. Review the changes and then select **Create**.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="55a9a2b1-cefb-465f-a606-3c2520e64597" />
 

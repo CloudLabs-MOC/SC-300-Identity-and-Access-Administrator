@@ -4,7 +4,10 @@
 
 When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Microsoft Entra authentication.  However, not all Azure services support Microsoft Entra authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
 
+## Estimated time: 20 minutes
+
 ## Lab objectives
+
 In this lab, you will complete the following tasks:
 
 - Task 1 - Create a Windows Virtual Machine
@@ -13,7 +16,6 @@ In this lab, you will complete the following tasks:
 - Task 4 - Grant access to Key Vault
 - Task 5 - Access data with Key Vault secret with PowerShell
 
-## Estimated time: 20 minutes
 
 ## Architecture Diagram
 
@@ -37,9 +39,9 @@ In this task, you will create a Windows 11 VM from the Azure Marketplace, config
 
    ![](./media/sc-300-lab16-7.png)
 
-1. From the dropdown, choose **Windows 11 Enterprise, version 22H2**. You will be redirected to **Create a virtual machine** tab.
+1. From the dropdown, choose **Windows 11 Enterprise, version 25H2**. You will be redirected to **Create a virtual machine** tab.
 
-   ![](./media/new-lab16-1.png)
+   ![](./media/Lab-16-Task-1-1.png)
 
 1. In the **Create a Virtual Machine** page, modify the following by keeping the rest as default:
 
@@ -55,7 +57,7 @@ In this task, you will create a Windows 11 VM from the Azure Marketplace, config
 
         ![](./media/sc-300-lab16-2.png)
 
-        ![](./media/sc-300-lab16-3.png)
+        <!-- ![](./media/sc-300-lab16-3.png) -->
    
 1. You will have to create an administrator username and password for the VM on the basics tab.
 
@@ -141,10 +143,10 @@ In this task, you will create a secret in your Key Vault by specifying the name 
 
 1. Copy the secret name **secret-<inject key="DeploymentID" enableCopy="false"/>** , and paste it in the notepad you need this value in further tasks.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="b3569c98-64c4-4f7e-a19b-463cfc0b4d36" />
 

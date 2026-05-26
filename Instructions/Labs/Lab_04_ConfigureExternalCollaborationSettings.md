@@ -5,14 +5,15 @@
 
 You must enable external collaboration settings for your organization for approved guests access.
 
+## Estimated timing: 15 minutes
+
 ## Lab scenario
 
 After completing this lab, you will be able to complete the following tasks:
+
 - Task 1 - Enable Guest Users to perform self service sign-up
 - Task 2 - Configure external collaboration settings
   
-## Estimated timing: 15 minutes
-
 ## Architecture Diagram
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch004.png)

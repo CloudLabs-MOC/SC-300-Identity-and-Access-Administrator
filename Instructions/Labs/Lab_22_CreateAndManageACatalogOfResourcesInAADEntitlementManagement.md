@@ -4,7 +4,10 @@
 
 A catalog is a container of resources and access packages. You create a catalog when you want to group related resources and access packages. Whoever creates the catalog becomes the first catalog owner. A catalog owner can add additional catalog owners. You must create and configure a catalog in your organization.
 
+## Estimated time: 15 Minutes
+
 ## Lab objectives
+
 In this lab, you will complete the following tasks:
 
 + Task 1 - Create a catalog
@@ -15,7 +18,6 @@ In this lab, you will complete the following tasks:
 + Task 6 - Create Access reviews for guest users
 + Task 7 - Delete a catalog
 
-## Estimated time: 15 Minutes
 
 ### Architecture Diagram
 
@@ -110,10 +112,10 @@ Building out resources in Entitlement Management involves defining and structuri
 
     ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lab22-405.png)
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="37c693fb-cab4-469c-855b-5e0afd7108df" />
 
@@ -209,7 +211,9 @@ You can edit the name and description for a catalog. Users see this information 
     ![](./media/lab22-22.png)
 
 ### Review
+
 In this lab, you have completed:
+
 - Created a catalog
 - Create a groups
 - Added resources to a catalog

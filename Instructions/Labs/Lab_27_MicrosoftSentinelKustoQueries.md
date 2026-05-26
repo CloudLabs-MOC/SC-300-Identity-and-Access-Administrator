@@ -4,6 +4,8 @@
 
 Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through connecting data sources from Microsoft and third-party security solutions, you have the ability to execute security operations tasks.  In this lab exercise, you will create a Microsoft Sentinel workspace with data connectors to Azure AD for executing hunting queries using Kusto Query Language (KQL). 
 
+## Estimated time: 60 minutes
+
 ## Lab Objectives
 
 In this lab, you will be performing the following tasks:
@@ -15,8 +17,6 @@ In this lab, you will be performing the following tasks:
 ## Architecture Diagram
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch27.png)
-
-### Estimated time: 60 minutes
 
 ## Exercise 1 - Configure Microsoft Sentinel for Kusto Queries
 Configuring Microsoft Sentinel for Kusto Queries enables advanced log and security data analysis within the Azure Sentinel platform, enhancing threat detection and response capabilities.
@@ -52,7 +52,7 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="4e426e86-3c79-41e6-b8e8-1c53996176e3" />
 

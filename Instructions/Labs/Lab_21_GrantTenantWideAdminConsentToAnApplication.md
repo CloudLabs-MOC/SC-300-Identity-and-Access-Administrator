@@ -4,7 +4,10 @@
 
 For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
+## Estimated time: 30 minutes
+
 ## Lab Objectives
+
 After completing this lab, you will be able to complete the following tasks:
 
 - Task 1 - App registration
@@ -15,7 +18,6 @@ After completing this lab, you will be able to complete the following tasks:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch021.png)
 
-## Estimated time: 30 Minutes
 
 ### Task 1 - App registration
 
@@ -35,10 +37,10 @@ Registering your application establishes a trust relationship between your app a
 
 5. When complete, you will be directed to the **Demo app** blade.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="8bc7c83f-773b-44c7-ba7a-567f0d85f110" />
 

@@ -4,12 +4,12 @@
 
 You must configure the additional password protection settings for your organization.
 
+## Estimated time: 15 minutes
+
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
 - Exercise 1 - Task 1 - Add Smart Lockouts
-
-## Estimated time: 15 minutes
 
 ## Architecture diagram
 
@@ -28,6 +28,7 @@ Based on your organizational requirements, you can customize the Microsoft Entra
     ![](./media/ms-entra-id-1.png)
 
 1. On the Microsoft Entra ID page, from the left-hand navigation page, under **Manage**, select **Security**.
+    ![](./media/Lab-12-Task-1-1.png)
 
 1. On the Security page, in the left navigation, select **Authentication methods**.
 
@@ -57,7 +58,9 @@ Based on your organizational requirements, you can customize the Microsoft Entra
    ![](./media/temp.png)
 
 ## Review
+
 In this lab, you have completed:
+
 - Added Smart Lockouts.
 - Understood the functionality of the Smart Lockouts.
 

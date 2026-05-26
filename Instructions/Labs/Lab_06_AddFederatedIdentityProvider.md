@@ -5,6 +5,8 @@
 
 Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest and allow them to use their Google account to sign-in.
 
+## Estimated time: 25 minutes
+
 ## Lab Objectives
 
 In this lab, you will complete the following tasks:
@@ -12,8 +14,6 @@ In this lab, you will complete the following tasks:
 - Exercise 1 - Configure identity providers
 - Exercise 2 - Configure Azure to work with an External identity provider
   
-
-## Estimated time: 25 minutes
 
 ## Architecture Diagram
 
@@ -148,10 +148,10 @@ This completes the configuration of Google as an identity provider.
 
 1. Select **Review + Invite** and subsequently click on **Invite**.
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
      <validation step="7cf29cba-eb1e-4f7d-b267-186788edd5f7" />
 

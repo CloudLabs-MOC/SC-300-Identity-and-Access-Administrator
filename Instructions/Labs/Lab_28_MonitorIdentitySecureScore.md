@@ -4,7 +4,10 @@
 
 Microsoft Entra Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Microsoft Entra Identity Protection also provides an Identity Secure Score to monitor and improve your identity security posture. In the same manner as Microsoft Defender XDR and Microsoft Defender for Cloud, Identity Secure Score provides improvement actions and recommendations that can improve your overall security posture for identity in Microsoft Entra ID. This lab will explore this capability.
 
+## Estimated time: 15 minutes
+
 ## Lab objectives
+
 In this lab, you will complete the following tasks:
 
 + Task 1 - Review Identity Secure Score and improvement actions
@@ -14,7 +17,6 @@ In this lab, you will complete the following tasks:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch28.png)
 
-## Estimated time: 15 minutes
 
 ## Exercise 1 - Using Identity Secure Score to monitor and manage identity security posture
 
@@ -88,6 +90,7 @@ In this task, you will execute an improvement action by enabling Microsoft Entra
    ![](./media/new-lab28-10.png)
 
 ## Review
+
 In this lab, you have completed:
 - Review Identity Secure Score and improvement actions
 - Execute an improvement action

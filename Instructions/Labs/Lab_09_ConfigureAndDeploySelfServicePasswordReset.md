@@ -3,6 +3,8 @@
 ## Lab scenario
 The company has decided to empower the employees and enable self-service password reset. You must configure this setting in your organization.
 
+## Estimated time: 15 minutes
+
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
@@ -11,8 +13,6 @@ In this lab, you will complete the following tasks:
 - Task 3 - Register for SSPR with Alex
 - Task 4 - Test SSPR
 - Task 5 - What happens if you try a user not in SSPRTesters group?
-
-## Estimated time: 15 minutes
 
 ## Architecture diagram
 
@@ -56,10 +56,10 @@ In this task, you will roll out SSPR to a limited set of users to ensure the con
 
     ![](./media/lab09-sc300-4.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="e11d21a6-fbc6-42b0-8271-5413eb1ee9b4" />
 
@@ -179,7 +179,9 @@ In this task, you will test the behavior when attempting to use Self-Service Pas
 1. Close the InPrivate browser.
 
 ## Review
+
 In this lab, you have completed:
+
 - Added users to a group to assign SSPR
 - Enabled SSPR for the group
 - Registered for SSPR with Alex
