@@ -147,7 +147,7 @@ In this task, you will log in to the Azure Portal as Miriam Graham, reset her pa
 
    >**Note:** From the Microsoft Entra ID **Users** section, click on **Miriam Graham** user and from the top navigation pane, click on **Reset Password** and subsequently click on **Reset Password**  again and copy the temporary password and login to Azure portal and reset the password to **Pa55w.rd@123**
 
-1. If prmpoted, on **Action required** pop-up window appears, click on **Next**.
+1. If prompted, on **Action required** pop-up window appears, click on **Next**.
 
      - On **Start by getting the app** page, click on **Next**.
       
@@ -195,7 +195,7 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
 1. In the navigation pane, expand **ID Governance (1)** and select **Privileged Identity Management (2)**.
 
-    - On the Privileged Identity Management page, in the left navigation menu, select **My roles (2)** under **Tasks**.
+    - On the Privileged Identity Management page, in the left navigation menu, select **My roles (3)** under **Tasks**.
 
       ![](./media/lab26-03-13.png)
 
