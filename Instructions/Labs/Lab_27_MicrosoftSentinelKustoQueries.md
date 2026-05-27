@@ -1,4 +1,4 @@
-# Lab 27 - Microsoft Sentinel Kusto Queries for Microsoft Entra ID data sources
+# Lab 27 OPTIONAL - Microsoft Sentinel Kusto Queries for Microsoft Entra ID data sources
 
 ## Lab Scenario
 
@@ -105,6 +105,9 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
     > **Note** - The Microsoft Entra ID data connector may take about 15  minutes to show in the active count.
 
     > **Note** - If the Connected count isn't displayed after a few minutes, try deleting the connector and then adding it again.
+    
+    > **Note** - You may experience a delay in the "Connected" count. If it takes more than 20 minutes, please do not wait further and proceed with the next steps. The Microsoft team is currently working on updates for this lab, which is why it has been marked as optional.
+
 
 ### Task 3 - Run Kusto query on User activity
 
