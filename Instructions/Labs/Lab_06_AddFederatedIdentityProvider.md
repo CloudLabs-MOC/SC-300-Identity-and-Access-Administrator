@@ -110,9 +110,9 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 16. Select **Create**.
 
-17. Click on the newly created **Credential** and copy your **client ID** and **client secret**. You'll use them when you add the identity provider in the Azure portal. Select **OK**.
+17. After creating the client copy your **client ID (1)** and **client secret (2)**. You'll use them when you add the identity provider in the Azure portal. Select **OK**.
 
-    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/p33.png) 
+    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/Lab-06-Task-1-7.png) 
 
 18. You can leave your project at a publishing status of Testing.
 
