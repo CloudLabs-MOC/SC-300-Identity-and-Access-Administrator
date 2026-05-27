@@ -2,7 +2,10 @@
 
 ## Lab scenario
 
-Microsoft Entra Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Microsoft Entra Identity Protection also provides an Identity Secure Score to monitor and improve your identity security posture. In the same manner as Microsoft Defender XDR and Microsoft Defender for Cloud, Identity Secure Score provides improvement actions and recommendations that can improve your overall security posture for identity in Microsoft Entra ID. This lab will explore this capability.
+Microsoft Entra Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Microsoft Entra Identity Protection also provides an Identity Secure Score to monitor and improve your identity security posture.  In the same manner as Microsoft Defender XDR and Microsoft Defender for Cloud, Identity Secure Score provides improvement actions and recommendations that can improve your overall security posture for identity in Microsoft Entra ID.  This lab will explore this capability. 
+
+>**Note:** Since this lab is running on a new created tenant environment, you will probably get an Identity Secure Score of 30% or less.  It takes about 24 hours for viable data to enter the calculation to give you a valid score.
+
 
 ## Estimated time: 15 Minutes
 
@@ -26,73 +29,102 @@ In this task, you will review the Identity Secure Score in Microsoft Entra and e
 
 1. Open a new tab, and sign in to the [https://entra.microsoft.com/](https://entra.microsoft.com/).
 
-2. Sign in using below credentials :
+1. Sign in using below credentials :
 
    | Setting | Value |
    | :--- | :--- |
    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
 
-3. From the left-hand navigation pane, select **Protection (1) > Identity Secure Score (2)** to view the dashboard.
+1. In the left navigation menu, under **Entra ID (1)**, select **Identity Secure Score (2)**.
 
-4. Select **Identity Secure Score**. This will take you to the Identity Secure Score dashboard.
+   ![](./media/sc14.png)
 
-   ![](./media/new-lab28-1.png)
+1. On the **Security | Identity Secure Score**, review the information provided.
 
-5. Scroll down to view the **Improvement actions**.
+1. Notice the value to **Identity Secure Score**, your **Score History** and other information.
 
-   ![](./media/new-lab28-2.png)
+   ![](./media/sc15.png)
 
-6. In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft Defender XDR, these improvement actions are specific to identity. This provides a more focused list of potential actions to your security posture management. Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture.
+1. Scroll down to view the **Recommendations**.
+
+   ![](./media/sc16.png)
+
+    >**Note** - In contrast to the recommendations in Microsoft Defender for Cloud and Microsoft Defender XDR, these actions are specific to identity.  This provides a more focused list of potential actions to your security posture management for identity. Any recommendations initiated from this list will also provide an impact to your overall tenant security posture. 
+
 
 ### Task 2 - Execute an improvement action
 
 In this task, you will execute an improvement action by enabling Microsoft Entra ID Identity Protection sign-in risk policies. You'll create a new conditional access policy to strengthen identity security, configuring users, resources, and access controls.
 
-1. To improve one area of the identity security posture, select **Enable Microsoft Entra ID Identity Protection sign-in risk policies (1)**.
+1. To improve one area of the identity security posture, select **Protect all users with a user risk policy**.
 
-1. In the tile that opens, scroll down and select **Get Started (2)**.
+   ![](./media/sc17.png)
 
-   ![](./media/new-lab28-3.png)
+1. In the page that opens, review the risk. Additionally, you see an **Action plan** on how to resolve the threat.
 
-1. A new tab will open for **Identity Protection**. Select **Conditional Access** under Protect from the left tab.
+1. Select the link **Follow these steps to create a Conditional Access policy from scratch or by using a template**. Review the steps in the article.
 
-   ![](./media/new-lab28-4.png)
+   ![](./media/sc18.png)
 
-   **Note**: By default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either will work.
+1. Close the article tab, and return to the tab with **Microsoft Entra ID** opened.
 
-1. Select **+ New policy**.
+1. From the menu on the left, select **Conditional Access**.
 
-1. Give your policy a name as **Accesspolicy-<inject key="DeploymentID" enableCopy="false"/> (1)**. We recommend that organizations create a meaningful standard for the names of their policies.
+   ![](./media/sc19.png)
 
-1. Under **Assignments|Users**, select **0 users and groups selected (2)**. Under **Include (3)**, select **All users (4)**.
+1. Select **+ Create new policy**.
 
-   ![](./media/new-lab28-5.png)
+   ![](./media/sc20.png)
 
-1. Under **Exclude (1)**, select **Users and groups (2)** and choose any accounts that must maintain the ability to use legacy authentication. Microsoft recommends you exclude at least one account to prevent yourself from being locked out. For now select **Spektra Systems** and **ODL_User <inject key="DeploymentID"></inject> (3)** and then click **Select (4)**.
+1. Use the following values to create the policy:
 
-   ![](./media/new-lab28-6.png)
+   - Name: **User risk protection policy (1)**
 
-1. Under Target resources, select **No target resources selected (1)** > **Resources(Formerly Cloud apps) (2)** > under **Include**, select **All Resources(formerly All cloud apps) (3)**.
+   - Assignments: Select **0 users or agents (Preview) selected (2)**
 
-   ![](./media/L28T2S8.png)
+     ![](./media/sc21.png)
 
-1. Under Conditions select **0 conditions selected (1)** > under **Client apps** select **Not configured (2)**, set **Configure** to **Yes (3)**. Check only the boxes **Exchange ActiveSync clients** and **Other clients (4)**. Select **Done (5)**.
+   - On the **Include (1)** tab mark **All users (2)**     
 
-   ![](./media/new-lab28-9.png)
+     ![](./media/sc22.png)
 
-1. Under Access controls|Grant select **0 controls selected (1)**, select **Block access (2)**. Choose **Select (3)**.
+   -  On the **Exclude (1)** tab, use the **Users and groups (2)**  
 
-1. Confirm your settings and set Enable policy to **Report-only (4)**.
+     ![](./media/sc23.png)   
 
-1. Select **Create (5)** to create to enable your policy.
+   - Choose any accounts that must maintain the ability to use legacy authentication. Microsoft recommends you exclude at least one account to prevent yourself from being locked out. For now select **Spektra Systems** and **ODL_User <inject key="DeploymentID"></inject> (3)** and then click **Select (2)**.
 
-   ![](./media/new-lab28-10.png)
+     ![](./media/sc24.png)  
+
+   - Under Target resources, Select **No target resource selected (1)**, and then select **All resources (formerly 'All cloud apps') (2)**.
+
+     ![](./media/sc25.png)
+
+   - **Network:** Leave at default
+
+   - Under Conditions select **0 conditions selected (1)** > Under **User risk** select the **Not configured (2)** link, set **Configure** to **Yes (3)**. Mark the box next to **High** and **Medium** **(4)** and then **Done (5)**.
+
+     ![](./media/sc26.png)
+   
+   - **Access controls:**  Under **Grant** select **0 controls selected (1)**,Select **Require risk remediation (2)**
+
+     ![](./media/sc27.png)
+
+   - Under the **Require authentication strength** select **Phishing-resistant MFA (1)** and then **Select (2)**.
+
+     ![](./media/sc28.png)
+
+   - Confirm your settings and set Enable policy to **Report-only (1)**.
+
+   - Select **Create (2)** to create to enable your policy.
+
+     ![](./media/sc29.png)
 
 ## Review
 
-In this lab, you have completed:
-- Review Identity Secure Score and improvement actions
-- Execute an improvement action
+In this lab, you have completed following tasks:
+- Reviewed Identity Secure Score and improvement actions
+- Executed an improvement action
 
 ## You have successfully completed the lab
