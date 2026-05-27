@@ -27,6 +27,8 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 **Important Note** - For this exercise, you will need a Gmail account on Google. You can use your **personnel Gmail account** or  create a **new Google account** and then follow the steps for the exercise.  Be sure to note the email address and password, they are necessary to complete the lab.
 
+   >**Note** If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment. Passkey requires BlueTooth, which cannot be enabled through the VM.
+
 1. Open the Microsoft Edge browser and copy and paste the link to go to the Google APIs at https://console.developers.google.com, and sign in with your Google account. We recommend that you use a shared team Google account.
 
 2. Accept the terms of service if you're prompted to do so.
@@ -108,9 +110,9 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 16. Select **Create**.
 
-17. Click on the newly created **Credential** and copy your **client ID** and **client secret**. You'll use them when you add the identity provider in the Azure portal. Select **OK**.
+17. After creating the client copy your **client ID (1)** and **client secret (2)**. You'll use them when you add the identity provider in the Azure portal. Select **OK**.
 
-    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/p33.png) 
+    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/Lab-06-Task-1-7.png) 
 
 18. You can leave your project at a publishing status of Testing.
 
