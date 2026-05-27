@@ -100,7 +100,7 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
 
 1. Notification will be provided that the changes were applied successfully. Navigate to the **Microsoft Sentinel** workspace by selecting the **X** on the top right of the connector page.
 
-1. Select **Refresh** on the **Microsoft Sentinel | Data connectors** tile and the number 1 will show in the **Connected** count.
+1. Select **Refresh** on the **Microsoft Sentinel | Data connectors** tile and the number `8` will show in the **Connected** count.
 
     > **Note** - The Microsoft Entra ID data connector may take about 15  minutes to show in the active count.
 
