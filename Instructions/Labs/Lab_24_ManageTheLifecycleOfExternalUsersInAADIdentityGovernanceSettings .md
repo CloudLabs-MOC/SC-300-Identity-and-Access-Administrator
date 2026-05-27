@@ -4,7 +4,7 @@
 
 You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 
-## Estimated time: 30 minutes
+## Estimated time: 30 Minutes
 
 ## Lab Objectives
 
@@ -21,7 +21,7 @@ In this lab you will be performing the following task:
 
 ### Task 1 - Manage the lifecycle of external users in Microsoft Entra Identity Governance settings
 
-In this task, you will configure Azure AD Identity Governance settings to manage the lifecycle of external users. You'll adjust policies to block external users from signing in or remove their guest accounts when they lose access to resources, ensuring proper governance and security of your Azure environment.
+In this task, you will configure Entra ID Identity Governance settings to manage the lifecycle of external users. You'll adjust policies to block external users from signing in or remove their guest accounts when they lose access to resources, ensuring proper governance and security of your Azure environment.
 
 1. Sign in to the https://portal.azure.com/
 
@@ -44,7 +44,6 @@ In this task, you will configure Azure AD Identity Governance settings to manage
 1. In the **Lifecycle of external users** section, review the different settings for external users.
 
 1. Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Select the checkbox (1)**.
-
 
     >**Note** - Entitlement management only removes accounts that were invited through entitlement management. Also, note that a user will be blocked from signing in and removed from this directory even if that user was added to resources in this directory that were not access package assignments. If the guest was present in this directory prior to receiving access package assignments, they will remain. However, if the guest was invited through an access package assignment, and after being invited was also assigned to a OneDrive for Business or SharePoint Online site, they will still be removed.
 

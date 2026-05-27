@@ -2,7 +2,7 @@
 
 ## Lab scenario
 
-A Privileged role administrator can customize Privileged Identity Management (PIM) in their Azure Active Directory (Azure AD) organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
+A Privileged role administrator can customize Privileged Identity Management (PIM) in their Microsoft Entra ID organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
 
    >**Note:** There have been on-going changes to requiring MFA in lab environments. When you switch between users to complete this lab, you may be prompted to set up MFA.
 
@@ -26,7 +26,7 @@ In this exercise, you will learn how to customize role settings by configuring M
 
 ### Task 1 - Open role settings
 
-In this task ,you will access and review the settings for the Compliance Administrator role in Azure AD Privileged Identity Management.
+In this task, you will access and review the settings for the Compliance Administrator role in Microsoft Entra Privileged Identity Management.
 
 1. In the lab VM, on the desktop, open the **Microsoft Edge** browser.
 
@@ -91,7 +91,7 @@ With Microsoft Entra ID, a Global administrator can make permanent Microsoft Ent
 
 The Microsoft Entra ID Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Microsoft Entra ID admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
 
-Follow these steps to make a user eligible for an Azure AD admin role.
+Follow these steps to make a user eligible for an Microsoft Entra ID admin role.
 
 1. In the Privileged Identity Management page, in the left navigation, under **Manage** select **Roles (1)**.
 
@@ -191,7 +191,7 @@ In this task, you will log in to the Azure Portal as Miriam Graham, reset her pa
 
 ### Task 3 - Activate your Microsoft Entra ID roles
 
-When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
+When you need to assume an Microsoft Entra ID role, you can request activation by opening **My roles** in Privileged Identity Management.
 
 1. In the navigation pane, expand **ID Governance (1)** and select **Privileged Identity Management (2)**.
 
@@ -257,7 +257,7 @@ Follow these steps to update or remove an existing role assignment.
 
 ## Review
 In this lab you have completed the following tasks:
-- Configured Azure AD role settings
-- Configured PIM with Azure AD roles
+- Configured Microsoft Entra ID role settings
+- Configured PIM with Microsoft Entra ID roles
 
 ## You have successfully completed the lab
