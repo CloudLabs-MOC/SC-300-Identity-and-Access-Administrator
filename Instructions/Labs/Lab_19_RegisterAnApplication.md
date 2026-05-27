@@ -152,7 +152,6 @@ Next, add another example scope named Employees.Write.All that only admins can
 
      ![](./media/IAA8.png)
 
-
     >**Note**: If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
       ![Screenshot of the Expose an API pane showing two exposed scopes.](./media/exposesanapi.png)
@@ -165,9 +164,9 @@ Next, add another example scope named Employees.Write.All that only admins can
    You can expose additional scopes later as necessary. Consider that your web API can expose multiple 
    scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
 
-     > **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
+    > **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
      
-     > **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+    > **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
     
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.

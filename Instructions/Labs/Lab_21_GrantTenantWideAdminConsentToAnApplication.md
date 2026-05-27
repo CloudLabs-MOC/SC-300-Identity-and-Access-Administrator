@@ -4,7 +4,7 @@
 
 For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
-## Estimated time: 30 minutes
+## Estimated time: 30 Minutes
 
 ## Lab Objectives
 

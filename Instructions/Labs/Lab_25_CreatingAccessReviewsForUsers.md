@@ -2,9 +2,9 @@
 
 ## Lab scenario
 
-Privileged user access should be regularly reviewed in a similar manner.  Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company.  Unused and unnecessary privileged assignments should be removed.  Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
+Privileged user access should be regularly reviewed in a similar manner. Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company.  Unused and unnecessary privileged assignments should be removed.  Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
 
-## Estimated time: 5 minutes
+## Estimated time: 5 Minutes
 
 ## Lab Objectives
 
@@ -19,21 +19,28 @@ After completing this lab, you will be able to:
 ### Exercise 1 - Create an internal Access review
 In this Exercise you'll learn creating an internal Access review involves regularly evaluating and validating the access permissions of users and roles within your organization to maintain security and compliance.
 
-1. Select the **Show portal menu** hamburger icon and then select **Microsoft Entra ID**.
+1. Select the **Show portal menu (1)** hamburger icon and then select **Microsoft Entra ID (2)**.
 
     ![Azure portal menu with Azure Active Directory selected](./media/lab25-1.png)
 
-1. From the left-hand navigation pane, select **Groups** under **Manage** option.
+1. From the left-hand navigation pane, under **Manage (1)** option,select **Groups (2)**.
 
-1. On **Groups | All groups**, select **New group**. Now, follow the instructions for creating the groups, and select **Create**:
+   ![Azure portal menu with Azure Active Directory selected](./media/lab25-15.png)
+
+1. On **Groups | All groups**, select **New group**. 
+
    ![Azure portal menu with Azure Active Directory selected](./media/lab25-2.png)
+
+1. Now, follow the instructions for creating the groups, and select **Create**:
 
     |Settings|Value|
     |--------|-----|
-    |Group type| **Security**|
-    |Group name| **Sales and Marketing**|
-    |Group description| **Sales and Marketing**|
-    |Owners| click on **No owners selected** > Select **ODL_User <inject key="DeploymentID" enableCopy="false"/>** and click on **select**|
+    |Group type| **Security (1)**|
+    |Group name| **Sales and Marketing (2)**|
+    |Group description| **Sales and Marketing (3)**|
+    |Owners| click on **No owners selected (4)** > Select **ODL_User <inject key="DeploymentID" enableCopy="false"/> (5)** and click on **select (6)**|
+
+   ![Azure portal menu with Azure Active Directory selected](./media/lab25-16.png)
 
 1. Return back to **Microsoft Entra ID** page, from the left-hand navigation pane, under the **Manage** section select **Identity Governance**.
 
@@ -46,30 +53,36 @@ In this Exercise you'll learn creating an internal Access review involves regula
 
    ![Azure portal menu with Azure Active Directory selected](./media/lab25-4.png)
 
-1. In the **Select what to review** box choose **Teams + Groups** from the dropdown and for **Review scope** select **Select Teams + groups**.
+1. On create an access review page, under the Review access to a resource type tile, click on **Select**
+
+   ![Azure portal menu with Azure Active Directory selected](./media/lab25-10.png)
+
+1. In the **Select what to review** box choose **Teams + Groups (1)** from the dropdown and for **Review scope** select **Select Teams + groups (2)**.
 
    ![Azure portal menu with Azure Active Directory selected](./media/lab25-5.png)
 
-1. For **Groups** select **+Select group(s)**, on **Select group** window select **Sales and Marketing** group from the list, and hit **Select**.
+1. For **Groups** select **+Select group(s) (1)**, on **Select group** window select **Sales and Marketing (2)** group from the list, and hit **Select (3)**.
 
     ![Azure portal menu with Azure Active Directory selected](./media/lab25-(6).png)
    
-1. Back on **New access review**, set the **Scope** to **All users** and select **Next: Reviews** option for move forward in the wizard.
+1. Back on **New access review**, set the **Scope** to **All users (1)** and select **Next: Reviews (2)** option for move forward in the wizard.
 
    ![Azure portal menu with Azure Active Directory selected](./media/lab25-1(7).png)
 
 1. The next step is to determine the reviewers. These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
-1. On the **Reviews** page, follow the instruction, and select **Next: Settings**:
+1. On the **Reviews** page, follow the instruction, and select **Next: Settings (6)**:
 
     |Settings|Value|
     |--------|-----|
-    |Select reviewers| **Selected user(s) or group(s)**|
-    |Users or groups| Click on **+ Select reviewers** and select **ODL_User <inject key="DeploymentID" enableCopy="false"/>**|
+    |Select reviewers| **Selected user(s) or group(s) (1)**|
+    |Users or groups| Click on **+ Select reviewers** and select **ODL_User <inject key="DeploymentID" enableCopy="false"/> (2)**|
     |**Specify recurrence of review**| 
-    |**Duration in days**| **Keep it as default**|
-    |Review recurrence| **Select the options of your choice**|
-    |Start date| **Select the options of your choice**|
+    |**Duration in days**| **Keep it as default (3)**|
+    |Review recurrence| **Select the options of your choice (4)**|
+    |Start date| **Select the options of your choice (5)**|
+
+    ![Azure portal menu with Azure Active Directory selected](./media/lab25-11.png)
     
 1. The advanced settings allow you to put a message as part of the review. On **Settings** page, keep it as default.
 

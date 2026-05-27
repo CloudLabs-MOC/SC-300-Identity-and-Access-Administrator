@@ -7,7 +7,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 >**Note:** Since this lab is running on a new created tenant environment, you will probably get an Identity Secure Score of 30% or less.  It takes about 24 hours for viable data to enter the calculation to give you a valid score.
 
 
-## Estimated time: 15 minutes
+## Estimated time: 15 Minutes
 
 ## Lab objectives
 
