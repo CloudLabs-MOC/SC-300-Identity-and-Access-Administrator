@@ -5,7 +5,7 @@ Microsoft Entra terms of use policies provide a simple method that organizations
 
 You must create and enforce a ToU policy for your organization.
 
-## Estimated time: 40 minutes
+## Estimated time: 40 Minutes
 
 ## Lab objectives
 
