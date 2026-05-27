@@ -124,7 +124,7 @@ In this task, you will execute an improvement action by enabling Microsoft Entra
 ## Review
 
 In this lab, you have completed:
-- Review Identity Secure Score and improvement actions
-- Execute an improvement action
+- Reviewed Identity Secure Score and improvement actions
+- Executed an improvement action
 
 ## You have successfully completed the lab
