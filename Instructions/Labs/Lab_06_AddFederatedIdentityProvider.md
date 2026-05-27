@@ -27,6 +27,8 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 **Important Note** - For this exercise, you will need a Gmail account on Google. You can use your **personnel Gmail account** or  create a **new Google account** and then follow the steps for the exercise.  Be sure to note the email address and password, they are necessary to complete the lab.
 
+   >**Note** If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment. Passkey requires BlueTooth, which cannot be enabled through the VM.
+
 1. Open the Microsoft Edge browser and copy and paste the link to go to the Google APIs at https://console.developers.google.com, and sign in with your Google account. We recommend that you use a shared team Google account.
 
 2. Accept the terms of service if you're prompted to do so.
