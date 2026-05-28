@@ -34,30 +34,14 @@ In this task, you will confirm that Pradeep Gupta has unconditional access to Mi
     
    | **Setting**| **Value**|
    | :--- | :--- |
-   | Username | pradeep.gupta@`your domain name.com`|
-   | Password| Enter the password for Pradeep Gupta|
-
-4. To find the username for **Pradeep Gupta**, login to the Azure portal using the credentials given in the **Environment Details** page
-
-5. In **Search resources, services and docs (1)** search and select for **Microsoft Entra ID (2)**.
-
-   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/MicrosoftentraID.png)
-
-6. Navigate to the **Users** section of the Microsoft Entra ID, and copy the mail id of Pradeep Gupta.
-
-   ![image](./media/sc-300-lab18-2.png)
-
-7. From the Microsoft Entra ID **Users** section, click on **Pradeep Gupta** user, and from the top navigation pane click on **Reset Password** and copy the temporary password and login and reset the password to **Pa55w.rd@123**
-
-    ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/pradeep.png)
-
-   >**Note:** Copy the username and password of Pradeep in a notepad file because you will be needing it for further tasks.
+   | Username |**<inject key="User 01 UPN"></inject>**|
+   | Password|**<inject key="User 01 Password"></inject>**|
     
-8. Confirm that Microsoft Forms opens and that you do not get any warning messages.
+1. Confirm that Microsoft Forms opens and that you do not get any warning messages.
 
    >**Note:** You will not have access to Microsoft Forms.
 
-9. Close the InPrivate browsing window.
+1. Close the InPrivate browsing window.
 
 ### Task 2 - Configure Microsoft Entra ID to work with Defender for Cloud Apps
 
@@ -67,39 +51,31 @@ In this task, you will configure Microsoft Entra ID to work with Defender for Cl
 
    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/MicrosoftentraID.png)
 
-2. From the left-hand navigation pane, under **Manage**, select **Security**.
+1. From the left-hand navigation pane, under **Manage (1)**, select **Security (2)**.
 
     ![](./media/IAA11.png)
 
-3. From the left-hand navigation pane, under **Protect (1)**, select **Conditional Access (2)**.
+1. From the left-hand navigation pane, under **Protect (1)**, select **Conditional Access (2)**.
 
    ![](./media/IAA12.png)
 
-4. Select **+ Create new policy**.
+1. Select **+ Create new policy**.
 
    ![](./media/IAA13.png)
 
-5. Enter a policy name, **Monitor Pradeep using Forms (1)**.
+1. Enter a policy name, **Monitor Pradeep using Forms (1)**.
 
-6. Under **Users (2)**, select **0 users and groups selected**, under **Include**, select **Select users and groups**, and select **Users and groups**. Choose **Pradeep Gupta** account for the lab tenant and select **Select**.
+1. Under **Users (2)**, select **0 users and groups selected**, under **Include**, select **Select users and groups**, and select **Users and groups**. Choose **Pradeep Gupta** account for the lab tenant and select **Select**.
 
-8. Under Target resources, select **No target resources selected**, under **Include**, select **All resources (formerly 'All cloud apps')**. 
+1. Under Target resources, select **No target resources selected**, under **Include**, select **All resources (formerly 'All cloud apps') (3)**. 
 
-9. Under **Access controls**, under **Session (3)**, select **0 controls selected**.
+1. Under **Access controls**, under **Session**, select **0 controls selected**.
 
-10. Select the **Use Conditional Access App Control ** box, select the drop-down and select **Monitor only (Preview)**, and select **Select**.
+1. Select the **Use Conditional Access App Control (4)** box, select the drop-down and select **Monitor only (Preview)**, and select **Select**.
 
-11. Under **Enable policy (4)**, select **On**, you will receive an alert message to disable security defaults. Click on the provided hyperlink.
+1. Under **Enable policy (5)**, select **On**, Select **Create (6)**
     
     ![](./media/sc-300-lab18-4.png)
-    
-12. On the Security Defaults setup page, select the option **Disabled (1)**. For the **Reason for disabling**, choose** _My organization is planning to use Conditional Access_ (2)** and click on **Save (3)**.
-
-    ![](./media/sc-300-lab18-3.png)
-
-13. Click on **Disable** when prompted.
-    
-14. Select **Create**.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
@@ -114,22 +90,22 @@ In this task, you will log into Microsoft Forms as Pradeep Gupta in an InPrivate
 
 1. Launch a new InPrivate browsing window and browse to [https://forms.microsoft.com](https://forms.microsoft.com).
 
-2. Select **Sign in** and log in as Pradeep Gupta.
+1. Select **Sign in** and log in as Pradeep Gupta.
 
    | **Setting**| **Value**|
    | :--- | :--- |
-   | Username | pradeep.gupta@`your domain name.com`|
-   | Password| Pa55w.rd@123|
+   | Username |**<inject key="User 01 UPN"></inject>**|
+   | Password|**<inject key="User 01 Password"></inject>**|
     
    >**Note:** Copy the username for Pradeep from the notepad file as mentioned in the previous task.
    
-3. Confirm that you get a new message as shown below:
+1. Confirm that you get a new message as shown below:
 
    - Access to Microsoft Forms is monitored.
    
      ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/access.png)
 
-4. Close the InPrivate browsing window.
+1. Close the InPrivate browsing window.
 
    >**Note:** If the above message does not appear as expected, verify if the conditional access policy has been created. If it has, refresh the page and wait for a while for the message to appear.
 
@@ -143,33 +119,45 @@ In this task, you will access Microsoft Defender for Cloud Apps to create a Cond
 
 1. Open a new tab and browse to the [https://security.microsoft.com](https://security.microsoft.com).
 
-   >**Note:** If you get  **Your new endpoint protection home** page close it.
+   >**Note:** If you get  **Whats new in Microsoft 365 Defender** page close it.
 
-1. In the **Microsoft Defender** portal menu, from the left-hand navigation pane, under **Cloud apps** select **Policies** drop-down, and select **Policy management (1)**. Click on the **Enable Office 365 Cloud App Security (2)** to allow your subscription to use Office 365 Cloud App Security.
+1. In the **Microsoft Defender** portal menu, from the left-hand navigation pane, click on **Show navigation (1)**  under **Cloud apps (2)**, select **Policies (3)** drop-down, and select **Policy management (4)**.
 
    ![image](./media/sc-300-lab18-1.png)
 
-1. Select **+ Create policy**. Select **Access policy**.
+   >**Note:** If you don't see the Cloud apps option, please wait for 5–6 minutes. It should appear shortly.
+
+1. Click on the **Enable Office 365 Cloud App Security (2)** to allow your subscription to use Office 365 Cloud App Security.
+
+   ![image](./media/sc-300-lab18-10.png)
+
+1. Select **+ Create policy (1)**. Select **Access policy (2)**.
+
+   ![image](./media/sc-300-lab18-11.png)
 
    >**Note:** If you encounter a situation where no conditional access policy appears to be active even though one has been created, please try refreshing the page or logging out and back in.
 
-1. Enter a name for the policy, **Monitor Microsoft Forms access**.
+1. Enter a name for the policy, **Monitor Microsoft Forms access (1)**.
 
-1. Leave the **Category** as **Access control**.
+1. Leave the **Category** as **Access control (2)**.
 
-1. Under **Activities matching all of the following**, select the drop-down for **Intune compliant, Microsoft Entra Hybrid joined** and unselect **Microsoft Entra Hybrid joined**.
+1. Under **Activities matching all of the following**, select the drop-down for **Intune compliant, Microsoft Entra Hybrid joined (3)** and unselect **Microsoft Entra Hybrid joined (4)**.
 
-   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/new-lab18-1.png)
+1. Select the drop-down for **Select apps (5)**, select **Microsoft Forms (6)**.
 
-1. Select the drop-down for **Select apps**, select **Microsoft Forms**.
+1. On **Actions**, select **Test (7)**.
 
-1. Leave **Actions** as **Test**.
-
-1. Under **Alerts**, leave **Create an alert...** checked and select **Send alert as email**.
+1. Under **Alerts**, leave **Create an alert... (8)** checked and select **Send alert as email (9)**.
 
 1. Enter and select **<inject key="AzureAdUserEmail"></inject>**.
 
-1. Select **Create** to create the access policy.
+1. Select **Create (10)** to create the access policy.
+
+   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/new-lab18-1.png)
+
+   ![image](./media/sc-300-lab18-12.png)
+
+   ![image](./media/sc-300-lab18-14.png)
 
 ### Task 2 - Log in as Pradeep to Forms to trigger activity
 
@@ -181,8 +169,8 @@ In this task, you will log in to Microsoft Forms as Pradeep Gupta to trigger act
 
    | **Setting**| **Value**|
    | :--- | :--- |
-   | Username | pradeep.gupta@`your domain name.com`|
-   | Password| Pa55w.rd@123|
+   | Username |**<inject key="User 01 UPN"></inject>**|
+   | Password|**<inject key="User 01 Password"></inject>**|
     
    >**Note:** Copy the username for Pradeep from the notepad file as mentioned in the previous task.
 
@@ -200,13 +188,15 @@ In this task, you will review activity in Defender for Cloud Apps by accessing t
 
 1. Return to the browser running Microsoft Defender.
 
-2. Refresh the browser to ensure the most recent data is downloaded.
+1. Refresh the browser to ensure the most recent data is downloaded.
 
-3. From the left-hand navigation pane, under **Cloud apps**, select **Activity log**.
+1. From the left-hand navigation pane, under **Cloud apps**, select **Activity log**.
 
-4. Using the **App: filter** pick **Microsoft Forms** from the list.
+1. Using the **App: filter (1)** pick **Microsoft Forms (2)** from the list.
 
-5. Notice the sign-on records for Pradeep.
+   ![image](./media/sc-300-lab18-15.png)
+
+1. Notice the sign-on records for Pradeep.
 
    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/msforms2.png)
 
