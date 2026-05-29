@@ -147,15 +147,15 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 In this exercise, you'll configure Azure to work with an external identity provider by setting up Microsoft Entra ID for Google federation. You'll invite a test user account, accept the invitation, and log in to Microsoft 365 using your Google account to verify the integration.
 
-   >**Note** Before stepping into the next task make sure you hold the **Client Id** and **Client secret** of the Client you have created by following the below steps.
+   >**Note**: Before stepping into the next task make sure you hold the **Client Id** and **Client secret** of the Client you have created by following the below steps.
 
-   >Click on the **Client (1)** and select the client that you have created like here **Web client 1 (2)**.
+1. Click on the **Client (1)** and select the client that you have created like here **Web client 1 (2)**.
 
-   ![](./media/Lab-06-Task-4-1.png)
+    ![](./media/Lab-06-Task-4-1.png)
 
-   >Copy the **Client ID (1)** and **Client Secret (2)**. and make them noted in some notepad or document.
+2. Copy the **Client ID (1)** and **Client Secret (2)**. and make them noted in some notepad or document.
 
-   ![](./media/Lab-06-Task-4-2.png)
+    ![](./media/Lab-06-Task-4-2.png)
 
 ### Task 1 - Configure Microsoft Entra ID for Google federation
 
@@ -179,8 +179,7 @@ In this exercise, you'll configure Azure to work with an external identity provi
 
    ![](./media/Lab-06-Task-4-4.png)
 
-
-This completes the configuration of Google as an identity provider.
+9. This completes the configuration of Google as an identity provider.
 
 ### Task 2 - Invite you Test User account
 
@@ -207,7 +206,6 @@ This completes the configuration of Google as an identity provider.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-
      <validation step="7cf29cba-eb1e-4f7d-b267-186788edd5f7" />
 
 ### Task 3 - Accept the invitation and login
@@ -220,9 +218,9 @@ This completes the configuration of Google as an identity provider.
 
 4. Enter your username and password as requested in the login dialog (if requested).
 
-   >**NOTE** If the federation is working correctly, this is where you will see the first results of your new Google External Identity provider.  You will go to the login screen and be able to log in with your gmail credentials.  If the federation is not work, or has not been set up, the user would be sent and ACCOUNT VERIFICATION email after the log in, to confirm the account.  With the federation, no extra verification is needed.
+   >**NOTE**: If the federation is working correctly, this is where you will see the first results of your new Google External Identity provider.  You will go to the login screen and be able to log in with your gmail credentials.  If the federation is not work, or has not been set up, the user would be sent and ACCOUNT VERIFICATION email after the log in, to confirm the account.  With the federation, no extra verification is needed.
 
-   >**NOTE** If you get an access error 500, wait about 30 seconds and refresh the page.  Choose to RESUBMIT.  This error is a timing issue only in the lab environment.
+   >**NOTE**: If you get an access error 500, wait about 30 seconds and refresh the page.  Choose to RESUBMIT.  This error is a timing issue only in the lab environment.
 
 5. Read over the new **Permissions requested by:** message that you get.  This message is coming from your Azure Lab Domain.
 
