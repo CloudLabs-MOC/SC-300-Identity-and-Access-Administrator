@@ -107,7 +107,9 @@ After completing this lab, you will be able to complete the following exercises:
 
       - Open **Google Play Store** (Android) or **App Store** (iOS).
       - Search for **Microsoft Authenticator** and tap **Install**.
-      ![](./media/sc300-43.png)
+
+        ![](./media/sc300-43.png)
+      
       - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
       - A **QR code** will be displayed on your computer screen.
       - In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
@@ -168,12 +170,12 @@ After completing this lab, you will be able to complete the following exercises:
     ![](./media/l1-12-8.png)
 
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-     <validation step="a2dbf6f4-a68f-47d8-b0fe-f5e0e821e10f" />
+<validation step="a2dbf6f4-a68f-47d8-b0fe-f5e0e821e10f" />
 
 ### Task 2 - Check application permissions
 
