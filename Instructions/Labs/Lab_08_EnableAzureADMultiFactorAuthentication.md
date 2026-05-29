@@ -17,24 +17,24 @@ After completing this lab, you will be able to complete the following exercises:
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch08.png)
 
-
 >**IMPORTANT** - A Microsoft Entra ID Premium license is required for this exercise.
 
 ## Exercise 1 - Review and enable Multi-factor Authentication in Azure
 
-  In this exercise, you will learn how to  enhance security, and ensure Multi-factor Authentication (MFA) is configured and enabled in your Azure environment, adding an extra layer of protection for your accounts and data.
+In this exercise, you will learn how to  enhance security, and ensure Multi-factor Authentication (MFA) is configured and enabled in your Azure environment, adding an extra layer of protection for your accounts and data.
 
 ### Task 1 - Review Azure Multi-Factor Authentication options
 
 1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using the credentials provided in the environment. (Global administrator privilages are provided for this account)
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
     ![](./media/lab08-sc300-1.png)
 
 1. On the search feature type **multifactor**, and in the search results select **Multifactor authentication**.
-Alternatively, you can open **Identity**, then select **Protection**, and select **Multifactor authentication**.
+   - Alternatively, you can open **Identity**, then select **Protection**, and select **Multifactor authentication**.
 
 1. On the **Multi-Factor Authentication | Getting started** page, under **Configure**, select **Additional cloud-based MFA settings**.
 
@@ -75,6 +75,7 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
    - Now under Include, change your choice to **Select resources** item and then under Select specific resources click on **None**.
 
    - In the newly opened dialog, choose **Office 365**.
+
    - Choose **Select**.
 
 1. Review the Conditions section.
