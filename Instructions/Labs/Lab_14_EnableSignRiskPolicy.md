@@ -1,4 +1,6 @@
-# Lab 14 - Enable sign in and user risk policies
+# [Read Only]Lab 14 - Enable sign in and user risk policies
+
+**IMPORTANT:** - This lab is titled Read-Only.
 
 ## Lab scenario
 
