@@ -1,4 +1,3 @@
-
 # Lab 06: Add a federated identity provider
 
 ## Lab scenario
@@ -14,7 +13,6 @@ In this lab, you will complete the following tasks:
 - Exercise 1 - Configure identity providers
 - Exercise 2 - Configure Azure to work with an External identity provider
   
-
 ## Architecture Diagram
 
 ![Screen image displaying the New Group page with Group type, Group name, Owners, and Members highlighted](./media/arch06.png)
@@ -27,7 +25,7 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 **Important Note** - For this exercise, you will need a Gmail account on Google. You can use your **personnel Gmail account** or  create a **new Google account** and then follow the steps for the exercise.  Be sure to note the email address and password, they are necessary to complete the lab.
 
-   >**Note** If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment. Passkey requires BlueTooth, which cannot be enabled through the VM.
+   >**Note**: If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment. Passkey requires BlueTooth, which cannot be enabled through the VM.
 
 1. Open the Microsoft Edge browser and copy and paste the link to go to the Google APIs at https://console.developers.google.com, and sign in with your Google account. We recommend that you use a shared team Google account.
 
@@ -36,9 +34,6 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 3. Choose **Create Project**.  Leave the remaining fields with the default settings.
 
    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/p31.png) 
-
-   
-
 
 4. On the New Project page, give the project name **MyB2BApp (1)**, and then select **Create(2)**.
 
@@ -55,47 +50,54 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 8. On the Application information screen enter the following information:
 
-| Section | Field Name | Value |
-| :---    | :---    | :---  |
-| 1 App Information | | |
-|            | App name | +++Microsoft Entra ID+++ |
-|            | User support email | Select the email name from the drop down |
-| 2 Audience | | |
-|            | Internal / External | **External** |
-| 3 Contact Information | | |
-|            | Email addresses | Use the same email address as above |
-| 4 Finish | | |
-|            | Agreement | Mark the checkbox |
+   | Section | Field Name | Value |
+   | :---    | :---    | :---  |
+   | 1 App Information | | |
+   |            | App name | **Microsoft Entra ID** |
+   |            | User support email | Select the email name from the drop down |
+   | 2 Audience | | |
+   |            | Internal / External | **External** |
+   | 3 Contact Information | | |
+   |            | Email addresses | Use the same email address as above |
+   | 4 Finish | | |
+   |            | Agreement | Mark the checkbox |
 
 9. Select the **Create** button to continue.
+
    ![](./media/Lab-06-Task-1-2.png)
+
    ![](./media/demo.png)
+
    ![](./media/Lab-06-Task-1-3.png)
+
    ![](./media/Lab-06-Task-1-4.png)
 
 10. Select the **Create OAuth client** button.
 
 11. Click on **Clients (1)** and then Click on the **Creat client (2)**.
-   ![](./media/Lab-06-Task-1-5.png)
+
+    ![](./media/Lab-06-Task-1-5.png)
 
 12. Choose **Application type = Web Application**.
-   ![](./media/Lab-06-Task-1-6.png)
+
+    ![](./media/Lab-06-Task-1-6.png)
 
 13. Accept the default name for the application.
 
 14. Within the **Authorized JavaScript origins**, select the **+ Add URI** button.
 
-15. Enter the URI +++https://microsoftonline.com+++ for the value.
-
+15. Enter the URI **https://microsoftonline.com** for the value.
 
 16. In the Application type menu, select Web application. Give the application a suitable name, **Entra ID B2B**. Under **Authorized redirect URIs**, select **+ ADD URI**, and add the following URIs (select **ADD URI**, after adding each URIs):
 
       ```
       https://login.microsoftonline.com
       ```
+
       ```
       https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp
       ```
+      
       ```
       https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
       ```
@@ -116,8 +118,6 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 18. You can leave your project at a publishing status of Testing.
 
-
-
 ### Task 2 - Add a test user
 
 1. From the menu on the left, select the **Audience (1)** item.
@@ -126,7 +126,7 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 
 3. Enter the gmail account you are using for this lab **(3)**.
 
-4. Select **Save (4)**
+4. Select **Save (4)**.
 
    ![](./media/Lab-06-Task-2-1.png)
 
@@ -139,6 +139,7 @@ In this exercise, you'll configure Google as an identity provider, set it up for
 3. In the **Authorized domains** section, add the domain **microsoftonline.com**.
 
 4. In the **Developer contact information** add they email address you are using for this lab.
+
    ![](./media/Lab-06-Task-3-1.png)
 
 
@@ -149,9 +150,11 @@ In this exercise, you'll configure Azure to work with an external identity provi
    >**Note** Before stepping into the next task make sure you hold the **Client Id** and **Client secret** of the Client you have created by following the below steps.
 
    >Click on the **Client (1)** and select the client that you have created like here **Web client 1 (2)**.
+
    ![](./media/Lab-06-Task-4-1.png)
 
    >Copy the **Client ID (1)** and **Client Secret (2)**. and make them noted in some notepad or document.
+
    ![](./media/Lab-06-Task-4-2.png)
 
 ### Task 1 - Configure Microsoft Entra ID for Google federation
@@ -164,7 +167,8 @@ In this exercise, you'll configure Azure to work with an external identity provi
 
 4. Choose **All identity providers (2)** from the menu on the left.
 
-5. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google (3)** from the **External Identities | All identity providers** page
+5. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google (3)** from the **External Identities | All identity providers** page.
+
    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/Lab-06-Task-4-3.png) 
 
 6. After selecting + Google, another page will open with additional information that is required to configure Google as an identity provider.  
@@ -172,9 +176,9 @@ In this exercise, you'll configure Azure to work with an external identity provi
 7. Make sure you see **Name (1)** Field as Google. Enter the **Client ID (2)** and **Client secret (3)** you obtained earlier.
 
 8. Select **Save (4)**.
+
    ![](./media/Lab-06-Task-4-4.png)
 
-    
 
 This completes the configuration of Google as an identity provider.
 
@@ -193,6 +197,7 @@ This completes the configuration of Google as an identity provider.
 6. Enter the information for the gmail account you set up as a test user for the Google App in Exercise 1 Task 2.
 
 7. Enter a personal message as you want.
+
    ![](./media/Lab-06-Task-5-1.png)
 
 8. Select **Review + Invite** and subsequently click on **Invite**.
@@ -260,8 +265,8 @@ This completes the configuration of Google as an identity provider.
 ## Review
 
 In this lab you have completed the following tasks:
+
 - Configured identity providers
 - Configured Azure to work with an External identity provider
 
 ## You have successfully completed the lab
-
