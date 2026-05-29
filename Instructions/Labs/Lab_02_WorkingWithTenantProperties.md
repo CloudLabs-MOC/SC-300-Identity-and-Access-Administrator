@@ -90,7 +90,7 @@ After completing this lab, you will be able to:
 
    ![B2B Collaboration Review permissions box with message](./media/SC-300-marketing.png)
 
-   **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
+   > **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
 
 ## Task 3 - Finding the tenant ID
 
@@ -108,7 +108,7 @@ Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft
 
 Microsoft strongly recommends you add both your global privacy contact and your organization's privacy statement, so your internal employees and external guests can review your policies. Because privacy statements are uniquely created and tailored for each business, we strongly recommend you contact a lawyer for assistance.
 
-   **NOTE** - For information about viewing or deleting personal data, see [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
+   > **NOTE** - For information about viewing or deleting personal data, see [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure).
             - For more information about GDPR, see the [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 You add your organization's privacy information in the **Properties** area of Microsoft Entra ID. To access the Properties area and add your privacy information:
