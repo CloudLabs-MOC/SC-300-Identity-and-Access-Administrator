@@ -5,7 +5,7 @@
      "BaseURL": "https://github.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/prod",
      "Files": [
          {
-           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/Getting-Started-Page.md",
+           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-300-Identity-and-Access-Administrator/refs/heads/prod/Instructions/Labs/combined_gettingstarted_page.md",
            "Order": 1
          },
          {
